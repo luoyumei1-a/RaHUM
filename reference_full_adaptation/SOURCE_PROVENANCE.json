@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "release": "public_reference_full_adaptation_source_v7",
+  "source_manuscript": {
+    "sha256": "f444fd23c2afd10260263755e29bddd9315a17e929677857236af002ec7af43c",
+    "evidence_identity": "author_reported_reference_configuration",
+    "new_full_7B_rerun_claimed": false
+  },
+  "source_archives": [
+    {
+      "name": "CHR-LMM code.zip",
+      "sha256": "f043afdec5a988ff9d8956ae947883c1c498b24bc5ab485423c95ed8cdf757c2"
+    },
+    {
+      "name": "CHRLMM/HiRAC_code.zip",
+      "sha256": "29e3b1828523b9a5904ba1caf61295eb02faef6f624766ece4424d9da585c1b9"
+    }
+  ],
+  "configuration_separation": {
+    "reference_full_adaptation": "original author source and reported 20+30-stage results",
+    "backbone": "unchanged v6 frozen-prefix engineering implementation and actual two-step records"
+  },
+  "reference_files": [
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/__init__.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "__init__.py",
+      "bytes": 845,
+      "sha256": "b985432690e17aed3f915c4133d44f018fa48c324e06ae3db611206b64057393"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/conversation.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "conversation.py",
+      "bytes": 15591,
+      "sha256": "2579e26ecc128f0a5c40d3c115049e900a4f6b8882af4663b61ce1aa7fd2d9f7"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/CHRLMM.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/CHRLMM.py",
+      "bytes": 25081,
+      "sha256": "5311e90a75bff4f6b3712c3586a3c06f04e57a0facf6c7b2921a9f9da8af758c"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/CHRLMM_hallucination.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/CHRLMM_hallucination.py",
+      "bytes": 17615,
+      "sha256": "078663a41f3ccbde829185c5febe69b11b9a8e32ebce8a3c7ecd4da973ba9abd"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/__init__.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/__init__.py",
+      "bytes": 849,
+      "sha256": "77957477e28c19718292707dae4c62a3a89d9ebc6c84d8d7da87a3531bcb8cb3"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/pointbert/PointTransformer_8192point_2layer.yaml",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/pointbert/PointTransformer_8192point_2layer.yaml",
+      "bytes": 306,
+      "sha256": "95a83fe87a66dd437477d5e3d758642f6cb54db5b634b0c322c360335c802e67"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/pointbert/PointTransformer_base_8192point.yaml",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/pointbert/PointTransformer_base_8192point.yaml",
+      "bytes": 291,
+      "sha256": "bc60b889d6a94013bfd1f1a7f8f4172959d11700d5d3954fc10893a18265529f"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/pointbert/checkpoint.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/pointbert/checkpoint.py",
+      "bytes": 3910,
+      "sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/pointbert/dvae.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/pointbert/dvae.py",
+      "bytes": 13750,
+      "sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/pointbert/logger.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/pointbert/logger.py",
+      "bytes": 4922,
+      "sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/pointbert/misc.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/pointbert/misc.py",
+      "bytes": 9292,
+      "sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/pointbert/point_encoder.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/pointbert/point_encoder.py",
+      "bytes": 8976,
+      "sha256": "9236b3236e6d9e9e6e40f86671ecc439b96d8b2c0fd6105557a1e946e66e2638"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/model/utils.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "model/utils.py",
+      "bytes": 1087,
+      "sha256": "d739ef72b626f72fa07d4b6c86aa04de708c92a028bb9c4243ce87d3488cfd3d"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/train/CHRLMM_trainer.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "train/CHRLMM_trainer.py",
+      "bytes": 1978,
+      "sha256": "bb196f0c85d4c68a4dc8286272fcfdd5dd5cd42cf82bdbe891052abdefa413fd"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/train/llama_flash_attn_monkey_patch.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "train/llama_flash_attn_monkey_patch.py",
+      "bytes": 4614,
+      "sha256": "509d11eb2a8fe127aca9138badb499b9d723cce0517967e6a09817cefd19d28f"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/train/train.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "train/train.py",
+      "bytes": 15331,
+      "sha256": "f875809092074a7ee6ec09c748545afe2403eb3223da346b5ebe6658219e282f"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/train/train_mem.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "train/train_mem.py",
+      "bytes": 500,
+      "sha256": "fec09e83e3650ea535560ea091881d5f5fd6f5c7539efcb5a4ef90cc1b5b8dc3"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/utils.py",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "utils.py",
+      "bytes": 4966,
+      "sha256": "21ad257b642ce726b601030515421b28149caf15ae6f9f4607c7fcfb65de3b1f"
+    },
+    {
+      "package_path": "reference_full_adaptation/config/chrlmm_config.yaml",
+      "source_identity": "nested_HiRAC_code_archive",
+      "source_relative_path": "config/chrlmm_config.yaml",
+      "bytes": 1612,
+      "sha256": "17c1d35371836fd11198f29ab5a155789b0787addf7c439992826f3ebcf0d5e8"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/__init__.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/__init__.py",
+      "bytes": 2049,
+      "sha256": "988ceddd1f6eafb09b6da2533ee97d3e592f96824c638864db5d61ccb110f9e1"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/chrlmm_dataset.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/chrlmm_dataset.py",
+      "bytes": 11125,
+      "sha256": "f65b13bbb6e2bb92f18704cb8907cc87fdecb01a63cb0b97b853b82c374fb6bd"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/modelnet.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/modelnet.py",
+      "bytes": 5532,
+      "sha256": "2c29fb550be2d08c8adce2a9c81928a11ea56451032da968e4bcf19d8f0387a6"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/modelnet_config/ModelNet40.yaml",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/modelnet_config/ModelNet40.yaml",
+      "bytes": 155,
+      "sha256": "6a99380013d910db59646d0b48a969dbdbbb8c13f43f6b7ffff20023bb03a14c"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/modelnet_config/modelnet40_shape_names_modified.txt",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/modelnet_config/modelnet40_shape_names_modified.txt",
+      "bytes": 275,
+      "sha256": "25089598c178794aa4fae0a5f18b9927b39b3ba008bb44c326e2c3e50777a228"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/multimodal_adapter.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/multimodal_adapter.py",
+      "bytes": 18460,
+      "sha256": "3394201225e1c45276ae641aba71c16c38d1a7ec11826c27bbb0714740dcbbc8"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/object_point_dataset.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/object_point_dataset.py",
+      "bytes": 10285,
+      "sha256": "f0dd2ba0dc3552e97bde216850abf88c6d77dc67961170ba6b3d6551411b5c52"
+    },
+    {
+      "package_path": "reference_full_adaptation/CHRLMM/data/utils.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "CHRLMM/data/utils.py",
+      "bytes": 8096,
+      "sha256": "2805fd33a8587dacbf17a2e6f9fa1e2cf781d3b76c639330bd453a2659d10656"
+    },
+    {
+      "package_path": "reference_full_adaptation/scripts/train_hallucination_reducer.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "scripts/train_hallucination_reducer.py",
+      "bytes": 21610,
+      "sha256": "981764f3230b64bb2d070019edc7f0bf00c21fd5fa3cae803b5f129e5e378793"
+    },
+    {
+      "package_path": "reference_full_adaptation/scripts/train_chrlmm.sh",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "scripts/train_chrlmm.sh",
+      "bytes": 562,
+      "sha256": "d4fdf8491fd0309328ee48fd8e5ac4b8d95802d563ccf4edaabae69e8945300a"
+    },
+    {
+      "package_path": "reference_full_adaptation/scripts/train_chrlmm_auto.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "scripts/train_chrlmm_auto.py",
+      "bytes": 12371,
+      "sha256": "15367346e27a0f43168cea20cd1969d2a109c0d81d1bdb6e4bf110805883bdf1"
+    },
+    {
+      "package_path": "reference_full_adaptation/scripts/prepare_vrpct_npy.py",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "scripts/prepare_vrpct_npy.py",
+      "bytes": 11728,
+      "sha256": "98484ebd62ef3c2463b567ee1410d75bf7ffc010686c2a4b42808bf3edc06ea7"
+    },
+    {
+      "package_path": "reference_full_adaptation/pyproject.toml",
+      "source_identity": "outer_CHRLMM_code_archive_dependency",
+      "source_relative_path": "pyproject.toml",
+      "bytes": 1137,
+      "sha256": "658491ded873231d139edb5d6f8086bfab0303e1ab2449e98476b419edd5549a"
+    }
+  ],
+  "full_pretrained_7B_weights_included": false,
+  "excluded": [
+    "synthetic dataset fixtures and generation scripts",
+    "constant-outcome evaluation scripts",
+    "bytecode caches",
+    "nested archives",
+    "credentials"
+  ]
+}

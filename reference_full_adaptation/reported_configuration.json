@@ -1,0 +1,28 @@
+{
+  "identity": "author_reported_HiRAC_PointLLM_reference_configuration",
+  "source": "author_supplied_HiRAC_manuscript",
+  "sequence_frames": 25,
+  "radar_tokens_per_frame": 96,
+  "feature_dimension": 384,
+  "causal_history_frames": 5,
+  "top_k": 96,
+  "num_classes": 11,
+  "num_experts": 5,
+  "alpha": 0.3,
+  "beta": 0.2,
+  "tau": 0.75,
+  "gamma": 2.0,
+  "stage_1": {
+    "trainable": "projector_and_reducer",
+    "epochs": 20,
+    "learning_rate": 0.0001
+  },
+  "stage_2": {
+    "trainable": "full_model",
+    "epochs": 30,
+    "learning_rate": 2e-05
+  },
+  "scope": "settings transcribed from the supplied manuscript; not a record of a new execution",
+  "source_default_configuration_is_unchanged": true,
+  "default_config_is_not_silently_equated_to_reported_checkpoint": true
+}

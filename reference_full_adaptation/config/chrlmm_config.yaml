@@ -1,0 +1,73 @@
+# CHR-LMM配置文件
+model:
+  point_backbone: "PointBERT"
+  point_backbone_config_name: "PointTransformer_8192point_2layer"
+  use_hallucination_reduction: true
+  top_k_reliable_groups: 96  # 与pointnum一致
+  mm_use_point_start_end: true
+  
+  # 幻觉消除模块参数
+  hallucination_reducer:
+    hidden_dim: 512
+    num_classes: 11  # Car, Human, Bike, Bus, Van, Trafficcone, Stroller, Wheelchair, Billboard, Motobike, Tesla
+    num_experts: 5
+    alpha: 0.3  # KL散度权重
+    beta: 0.2   # 时间一致性权重
+    tau: 0.75   # 冲突阈值
+    gamma: 2.0  # 温度参数
+    delta_v: 0.7  # 视觉置信度阈值
+    delta_p: 0.6  # 点云置信度阈值
+
+data:
+  format: "vrpct"
+  frame_mode: "middle"
+  sequence_length: 25
+  pointnum: 96
+  radar_feature_dim: 5
+  radar_feature_order: ["x", "y", "z", "intensity", "velocity"]
+  use_color: false
+  use_vision: true
+  vision_tokens: 32
+  vision_feature_dim: 3
+  temporal_history_length: 5
+  
+  # 目标类别
+  targets:
+    - Car
+    - Human
+    - Bike
+    - Bus
+    - Van
+    - Trafficcone
+    - Stroller
+    - Wheelchair
+    - Billboard
+    - Motobike
+    - Tesla
+  
+  # 天气条件
+  weathers:
+    - Sunny
+    - Rain
+    - Foggy
+    - Night
+
+training:
+  batch_size: 16
+  learning_rate: 1e-4
+  num_epochs: 50
+  warmup_steps: 1000
+  gradient_accumulation_steps: 4
+  
+  # 两阶段训练
+  stage_1:
+    fix_llm: true
+    fix_pointnet: true
+    tune_mm_mlp_adapter: true
+    epochs: 20
+  
+  stage_2:
+    fix_llm: false
+    fix_pointnet: false
+    tune_mm_mlp_adapter: false
+    epochs: 30
