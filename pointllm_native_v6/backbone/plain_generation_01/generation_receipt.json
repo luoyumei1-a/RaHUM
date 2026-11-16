@@ -1,0 +1,113 @@
+{
+  "status": "completed_raw_generation_no_automatic_claim_score",
+  "split": "train",
+  "variant": "plain_projector",
+  "scope": "TRAIN engineering generation, not a held-out performance measure",
+  "ground_truth_sidecar_read_for_generation": false,
+  "selection": "all manifest records in the requested split, including unavailable inputs",
+  "seed": 7588,
+  "max_new_tokens": 32,
+  "records": [
+    {
+      "case_id": "e0845f5322254dafadbbed75aaa07969",
+      "execution_status": "generated",
+      "raw_response_sha256": "7ef57d64fc314e87b38c7b6a4a3358b052413d1b7fa06e9f6008a936eb2965cd",
+      "generated_tokens": 14
+    }
+  ],
+  "elapsed_s": 130.33766508102417,
+  "peak_rss_kib": 5149216,
+  "dataset_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+  "method_contract_sha256": "2ff68ad6d4ada5c7a38e5e1a663a25af35023db83be85e6b4539c503087db30c",
+  "generation_protocol_sha256": "4040933beb1051b302c373e59c0ee63ff1bf0d53a6cf231458ebd056d3c86007",
+  "checkpoint_sha256": "eb7e2e0a55c444fb2e401fec674c82c714f7b9a3db3e4c7a00d6958c125e6eee",
+  "n_manifest_records": 1,
+  "source_sha256": {
+    "runtime.py": "01d1b8c2635f5eac162926389fff4bd81ccd9b39eb98c2fc2b06590cc0f5a95b",
+    "adapter.py": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e",
+    "cached_data.py": "9d7b67ea44c4e3a0aa229d13ec337d8520cb3c47e0f96d7ab309949ce810cb76",
+    "training_engine.py": "18aea48d8121281f423b370ba2bf891f51d4ca80f872fb83323e4edb93232738",
+    "eval_pointllm.py": "e394e532c94d85a9554354c01d322913d0f83b8d1bb1ce6b12bad5dc1b09a270"
+  },
+  "stage": "generation_completed",
+  "official_model": {
+    "official_model": "RunsenXu/PointLLM_7B_v1.2",
+    "official_revision": "37d8c15aaff8e7e05f04729dcb6960d5758e9f86",
+    "source_config_sha256": "e308892ee8b0a49602d4d3f8e7a1c75e8d57db7178ebb121ca8e3b36c0e76506",
+    "pointbert_strict_load": true,
+    "projector_strict_load": true,
+    "language_missing_keys": [],
+    "adapted_point_groups": 96,
+    "point_tokens": 97,
+    "official_default_point_groups": 512,
+    "point_input_channels": 6,
+    "missing_color": "zero channels, not measured color",
+    "point_encoder_parameter_count": 21859200,
+    "projector_parameter_count": 10886144,
+    "language_frozen": true,
+    "projector_trainable": false,
+    "language_precision": "canonical NF4 weights/BF16 compute",
+    "point_encoder_projector_precision": "FP32",
+    "language_load_s": 14.042420625686646,
+    "torch": "2.9.0+cpu",
+    "device": "cpu",
+    "threads": 2,
+    "checkpointing": "non-reentrant; use_cache=False during training",
+    "private_canonical_language_cache_used": true,
+    "private_cache_provenance_sha256": "ac9ecd2a5d9edb8e55243fa69416900c0cc99e8a1ea465ee90cf0586c92bd1f3"
+  },
+  "restored_completed_steps": 2,
+  "restored_checkpoint_metadata": {
+    "completed_steps": 2,
+    "dataset_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+    "method_contract_sha256": "2ff68ad6d4ada5c7a38e5e1a663a25af35023db83be85e6b4539c503087db30c",
+    "seed": 7588,
+    "learning_rate": 0.0001,
+    "aux_weight": 0.0,
+    "max_steps_requested": 2,
+    "case_schedule": "sorted cases, per-epoch random.Random(seed+epoch).shuffle; batchsize1",
+    "latest_step": {
+      "step": 2,
+      "language_loss": 2.469533681869507,
+      "auxiliary_losses": {},
+      "pure_LM_adapter_gradients": {},
+      "pure_LM_projector_gradients": {
+        "0.weight": 2.133321762084961,
+        "0.bias": 0.11991044133901596,
+        "2.weight": 1.5874570608139038,
+        "2.bias": 0.07395254075527191,
+        "4.weight": 1.240346908569336,
+        "4.bias": 0.034357596188783646
+      },
+      "pure_LM_gradient_groups": {
+        "discrepancy_network": 0.0,
+        "utility": 0.0,
+        "feature_expert_MLPs": 0.0,
+        "expert_router": 0.0,
+        "output_residual": 0.0,
+        "rgb_global_reconstruction": 0.0,
+        "rgb_global_residual": 0.0,
+        "all_adapter": 0.0
+      },
+      "full_input_length": 159,
+      "supervised_response_tokens": 7,
+      "elapsed_s": 65.41819405555725,
+      "case_id": "e0845f5322254dafadbbed75aaa07969",
+      "source_case_sha256": "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada"
+    },
+    "source_sha256": {
+      "runtime.py": "01d1b8c2635f5eac162926389fff4bd81ccd9b39eb98c2fc2b06590cc0f5a95b",
+      "adapter.py": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e",
+      "cached_data.py": "9d7b67ea44c4e3a0aa229d13ec337d8520cb3c47e0f96d7ab309949ce810cb76",
+      "training_engine.py": "18aea48d8121281f423b370ba2bf891f51d4ca80f872fb83323e4edb93232738",
+      "train_pointllm.py": "651e9272ad09621b52d9a725fad8abc77070d3936d45268e30275449264f17e5"
+    },
+    "checkpoint_selection": "latest fixed budget, never test-selected",
+    "engineering_scope": "One real nuScenes-mini TRAIN window; two-step actualRGBPointLLM engineering connectivity smoke, not heldoutperformance or authors14TB11classresults"
+  },
+  "frozen_language_pointbert_quantstates_unchanged": true,
+  "implementation_sources_unchanged": true,
+  "raw_generations_sha256": "d59ada2d655b567f3aedf21eb56f332c40712aac5c65010c8125c25b5c2535dd",
+  "n_generated": 1,
+  "n_input_or_generation_errors": 0
+}

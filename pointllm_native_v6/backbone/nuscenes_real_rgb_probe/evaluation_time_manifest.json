@@ -1,0 +1,31 @@
+{
+  "raw_window_manifest_sha256": "a18ab6532c89d15635ee98626b587751027cb0b9222d9d7e24d4baf0d58da65b",
+  "source_causal_manifest_sha256": "65cd96d73ce4781d62177e9c9a0744d56d6f80f34742f1c67a0f550b935c8050",
+  "evaluation_time_policy": "officialsampletimestamp; allusedradarandcameraobservationsareat orbeforeit",
+  "all404_source_camera_timestamps_checked": 404,
+  "future_camera_violations": 0,
+  "GT_geometry_time": "officialsampletime, no inventedcamera-timeboxmotioncompensation",
+  "frames": [
+    {
+      "sample_token": "39586f9d59004284a7114a68825e8eec",
+      "evaluation_timestamp_us": 1532402928147847,
+      "camera_anchor_timestamp_us": 1532402928112460,
+      "camera_age_at_evaluation_us": 35387,
+      "radar_latest_age_at_evaluation_us": 44885
+    },
+    {
+      "sample_token": "356d81f38dd9473ba590f39e266f54e5",
+      "evaluation_timestamp_us": 1532402928698048,
+      "camera_anchor_timestamp_us": 1532402928662460,
+      "camera_age_at_evaluation_us": 35588,
+      "radar_latest_age_at_evaluation_us": 37224
+    },
+    {
+      "sample_token": "e0845f5322254dafadbbed75aaa07969",
+      "evaluation_timestamp_us": 1532402929197353,
+      "camera_anchor_timestamp_us": 1532402929162460,
+      "camera_age_at_evaluation_us": 34893,
+      "radar_latest_age_at_evaluation_us": 68915
+    }
+  ]
+}

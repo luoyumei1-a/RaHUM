@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "scope": "Only files under pointllm_native_v6, excluding this manifest itself; no large model/adaptation weights or internal paper/review materials.",
+  "source_delivery": "RaHUM_PointLLM_Code_and_Real_Examples_v6",
+  "execution_scope": "One real TRAIN window; two actual language-CE updates per matched variant and raw autoregressive generation. No heldout mitigation gain claimed.",
+  "data_notice": "DATA_LICENSE.md governs nuScenes-derived feature/context/annotation example; upstream source/model terms remain separate.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 97,
+      "sha256": "57a4b257b523a3457f16ffdc0c8a75c90d364dd8b2dc2ff96bab78628f40e99e",
+      "git_blob_sha1": "0009da211a846eb3a9e3f12c0839098761a7dab4",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "DATA_LICENSE.md",
+      "bytes": 2009,
+      "sha256": "dc3b73b52f15e85aec9d02cc65821463db985654a14fae57364e21b1a4ac794a",
+      "git_blob_sha1": "4994dfee60b87b163192d0a317ba17ad49dd0681",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7491,
+      "sha256": "316ad1d42dd31d37efb35c2f1283ff3b02064d0dcb837e4391254b0270907173",
+      "git_blob_sha1": "d58077e7c408646895abe2a2d1a22ab125e56b1b",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/ADAPTER_V2_CONTRACT.md",
+      "bytes": 6283,
+      "sha256": "d19fe66ce52016901b93daa25af95326dcf56d270012f8c9f8186d652c00a876",
+      "git_blob_sha1": "c418d39bd3ed862067c3d522762ccca527470b70",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/CACHED_DATA_CONTRACT.md",
+      "bytes": 10162,
+      "sha256": "6ffe148ae4d8d49a8a3b8cea006a691404f7e7750563ce15fd4677e739a6cbb5",
+      "git_blob_sha1": "90ff6faf7d14df728fd63cc433841e032b854f52",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/THIRD_PARTY_NOTICES.md",
+      "bytes": 2478,
+      "sha256": "1f7a47551202459eba77fd64d7204b6439921e2ab5a62162ccafc895d290d8b0",
+      "git_blob_sha1": "1c754816cf89d5c85e444bad789418b2fa669a7a",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/actual_engineering_summary.json",
+      "bytes": 5450,
+      "sha256": "dab337ecbded08dbe03fd54fbcb73b7d0755360096c1841373665eaf5648b4ba",
+      "git_blob_sha1": "97179c1375897eff6c25182de0b1bfc0cca8ccb9",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/adapter.py",
+      "bytes": 25304,
+      "sha256": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e",
+      "git_blob_sha1": "cf5064b4787da572ca694d7f2949ab1d72f57e6e",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/cache_native_points.py",
+      "bytes": 3051,
+      "sha256": "ef8373ca35f81de143b8c704acc2d4fb3ff5e5b4e9a5b7d16a999e2d8b8e1209",
+      "git_blob_sha1": "097d9437da3b5243461e2f0dd381b876dd25def2",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/cached_data.py",
+      "bytes": 7557,
+      "sha256": "9d7b67ea44c4e3a0aa229d13ec337d8520cb3c47e0f96d7ab309949ce810cb76",
+      "git_blob_sha1": "dd5c486e4c8af8f884362173f292da63503b2460",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/download_official_model.py",
+      "bytes": 4137,
+      "sha256": "80f3deab5eb73f16fd4aab84c2b275b2602730e59fd8738ad7d32c9fa6be8122",
+      "git_blob_sha1": "ead905f3b6e8912add47a9ba8c203ac09eee52df",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/eval_pointllm.py",
+      "bytes": 9221,
+      "sha256": "e394e532c94d85a9554354c01d322913d0f83b8d1bb1ce6b12bad5dc1b09a270",
+      "git_blob_sha1": "cc54cb51942aab88dd1bc338525b50dd08c2163f",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/evaluation/claim_metrics.py",
+      "bytes": 7879,
+      "sha256": "cbc9fbac32b61ab9c9e00c403c12e3cc8dffbce1d19c80ad7389e082c2693b90",
+      "git_blob_sha1": "b7cd6fade2eb73e8da71bef3844c16d0a8063d05",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/evaluation/test_claim_metrics.py",
+      "bytes": 3918,
+      "sha256": "c4d4f555affec74cd6b8231f5aa5b1c7430e6bf8765d9347584e51c94e3e2b9e",
+      "git_blob_sha1": "fa686b22490be07e32dc7b807b9b5b0409371ce4",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/nuscenes_inputs.py",
+      "bytes": 24655,
+      "sha256": "de3f179f369fc99c4565674a4fa587ffb779d539454d8d5da935407f2223733e",
+      "git_blob_sha1": "3d27e7998492bd56bb2736b2d5b0bbf3a732526d",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/PATH_REBASE.json",
+      "bytes": 386,
+      "sha256": "c53df7739a935181b6c01a5bb862a7b44c41aa1b6bef6209b124d07ac3c50dae",
+      "git_blob_sha1": "be7940e5b12e9b49834677498ca57d4cee56078e",
+      "artifact_kind": "real_nuscenes_derived_data_or_annotation"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/adapter_inputs_v1/actual_radar_rgb_adapter_inputs.npz",
+      "bytes": 1514708,
+      "sha256": "01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0",
+      "git_blob_sha1": "5550ffd3fdd877ce98cccab590593d40d170a487",
+      "artifact_kind": "real_nuscenes_derived_data_or_annotation"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/adapter_inputs_v1/actual_radar_rgb_adapter_inputs_receipt.json",
+      "bytes": 1666,
+      "sha256": "6103caa8b7988f1081ef5236469891797b81491b2511d6f13629f6dbcb45ff01",
+      "git_blob_sha1": "6ad21ef95c4d484389069daf97631d4c8d78ec5b",
+      "artifact_kind": "real_nuscenes_derived_data_or_annotation"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/evaluation_time_manifest.json",
+      "bytes": 1309,
+      "sha256": "9b5083e00309a9be5751fe6237d55314f6e22571cb0ca9279e1c653171d7717f",
+      "git_blob_sha1": "de36d51c4839e1f77ac957d3dea269fab90a029a",
+      "artifact_kind": "real_nuscenes_derived_data_or_annotation"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/partial_response_supervision.json",
+      "bytes": 3791,
+      "sha256": "9ac992356875968ae6c33557aacd75f29e07b7f2b977d6a94f88db5f8ebcb7b2",
+      "git_blob_sha1": "a4d1be9d0117fc7f7f41963af52f1de60ac2b52c",
+      "artifact_kind": "real_nuscenes_derived_data_or_annotation"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/runner_dataset.json",
+      "bytes": 3117,
+      "sha256": "6d8d94d14755e389bb5a8ca4de12bbc165cf3a9abde48fbf15fc8b2563d8ca96",
+      "git_blob_sha1": "737fed2fd08f72122d4f72cf6e6a7f7278ede231",
+      "artifact_kind": "real_nuscenes_derived_data_or_annotation"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/runner_protocol.json",
+      "bytes": 2058,
+      "sha256": "2ff68ad6d4ada5c7a38e5e1a663a25af35023db83be85e6b4539c503087db30c",
+      "git_blob_sha1": "77e4cd493da407efc68aff116a4435a1f3abcb32",
+      "artifact_kind": "real_nuscenes_derived_data_or_annotation"
+    },
+    {
+      "path": "backbone/plain_generation_01/generation_receipt.json",
+      "bytes": 5235,
+      "sha256": "234eafdedaf1076e653003226f58b4772e41973be452d9ba6f449c9a6003eb8f",
+      "git_blob_sha1": "10fd0c97dc7c5daec7683fb0802ebe33f346c083",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/plain_generation_01/raw_generations.jsonl",
+      "bytes": 2187,
+      "sha256": "d59ada2d655b567f3aedf21eb56f332c40712aac5c65010c8125c25b5c2535dd",
+      "git_blob_sha1": "9330e12c3df2b899cd9d5e5edfa8677dfc89002c",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/plain_runner_01/training_receipt.json",
+      "bytes": 4782,
+      "sha256": "ceb16cd19ac5cec332a7b3558286abe742edf23f8851ae5d45d59a1a4769051d",
+      "git_blob_sha1": "0b009fb60ca82870ca193d690a770221e3091b7d",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/plain_runner_01/training_steps.jsonl",
+      "bytes": 1565,
+      "sha256": "429f9435d82444086804bf914f33375602b50d030abb496071335d5934d3f214",
+      "git_blob_sha1": "f3ecffab1b4905476be79b10584a9a8fcbf63002",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/requirements-cpu.txt",
+      "bytes": 260,
+      "sha256": "31576bb66ab86b07b7d39803bcede2d9f2405c4cb83be26ccd6fc2a06100f4d9",
+      "git_blob_sha1": "8c5bedf8cac838399d14186e13fc60097338e59d",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/rgb_encoder.py",
+      "bytes": 13686,
+      "sha256": "098c39b4c298396f0695f51d0b12c0a1bdf9422bf56c0ca1d62a15169cea354b",
+      "git_blob_sha1": "b150c7b62e3560d00f6437d1546d3f0e9e04f2b8",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/rgb_generation_01/generation_receipt.json",
+      "bytes": 10407,
+      "sha256": "984f347aa1dbd5ba7d5a7ed389fdddd97d74233fcf7a425f95ec14bc103fdd30",
+      "git_blob_sha1": "6e8498f29ed0a0d15230ef1469a70827662034d2",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/rgb_generation_01/raw_generations.jsonl",
+      "bytes": 2186,
+      "sha256": "673a335d4b6e190bed3412283ef3c6245ccc150aa4ea857a926f200d8e3671e8",
+      "git_blob_sha1": "ef9b92dbebc5697a99103cd180a0b8b051a70e7a",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/rgb_probe.py",
+      "bytes": 10700,
+      "sha256": "f6452aa5269f86bfbdf53207cff941c8ea92746dd7c5e886d4b7e63358b0a104",
+      "git_blob_sha1": "a85860d1486b99c28162c59d33e5e46b6d59e968",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/rgb_runner_01/training_receipt.json",
+      "bytes": 12999,
+      "sha256": "b88b43e1a50e7f0f4929fa2dac0d3ce86745a75f00dd701a05993a4cb46c0994",
+      "git_blob_sha1": "af17075d5bff7d2b8d53b1e7dae2c69857674e95",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/rgb_runner_01/training_steps.jsonl",
+      "bytes": 8416,
+      "sha256": "ea02070f6402bd8bd8eb694cef93f02979119acf79d1421b1e3bd7a4f111c8a0",
+      "git_blob_sha1": "a516328fc2d44c6a5707e01bf9b5fa97c0f914af",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/runtime.py",
+      "bytes": 18135,
+      "sha256": "01d1b8c2635f5eac162926389fff4bd81ccd9b39eb98c2fc2b06590cc0f5a95b",
+      "git_blob_sha1": "7a115cced9a41e4181aa0c7af0ccd19d1274257f",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/supervise_probe.py",
+      "bytes": 3328,
+      "sha256": "3d9b10e30a5684ec4822cf895513f7f4cc61778ed38b957a04005d347a518c18",
+      "git_blob_sha1": "c67e8d967647c2471fb2ba538b69659b8e01c88d",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/test_adapter_contract.py",
+      "bytes": 7166,
+      "sha256": "1128dfc51c86f2b6ea2bc79ee5cc99e8bf7d728df9dd562d2a644d148d5dfa2e",
+      "git_blob_sha1": "ddc8a7d776c5b3a20705d40d1fa2d0ec11ba0469",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/test_nuscenes_inputs.py",
+      "bytes": 4110,
+      "sha256": "09c21110edf54411fba755960ad05c2e6f0a243bd13a4403d9d1175c58e95712",
+      "git_blob_sha1": "6c6c1daedf7e75a74fb0c286157de3b140a14f2e",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/test_postprobe_adapter.py",
+      "bytes": 6351,
+      "sha256": "ea025b080b368a79a249d56a1d96b9fd105e735f84a9bc9f0f88b2134cdae912",
+      "git_blob_sha1": "b422dce78efe80157cfd5c0f0d6fd525ffa2604d",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/train_pointllm.py",
+      "bytes": 12727,
+      "sha256": "00f46223d960f8e0dd5daccaaad002a69669f6f38f6ed96b7656ea987dd58eec",
+      "git_blob_sha1": "89ca8e98d880d5e783cb2d387a0a6579b6af1bec",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/training_engine.py",
+      "bytes": 10322,
+      "sha256": "18aea48d8121281f423b370ba2bf891f51d4ca80f872fb83323e4edb93232738",
+      "git_blob_sha1": "2e2f3dd7507d1ce4dafcb2b884386c552256b1c2",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/UPSTREAM_ATTRIBUTION.txt",
+      "bytes": 509,
+      "sha256": "135c42cd3e7d9b57f19221bbb7c9484bca32e3bd70405a06e83a2735643dd640",
+      "git_blob_sha1": "a44240938a200345e83b8079b17183d03ff650be",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/__init__.py",
+      "bytes": 44,
+      "sha256": "45000abc69b5d166efe7105285dd66110d6e6dfb4f18b6b4cd87e1da8c9979d7",
+      "git_blob_sha1": "f0037fc57838359b9eb47fdd904613cb293be6fb",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/checkpoint.py",
+      "bytes": 3910,
+      "sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946",
+      "git_blob_sha1": "2ac680ab712235a4b8f4cc74f4c36b969ad6e57b",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/compat.py",
+      "bytes": 435,
+      "sha256": "e9c91a18c337df7c97c8f22886ca7a44ed2996e0a19bec53d52b9c7f40864d7f",
+      "git_blob_sha1": "4073b94a538f99613d2feae87ec9568219ce358b",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/dvae.py",
+      "bytes": 13750,
+      "sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1",
+      "git_blob_sha1": "056c025bbc9b0ba0eab61ba1163c79745214fe81",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/logger.py",
+      "bytes": 4922,
+      "sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69",
+      "git_blob_sha1": "847c1c7a2f50f310cd5daf96b928838c1c293525",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/misc.py",
+      "bytes": 9292,
+      "sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927",
+      "git_blob_sha1": "02071cb2e4f70b143c86c617f16d5922a88f24f6",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "backbone/vendor_pointbert/point_encoder.py",
+      "bytes": 7560,
+      "sha256": "56623d4828780726a9beb93a57492831ab517ff3ade5909641674218a090a706",
+      "git_blob_sha1": "b647b47fb62d3c804981325193c54c712b49498c",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "dataset_tools/build_causal_pairs.py",
+      "bytes": 9718,
+      "sha256": "a14e1d61dcd53dc0892c0ce6d1ab7b4b86bc641a1015e79fd893db3ba073f460",
+      "git_blob_sha1": "fb667da78312f600d09b2058661b2fa5c7fe2dba",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "dataset_tools/build_paired_manifest.py",
+      "bytes": 13061,
+      "sha256": "f257a4cf9129e9e83648305722017e26751d224126e3d55a1822f024872e34e7",
+      "git_blob_sha1": "181d93289d8ae0c73723eaf8e451853efbc235b0",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "dataset_tools/download_official_mini.py",
+      "bytes": 3231,
+      "sha256": "005ecedbfb4e0625f0eb4792398d5027bcd9ac0d05a750056b5df2731742d5ac",
+      "git_blob_sha1": "66d81b9b7daae0e6115b733a748ce0a5135d4588",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "dataset_tools/extract_selected.py",
+      "bytes": 5080,
+      "sha256": "65dcc5936b7963ed0204c500f08415015b0cfc786c6b13dcafcf71c1d22932e2",
+      "git_blob_sha1": "54d362056bf0e7efd0519e68d733a3d3a73436eb",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "dataset_tools/nuscenes_data_interface.py",
+      "bytes": 6732,
+      "sha256": "31b47aa81cf8e1dbb44fb42e7844acf4fb15cadb903deff48afac9f264005955",
+      "git_blob_sha1": "f97337fa4463d435209e807c0d1d57afd6f07437",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    },
+    {
+      "path": "verify_example.py",
+      "bytes": 3327,
+      "sha256": "c5f44c1cd0fb861432b35dafc97c5992e4e072950a65ba2bdf8a9cb6ee0d8d1d",
+      "git_blob_sha1": "eb71b8c2800e46ef27b032a188b17f25564812f0",
+      "artifact_kind": "source_documentation_or_actual_execution_evidence"
+    }
+  ]
+}

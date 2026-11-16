@@ -21,10 +21,17 @@ Full source MAT examples are included in the downloadable code-and-example bundl
 
 ## Official PointLLM execution
 
-See `pointllm/README_CPU_REPRODUCTION.md` for the pinned official checkpoint, CPU NF4 configuration, measured-row preprocessing, and execution commands. The complete official 7B weights are obtained from their publisher, with hashes checked by the supplied downloader. Weights are not included in this repository. Official PointLLM provides 7B and 13B variants; a separate model is not renamed PointLLM-3B.
+See `pointllm/README.md` for the pinned official checkpoint, CPU NF4 configuration, measured-row preprocessing, and execution commands. The complete official 7B weights are obtained from their publisher, with hashes checked by the supplied downloader. Weights are not included in this repository. Official PointLLM provides 7B and 13B variants; a separate model is not renamed PointLLM-3B.
 
 ## Data and attribution
 
 Examples are real recorded numeric measurements. They do not include independent per-return artifact labels or full-scene semantic annotations. Coordinate/channel semantics require the relevant acquisition documentation. Geometric support, return classification, and verifiable semantic claims have separate denominators.
 
 Third-party source, checkpoints, and public datasets retain their respective licenses. See `pointllm/THIRD_PARTY_NOTICES.md` and source-specific notices. No blanket license for this repository overrides those terms.
+
+## Native PointLLM training and real radar–RGB example
+
+The versioned [`pointllm_native_v6/`](pointllm_native_v6/README.md) entry point implements measured radar → official PointBERT → corrected native point tokens → original projector → the complete frozen PointLLM-7B decoder. The release includes train/eval CLIs, a pinned official-model downloader, source/data notices, a small real radar–RGB feature example, and the original recorded training/generation receipts and response text.
+
+The supplied execution is a two-update TRAIN engineering check with a matched projector baseline; it is not a held-out hallucination-reduction result. Model weights and adaptation checkpoints are not committed to this repository. See the v6 README for reproducible training and generation commands, source hashes, feature verification and independent claim-annotation requirements.
+

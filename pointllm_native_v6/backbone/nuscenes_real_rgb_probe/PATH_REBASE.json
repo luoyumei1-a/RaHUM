@@ -1,0 +1,5 @@
+{
+  "original_frozen_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+  "change": "Filesystem paths only; case, split, token arrays, targets, source hashes and prompts unchanged.",
+  "original_inference_checkpoints": "Inference restores use unchanged features and source_case hashes. Exact training resume retains its original manifest identity."
+}

@@ -1,0 +1,144 @@
+{
+  "scope": "Actual real-data TRAIN engineering executions; no held-out hallucination score or generalization improvement",
+  "same_feature_cache_for_variants": true,
+  "no_official_3b_pointllm_claim": true,
+  "runs": {
+    "rgb_runner_01": {
+      "training_receipt_sha256": "b88b43e1a50e7f0f4929fa2dac0d3ce86745a75f00dd701a05993a4cb46c0994",
+      "variant": "rahumpointllm",
+      "language_loss": [
+        2.6411845684051514,
+        2.3584704399108887
+      ],
+      "second_step_pure_LM_gradient_groups": {
+        "discrepancy_network": 0.0010669701613379827,
+        "utility": 0.06805067673182967,
+        "feature_expert_MLPs": 0.04018226232854562,
+        "expert_router": 0.007769766117096261,
+        "output_residual": 1.9309997940774284,
+        "rgb_global_reconstruction": 0.1483634278997818,
+        "rgb_global_residual": 1.5123173599378048,
+        "all_adapter": 2.4659596081740687
+      },
+      "aux_weight": 0.0,
+      "trainable_parameter_count": 14182863,
+      "frozen_base_unchanged": true,
+      "peak_rss_kib": 5210548,
+      "elapsed_s": 168.14252519607544,
+      "exit_code": 0,
+      "export_verification": {
+        "inference_sha256": "f39fc35d0d766c86485f3c630448e63554f7dac5b75a969da1ee7a2b6b2bfa76",
+        "inference_bytes": 56780237,
+        "optimizer_omitted": true,
+        "model_tensor_equality_with_latest": true,
+        "latest_sha256": "3735e120ac3f395b0faa65395c46f4a2c840b90804de8b8562fef5a69518e126"
+      },
+      "source_case_sha256": [
+        "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada",
+        "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada"
+      ],
+      "dataset_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+      "method_contract_sha256": "2ff68ad6d4ada5c7a38e5e1a663a25af35023db83be85e6b4539c503087db30c"
+    },
+    "plain_runner_01": {
+      "training_receipt_sha256": "ceb16cd19ac5cec332a7b3558286abe742edf23f8851ae5d45d59a1a4769051d",
+      "variant": "plain_projector",
+      "language_loss": [
+        2.6411845684051514,
+        2.469533681869507
+      ],
+      "second_step_pure_LM_gradient_groups": {
+        "discrepancy_network": 0.0,
+        "utility": 0.0,
+        "feature_expert_MLPs": 0.0,
+        "expert_router": 0.0,
+        "output_residual": 0.0,
+        "rgb_global_reconstruction": 0.0,
+        "rgb_global_residual": 0.0,
+        "all_adapter": 0.0
+      },
+      "aux_weight": 0.0,
+      "trainable_parameter_count": 10886144,
+      "frozen_base_unchanged": true,
+      "peak_rss_kib": 5138976,
+      "elapsed_s": 176.22500348091125,
+      "exit_code": 0,
+      "export_verification": {
+        "inference_sha256": "eb7e2e0a55c444fb2e401fec674c82c714f7b9a3db3e4c7a00d6958c125e6eee",
+        "inference_bytes": 43560043,
+        "optimizer_omitted": true,
+        "model_tensor_equality_with_latest": true,
+        "latest_sha256": "8e8726c1188f26b47a6d142eaa6acfaa85809682450e4601f2e9606a0b4c840d"
+      },
+      "source_case_sha256": [
+        "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada",
+        "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada"
+      ],
+      "dataset_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+      "method_contract_sha256": "2ff68ad6d4ada5c7a38e5e1a663a25af35023db83be85e6b4539c503087db30c"
+    }
+  },
+  "generations": {
+    "plain_generation_01": {
+      "raw_generations_sha256": "d59ada2d655b567f3aedf21eb56f332c40712aac5c65010c8125c25b5c2535dd",
+      "raw_response": "One type of object present in the scene is a black magnet.",
+      "generated_token_ids": [
+        3118,
+        1134,
+        310,
+        1203,
+        2198,
+        297,
+        278,
+        9088,
+        338,
+        263,
+        4628,
+        10710,
+        29889,
+        2
+      ],
+      "generated_tokens": 14,
+      "finish_reason": "eos",
+      "generation_s": 99.46889090538025,
+      "checkpoint_sha256": "eb7e2e0a55c444fb2e401fec674c82c714f7b9a3db3e4c7a00d6958c125e6eee",
+      "source_case_sha256": "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada",
+      "protocol_sha256": "4040933beb1051b302c373e59c0ee63ff1bf0d53a6cf231458ebd056d3c86007",
+      "ground_truth_sidecar_read_for_generation": false,
+      "exit_code": 0,
+      "peak_rss_kib": 5149216
+    },
+    "rgb_generation_01": {
+      "raw_generations_sha256": "673a335d4b6e190bed3412283ef3c6245ccc150aa4ea857a926f200d8e3671e8",
+      "raw_response": "One type of object present in the scene is a grey sphere.",
+      "generated_token_ids": [
+        3118,
+        1134,
+        310,
+        1203,
+        2198,
+        297,
+        278,
+        9088,
+        338,
+        263,
+        18345,
+        20745,
+        29889,
+        2
+      ],
+      "generated_tokens": 14,
+      "finish_reason": "eos",
+      "generation_s": 103.22242546081543,
+      "checkpoint_sha256": "f39fc35d0d766c86485f3c630448e63554f7dac5b75a969da1ee7a2b6b2bfa76",
+      "source_case_sha256": "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada",
+      "protocol_sha256": "4040933beb1051b302c373e59c0ee63ff1bf0d53a6cf231458ebd056d3c86007",
+      "ground_truth_sidecar_read_for_generation": false,
+      "exit_code": 0,
+      "peak_rss_kib": 5180112
+    }
+  },
+  "claim_metrics": null,
+  "matched_generation_pairs": 1,
+  "status": "PASS_actual_language_training_export_restore_and_autoregressive_generation_engineering"
+}

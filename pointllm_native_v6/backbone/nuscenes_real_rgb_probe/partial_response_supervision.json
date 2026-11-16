@@ -1,0 +1,73 @@
+{
+  "scope": "TRAIN engineering response-token CE target; not complete scene caption, camera visibility ground truth, test score, or performance claim",
+  "created_utc": "2026-11-16T12:15:19.706974+00:00",
+  "raw_window_manifest_sha256": "a18ab6532c89d15635ee98626b587751027cb0b9222d9d7e24d4baf0d58da65b",
+  "evaluation_time_manifest_sha256": "9b5083e00309a9be5751fe6237d55314f6e22571cb0ca9279e1c653171d7717f",
+  "source_supervision_sidecar_sha256": "a81b17fa8ede460a43e808b568ce72e9b02f54a0bf71123612e4a886bfbd6ac4",
+  "sample_token": "e0845f5322254dafadbbed75aaa07969",
+  "evaluation_timestamp_us": 1532402929197353,
+  "question": "Describe one type of object present in the scene.",
+  "target_policy": "Fixed positive category vehicle.car; use all official finalsample annotations of that category as independent existence support. No model prediction or generation is used to select this partial target.",
+  "source_category_name": "vehicle.car",
+  "source_annotation_tokens": [
+    "03fbb8c1d6394a7fa3c8da2bfab56c45",
+    "04b0d9bec8c04b19abbe76dc0c67a7ab",
+    "1b0a0447901a454dbe74d3d1579b7715",
+    "5a390e5c3f6249bb9f99c9be52614dd2",
+    "61d5835a5b6f4aebbfef94e76221b9fe",
+    "7681a73a8ac94bf88a230e1f5d45852c",
+    "7fb04f2eff1f4885879204b59ce6366d",
+    "b2b43ef63f5242b2a4c0b794e673782d",
+    "b561cd0c41c24ec48814725af0657d58",
+    "bde622696e974bb8a41e7c681528d36e",
+    "ee717901b80c43faa03e00caf99d8306"
+  ],
+  "source_instance_tokens": [
+    "bd26c2cdb22d4bb1834e808c89128898",
+    "61dd7d03d7ad466d89f901ed64e2c0dd",
+    "56a71c208ac6472f90b6a82529a6ce61",
+    "c1958768d48640948f6053d04cffd35b",
+    "4005437c730645c2b628dc1da999e06a",
+    "42641eb6adcb4f8f8def8ef129d9e843",
+    "4080c30aa7104d91ad005a50b18f6108",
+    "bc38961ca0ac4b14ab90e547ba79fbb6",
+    "86ed8530809d4b1b8fbc53808f599339",
+    "a017fe4e9c3d445784aae034b1322006",
+    "85246a44cc6340509e3882e2ff088391"
+  ],
+  "count_of_supporting_annotations": 11,
+  "not_exhaustive": true,
+  "not_front_camera_visibility_annotation": true,
+  "auxiliary_masks": {
+    "category_mask": false,
+    "radar_category_mask": false,
+    "reference_query_category_mask": false,
+    "support_mask": false
+  },
+  "annotation_data_must_not_enter_adapter_forward_or_prompt": true,
+  "source_official_split": "mini_train",
+  "response": "The scene contains a car.",
+  "independent_annotation_source": "Official nuScenes v1.0-mini sample_annotation, category and instance tables; independent from radar/RGB feature extraction and model outputs.",
+  "annotation_scope": "A positive vehicle.car existence claim at the official finalsample timestamp. This is a partial positive TRAIN response, not a complete scene description, per-camera visibility annotation, spatial box claim or evaluation label.",
+  "evidence_refs": {
+    "supervision_sidecar": "supervision_only.json",
+    "supervision_sidecar_sha256": "a81b17fa8ede460a43e808b568ce72e9b02f54a0bf71123612e4a886bfbd6ac4",
+    "official_sample_token": "e0845f5322254dafadbbed75aaa07969",
+    "annotation_tokens": [
+      "03fbb8c1d6394a7fa3c8da2bfab56c45",
+      "04b0d9bec8c04b19abbe76dc0c67a7ab",
+      "1b0a0447901a454dbe74d3d1579b7715",
+      "5a390e5c3f6249bb9f99c9be52614dd2",
+      "61d5835a5b6f4aebbfef94e76221b9fe",
+      "7681a73a8ac94bf88a230e1f5d45852c",
+      "7fb04f2eff1f4885879204b59ce6366d",
+      "b2b43ef63f5242b2a4c0b794e673782d",
+      "b561cd0c41c24ec48814725af0657d58",
+      "bde622696e974bb8a41e7c681528d36e",
+      "ee717901b80c43faa03e00caf99d8306"
+    ],
+    "source_category_name": "vehicle.car"
+  },
+  "category_verified": false,
+  "category_verified_explanation": "No single category is assigned to the whole multi-object input, and all auxiliary category masks are disabled. The partial positive response has independent annotation support."
+}

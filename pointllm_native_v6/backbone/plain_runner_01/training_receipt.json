@@ -1,0 +1,118 @@
+{
+  "status": "completed_finite_training_no_heldout_performance_claim",
+  "scope": "Finite real-data PointLLM language-objective training; not a held-out hallucination metric",
+  "variant": "plain_projector",
+  "max_steps": 2,
+  "step_records": [
+    {
+      "step": 1,
+      "language_loss": 2.6411845684051514,
+      "auxiliary_losses": {},
+      "pure_LM_adapter_gradients": {},
+      "pure_LM_projector_gradients": {
+        "0.weight": 2.415465831756592,
+        "0.bias": 0.13606137037277222,
+        "2.weight": 1.729772925376892,
+        "2.bias": 0.08095324039459229,
+        "4.weight": 1.361616849899292,
+        "4.bias": 0.03816216439008713
+      },
+      "pure_LM_gradient_groups": {
+        "discrepancy_network": 0.0,
+        "utility": 0.0,
+        "feature_expert_MLPs": 0.0,
+        "expert_router": 0.0,
+        "output_residual": 0.0,
+        "rgb_global_reconstruction": 0.0,
+        "rgb_global_residual": 0.0,
+        "all_adapter": 0.0
+      },
+      "full_input_length": 159,
+      "supervised_response_tokens": 7,
+      "elapsed_s": 67.47395253181458,
+      "case_id": "e0845f5322254dafadbbed75aaa07969",
+      "source_case_sha256": "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada"
+    },
+    {
+      "step": 2,
+      "language_loss": 2.469533681869507,
+      "auxiliary_losses": {},
+      "pure_LM_adapter_gradients": {},
+      "pure_LM_projector_gradients": {
+        "0.weight": 2.133321762084961,
+        "0.bias": 0.11991044133901596,
+        "2.weight": 1.5874570608139038,
+        "2.bias": 0.07395254075527191,
+        "4.weight": 1.240346908569336,
+        "4.bias": 0.034357596188783646
+      },
+      "pure_LM_gradient_groups": {
+        "discrepancy_network": 0.0,
+        "utility": 0.0,
+        "feature_expert_MLPs": 0.0,
+        "expert_router": 0.0,
+        "output_residual": 0.0,
+        "rgb_global_reconstruction": 0.0,
+        "rgb_global_residual": 0.0,
+        "all_adapter": 0.0
+      },
+      "full_input_length": 159,
+      "supervised_response_tokens": 7,
+      "elapsed_s": 65.41819405555725,
+      "case_id": "e0845f5322254dafadbbed75aaa07969",
+      "source_case_sha256": "c0afe0bcab8a0c83dd5b5f07f893c17291d84be640a74cd12b4664b0a728aada"
+    }
+  ],
+  "selection_policy": "fixed_update_budget_latest; no test loss or test outputs select a checkpoint",
+  "elapsed_s": 173.51720762252808,
+  "peak_rss_kib": 5138976,
+  "dataset_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+  "method_contract_sha256": "2ff68ad6d4ada5c7a38e5e1a663a25af35023db83be85e6b4539c503087db30c",
+  "seed": 7588,
+  "learning_rate": 0.0001,
+  "aux_weight": 0.0,
+  "available_train_cases": 1,
+  "train_scenes": [
+    "cc8c0bf57f984915a77078b10eb33198"
+  ],
+  "input_target_sidecars_separate": true,
+  "source_sha256": {
+    "runtime.py": "01d1b8c2635f5eac162926389fff4bd81ccd9b39eb98c2fc2b06590cc0f5a95b",
+    "adapter.py": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e",
+    "cached_data.py": "9d7b67ea44c4e3a0aa229d13ec337d8520cb3c47e0f96d7ab309949ce810cb76",
+    "training_engine.py": "18aea48d8121281f423b370ba2bf891f51d4ca80f872fb83323e4edb93232738",
+    "train_pointllm.py": "651e9272ad09621b52d9a725fad8abc77070d3936d45268e30275449264f17e5"
+  },
+  "stage": "finite_actual_training_completed",
+  "official_model": {
+    "official_model": "RunsenXu/PointLLM_7B_v1.2",
+    "official_revision": "37d8c15aaff8e7e05f04729dcb6960d5758e9f86",
+    "source_config_sha256": "e308892ee8b0a49602d4d3f8e7a1c75e8d57db7178ebb121ca8e3b36c0e76506",
+    "pointbert_strict_load": true,
+    "projector_strict_load": true,
+    "language_missing_keys": [],
+    "adapted_point_groups": 96,
+    "point_tokens": 97,
+    "official_default_point_groups": 512,
+    "point_input_channels": 6,
+    "missing_color": "zero channels, not measured color",
+    "point_encoder_parameter_count": 21859200,
+    "projector_parameter_count": 10886144,
+    "language_frozen": true,
+    "projector_trainable": true,
+    "language_precision": "canonical NF4 weights/BF16 compute",
+    "point_encoder_projector_precision": "FP32",
+    "language_load_s": 17.951822519302368,
+    "torch": "2.9.0+cpu",
+    "device": "cpu",
+    "threads": 2,
+    "checkpointing": "non-reentrant; use_cache=False during training",
+    "private_canonical_language_cache_used": true,
+    "private_cache_provenance_sha256": "ac9ecd2a5d9edb8e55243fa69416900c0cc99e8a1ea465ee90cf0586c92bd1f3"
+  },
+  "trainable_parameter_count": 10886144,
+  "latest_checkpoint_sha256": "8e8726c1188f26b47a6d142eaa6acfaa85809682450e4601f2e9606a0b4c840d",
+  "frozen_language_pointbert_quantstates_unchanged": true,
+  "implementation_sources_unchanged": true,
+  "inference_checkpoint_sha256": "eb7e2e0a55c444fb2e401fec674c82c714f7b9a3db3e4c7a00d6958c125e6eee"
+}

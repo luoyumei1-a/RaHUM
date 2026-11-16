@@ -7,8 +7,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2262,
-      "sha256": "964d485a68cc5b43a8c61cf8c9a001f7c6966321bdd3c4a7c3d9e6100a246195"
+      "bytes": 3130,
+      "sha256": "60313526a19286950bae590210c4f5faf0058ce07662975b84d450b880ade3f2"
     },
     {
       "path": "examples/real_numeric/DATA_ACCESS.md",
@@ -245,5 +245,6 @@
       "bytes": 7560,
       "sha256": "56623d4828780726a9beb93a57492831ab517ff3ade5909641674218a090a706"
     }
-  ]
+  ],
+  "scope": "Legacy public files listed here, with current root README hash. pointllm_native_v6 is separately covered by pointllm_native_v6/PUBLIC_SOURCE_MANIFEST.json."
 }

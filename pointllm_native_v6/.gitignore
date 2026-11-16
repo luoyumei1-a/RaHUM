@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+checkpoints/
+runs/
+private_canonical_language_cache/
+*.pt
+*.bin
+*.safetensors

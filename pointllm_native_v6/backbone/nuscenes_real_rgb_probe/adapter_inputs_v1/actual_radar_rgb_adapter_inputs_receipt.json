@@ -1,0 +1,35 @@
+{
+  "scope": "actualmeasuredradar/nativePointBERTandactualRGBencoderinputassembly; not7BLMexecutionorperformance",
+  "raw_window_sha256": "a18ab6532c89d15635ee98626b587751027cb0b9222d9d7e24d4baf0d58da65b",
+  "evaluation_time_manifest_sha256": "9b5083e00309a9be5751fe6237d55314f6e22571cb0ca9279e1c653171d7717f",
+  "evaluation_time_policy": "officialsampletimestamp; allusedradarandcameraobservationsareat orbeforeit",
+  "source_camera_time_checks": 404,
+  "actual_pointbert_cache_sha256": "079efcc32b5d5507dfb321624ce03417eac5b97271bb943bd24d1c7273291d79",
+  "reference_kind": "rgb_patch",
+  "reference_has_cls": false,
+  "native_point_tokens": 97,
+  "reference_patch_tokens": 256,
+  "spatial_sigma_native_pixels": 49.224761962890625,
+  "sigma_policy": "geometricmean of actualpatchgridspacing induced by encoderresize/crop; no label/test-score fitting",
+  "history_sigma_m": 1.0,
+  "geometry_dims": 2,
+  "projected_in_crop_counts": [
+    13,
+    15,
+    14
+  ],
+  "unmatched_radar_groups_retained": true,
+  "source_sample_tokens": [
+    "39586f9d59004284a7114a68825e8eec",
+    "356d81f38dd9473ba590f39e266f54e5",
+    "e0845f5322254dafadbbed75aaa07969"
+  ],
+  "all_radar_sources_at_or_before_camera_anchor": true,
+  "all_camera_anchors_at_or_before_official_sampletime": true,
+  "no_gt_forward_keys": true,
+  "annotation_sidecar": "supervision_only.json; never openedbythisassembly",
+  "projection_is_not_visibility_or_absence": true,
+  "actor_motion_compensation": false,
+  "assembled_input_sha256": "01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0",
+  "actual_rgb_cache_sha256": "ee1442bf862394bd1a53b96c7cc3329aa2a968e4d6195687b148cab8190eedd0"
+}

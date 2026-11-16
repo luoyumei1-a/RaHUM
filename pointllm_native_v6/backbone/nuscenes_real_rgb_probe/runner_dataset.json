@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "scope": "One real nuScenes-mini TRAIN window; two-step actualRGBPointLLM engineering connectivity smoke, not heldoutperformance or authors14TB11classresults",
+  "measurement_data_kind": "real",
+  "frozen_before_training": true,
+  "point_token_budget": 97,
+  "class_vocabulary": [
+    "animal",
+    "human.pedestrian.adult",
+    "human.pedestrian.child",
+    "human.pedestrian.construction_worker",
+    "human.pedestrian.personal_mobility",
+    "human.pedestrian.police_officer",
+    "human.pedestrian.stroller",
+    "human.pedestrian.wheelchair",
+    "movable_object.barrier",
+    "movable_object.debris",
+    "movable_object.pushable_pullable",
+    "movable_object.trafficcone",
+    "static_object.bicycle_rack",
+    "vehicle.bicycle",
+    "vehicle.bus.bendy",
+    "vehicle.bus.rigid",
+    "vehicle.car",
+    "vehicle.construction",
+    "vehicle.emergency.ambulance",
+    "vehicle.emergency.police",
+    "vehicle.motorcycle",
+    "vehicle.trailer",
+    "vehicle.truck"
+  ],
+  "class_vocabulary_provenance_sha256": "f85b238e1e57296ce59c6ee202430855beec443da1a7dac6e661471f4fc728a6",
+  "adapter_config": {
+    "token_dim": 384,
+    "reference_dim": 384,
+    "groups": 96,
+    "reference_has_cls": false,
+    "reference_kind": "rgb_patch",
+    "local_memory": 8,
+    "geometry_dims": 2,
+    "spatial_sigma": 49.224761962890625,
+    "history_window": 5,
+    "history_sigma_m": 1.0,
+    "attribute_dim": 2,
+    "num_experts": 5,
+    "num_categories": 23
+  },
+  "required_second_step_LM_gradient_groups": [
+    "discrepancy_network",
+    "utility",
+    "feature_expert_MLPs",
+    "expert_router",
+    "rgb_global_reconstruction",
+    "rgb_global_residual"
+  ],
+  "records": [
+    {
+      "case_id": "e0845f5322254dafadbbed75aaa07969",
+      "scene_id": "cc8c0bf57f984915a77078b10eb33198",
+      "split": "train",
+      "input_available": true,
+      "feature_cache": "adapter_inputs_v1/actual_radar_rgb_adapter_inputs.npz",
+      "feature_cache_sha256": "01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0",
+      "input_receipt": "adapter_inputs_v1/actual_radar_rgb_adapter_inputs_receipt.json",
+      "input_receipt_sha256": "6103caa8b7988f1081ef5236469891797b81491b2511d6f13629f6dbcb45ff01",
+      "prompt": "Describe one type of object present in the scene.",
+      "target_sidecar": "partial_response_supervision.json",
+      "target_sidecar_sha256": "9ac992356875968ae6c33557aacd75f29e07b7f2b977d6a94f88db5f8ebcb7b2",
+      "source_sample_tokens": [
+        "39586f9d59004284a7114a68825e8eec",
+        "356d81f38dd9473ba590f39e266f54e5",
+        "e0845f5322254dafadbbed75aaa07969"
+      ],
+      "evaluation_timestamp_us": 1532402929197353
+    }
+  ],
+  "packaging_path_rebase": {
+    "original_frozen_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+    "change": "Filesystem paths only; case, split, token arrays, targets, source hashes and prompts unchanged.",
+    "original_inference_checkpoints": "Inference restores use unchanged features and source_case hashes. Exact training resume retains its original manifest identity."
+  }
+}
