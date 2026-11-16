@@ -39,3 +39,7 @@ The supplied execution is a two-update TRAIN engineering check with a matched pr
 ## Original full-adaptation reference source
 
 The [`reference_full_adaptation/`](reference_full_adaptation/README.md) snapshot preserves the author-supplied CHR-LMM/HiRAC PointLLM implementation, its original default configuration, source hashes and training interfaces. Its author-reported 20+30-stage reference experiment is distinct from the recorded frozen-prefix engineering execution in `pointllm_native_v6`. No new full-training reproduction or held-out performance is claimed by this source release. See that snapshot's README and `SOURCE_PROVENANCE.json` before choosing a configuration.
+
+## Article-ordered MATLAB figures
+
+[`figures/RaHUM_Figures_v7.m`](figures/RaHUM_Figures_v7.m) is the single plotting source, executed in MATLAB Online R2026b Update 2. Its two default article figures use the existing author-reported full-adaptation measurements, separately from the v6 prefix-training engineering records. See [`figures/README.md`](figures/README.md) for the exact source hash and scope.
