@@ -1,0 +1,3 @@
+PointBERT components copied from the official InternRobotics/PointLLM repository, commit cb72f4e6ab625ddab92f84931127e12bc326b4be.
+Source: https://github.com/InternRobotics/PointLLM/tree/cb72f4e6ab625ddab92f84931127e12bc326b4be/pointllm/model/pointbert
+Retain the upstream attribution and license requirements. No training weights are generated or replaced. Only the timm DropPath import is replaced with a pure-Torch equivalent; eval-mode DropPath is identity. Official pure-Torch FPS/KNN code is unchanged.

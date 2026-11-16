@@ -1,0 +1,381 @@
+{
+  "schema": "rahum_public_numeric_csv_v1",
+  "source_record_count": 6,
+  "csv_count": 12,
+  "data_origin": "Unchanged numeric values from authors' real recorded MAT fields.",
+  "excluded_field": "pc_xyzb_kinect (dense XYZ is available only in the corresponding source MAT sample)",
+  "records": [
+    {
+      "csv_file": "outdoor_A_0002__pc_xyziv_ti.csv",
+      "csv_sha256": "5bc14025ed3d16ed0fad2432ede27a8833e6361adf6d5602d500d7df60740eb0",
+      "bytes": 3633,
+      "sample_id": "outdoor_A_0002",
+      "source_mat_file": "numeric/outdoor_A_0002.mat",
+      "source_mat_sha256": "9b1805de0897fb1ebe747e70c73a748b4f68116b53e9efb6d206ff84a37ab278",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/1234567890/000/pc_ti_kinect_key_02.mat",
+      "source_field": "pc_xyziv_ti",
+      "shape": [
+        41,
+        5
+      ],
+      "source_dtype": "float32",
+      "source_array_sha256_c_order": "c3c0693f7832083c2a4e8f6f3cd50d6b0cadca664322610325519a513c2c849d",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_A_0002__pc_xyz_key.csv",
+      "csv_sha256": "740bb463798fa1fd8bcbf534b40251ee4b571012f906f7298fa27c51f11f13e3",
+      "bytes": 1949,
+      "sample_id": "outdoor_A_0002",
+      "source_mat_file": "numeric/outdoor_A_0002.mat",
+      "source_mat_sha256": "9b1805de0897fb1ebe747e70c73a748b4f68116b53e9efb6d206ff84a37ab278",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/1234567890/000/pc_ti_kinect_key_02.mat",
+      "source_field": "pc_xyz_key",
+      "shape": [
+        32,
+        3
+      ],
+      "source_dtype": "float64",
+      "source_array_sha256_c_order": "d7e7abf55b7c4c9fcd399b71c6db17a5701e9c8fd75facf770b291e35b80ef4b",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_A_0003__pc_xyziv_ti.csv",
+      "csv_sha256": "044f33a5ad656e665fe6244e1608613d897fc11f564fe2e4490399f7e92ebbcb",
+      "bytes": 2667,
+      "sample_id": "outdoor_A_0003",
+      "source_mat_file": "numeric/outdoor_A_0003.mat",
+      "source_mat_sha256": "88ba7c56272de3b84779b9c4ffb9c8de4c00dee1ed8f55e7d110223fe79f92f1",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/1234567890/000/pc_ti_kinect_key_03.mat",
+      "source_field": "pc_xyziv_ti",
+      "shape": [
+        29,
+        5
+      ],
+      "source_dtype": "float32",
+      "source_array_sha256_c_order": "2689fe2ee7624a359d5f851eeb29c28bb3dce38c8322c19cce7af1ff70da14c2",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_A_0003__pc_xyz_key.csv",
+      "csv_sha256": "1ffcc75ae7d39f3c5bc670cc8d623824b68fc6234228de0de0b9f0b835feca06",
+      "bytes": 1941,
+      "sample_id": "outdoor_A_0003",
+      "source_mat_file": "numeric/outdoor_A_0003.mat",
+      "source_mat_sha256": "88ba7c56272de3b84779b9c4ffb9c8de4c00dee1ed8f55e7d110223fe79f92f1",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/1234567890/000/pc_ti_kinect_key_03.mat",
+      "source_field": "pc_xyz_key",
+      "shape": [
+        32,
+        3
+      ],
+      "source_dtype": "float64",
+      "source_array_sha256_c_order": "84299d7977ab70966e604115f9f5b1db5e77e3977349ac8589af287dcdbb3887",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_B_0102__pc_xyziv_ti.csv",
+      "csv_sha256": "862046cfe2a5bb344e35320969564d3ebf0a7fb50cacee3e14de7d1a7bcf2ffe",
+      "bytes": 3077,
+      "sample_id": "outdoor_B_0102",
+      "source_mat_file": "numeric/outdoor_B_0102.mat",
+      "source_mat_sha256": "a12e4d97557f6f83f53a3836c9241910c6c882aecaf1cf34dbca605834576c4e",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/ujmikolp/001/pc_ti_kinect_key_102.mat",
+      "source_field": "pc_xyziv_ti",
+      "shape": [
+        34,
+        5
+      ],
+      "source_dtype": "float32",
+      "source_array_sha256_c_order": "0bf0a00bf02971849d38a1e2eefd5e483cbe7a6d0019a8751b1a13a8906694a0",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_B_0102__pc_xyz_key.csv",
+      "csv_sha256": "cf25ae2d05cfa5c56d3586519ab82f5030b87776426fbe81c4c25026bd8b2c5f",
+      "bytes": 1948,
+      "sample_id": "outdoor_B_0102",
+      "source_mat_file": "numeric/outdoor_B_0102.mat",
+      "source_mat_sha256": "a12e4d97557f6f83f53a3836c9241910c6c882aecaf1cf34dbca605834576c4e",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/ujmikolp/001/pc_ti_kinect_key_102.mat",
+      "source_field": "pc_xyz_key",
+      "shape": [
+        32,
+        3
+      ],
+      "source_dtype": "float64",
+      "source_array_sha256_c_order": "eda0cb5e9023ace32563e80742872a629869ee44795d69d8c5baa5282637df36",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_B_0103__pc_xyziv_ti.csv",
+      "csv_sha256": "bebe9ae5c504024830818651f4c17c52d5055da3f69d0ddd64f4474ff71d925e",
+      "bytes": 3155,
+      "sample_id": "outdoor_B_0103",
+      "source_mat_file": "numeric/outdoor_B_0103.mat",
+      "source_mat_sha256": "3bd175012584a56d83bc19cb241bcb5b9ecec0393aca446601504e29570624b1",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/ujmikolp/001/pc_ti_kinect_key_103.mat",
+      "source_field": "pc_xyziv_ti",
+      "shape": [
+        35,
+        5
+      ],
+      "source_dtype": "float32",
+      "source_array_sha256_c_order": "08233246f2d27523db9c1cdabc8a2224c6e7492cfa13c1004f0e61b6cb0d2393",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_B_0103__pc_xyz_key.csv",
+      "csv_sha256": "e160ef4d20f306db5814437895f0d60cf85875b2f3278c9caed0b1b9248c9e67",
+      "bytes": 1949,
+      "sample_id": "outdoor_B_0103",
+      "source_mat_file": "numeric/outdoor_B_0103.mat",
+      "source_mat_sha256": "3bd175012584a56d83bc19cb241bcb5b9ecec0393aca446601504e29570624b1",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/ujmikolp/001/pc_ti_kinect_key_103.mat",
+      "source_field": "pc_xyz_key",
+      "shape": [
+        32,
+        3
+      ],
+      "source_dtype": "float64",
+      "source_array_sha256_c_order": "1b9c75524291c3750a9aa03d1cb2d50b08d2670c87c6d55cb3a93abec2cd0a48",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_C_0002__pc_xyziv_ti.csv",
+      "csv_sha256": "e317a8ee0ac85309516cb4d0adc908a78590feaa6c81684e24533f0ca0264ec4",
+      "bytes": 1898,
+      "sample_id": "outdoor_C_0002",
+      "source_mat_file": "numeric/outdoor_C_0002.mat",
+      "source_mat_sha256": "a5bcf69ba9f49241e71fb250fe5fb543dd020dc5cd45695c2bf0a898474ba84f",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/zxcvbnm/000/pc_ti_kinect_key_02.mat",
+      "source_field": "pc_xyziv_ti",
+      "shape": [
+        21,
+        5
+      ],
+      "source_dtype": "float32",
+      "source_array_sha256_c_order": "e7cdb3796b9bdffa860f935f30bdb33bab34ae141d9ac1a1d5127944b89eadc5",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_C_0002__pc_xyz_key.csv",
+      "csv_sha256": "415acdb4107b1fe8488196828cac052f24b138e7c262585b1fc94a2e31f26332",
+      "bytes": 1950,
+      "sample_id": "outdoor_C_0002",
+      "source_mat_file": "numeric/outdoor_C_0002.mat",
+      "source_mat_sha256": "a5bcf69ba9f49241e71fb250fe5fb543dd020dc5cd45695c2bf0a898474ba84f",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/zxcvbnm/000/pc_ti_kinect_key_02.mat",
+      "source_field": "pc_xyz_key",
+      "shape": [
+        32,
+        3
+      ],
+      "source_dtype": "float64",
+      "source_array_sha256_c_order": "44c16a81b46ea04947fc4cd78d67ceb9596e2d307aef810d8b909d8fd0dcc0e2",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_C_0003__pc_xyziv_ti.csv",
+      "csv_sha256": "179440ac7cbecaf4df0f5a73dac9a96f635e5f360350ac5cf08bdd01acbdb014",
+      "bytes": 2553,
+      "sample_id": "outdoor_C_0003",
+      "source_mat_file": "numeric/outdoor_C_0003.mat",
+      "source_mat_sha256": "933f538c85b6b88e359db0b3981a33c02d2bcfdafef90797e57041ace20603e7",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/zxcvbnm/000/pc_ti_kinect_key_03.mat",
+      "source_field": "pc_xyziv_ti",
+      "shape": [
+        28,
+        5
+      ],
+      "source_dtype": "float32",
+      "source_array_sha256_c_order": "1cd823073e7ca86e5b98873232972bdd9ef15b944c32d1f24ead907152f0f09e",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    },
+    {
+      "csv_file": "outdoor_C_0003__pc_xyz_key.csv",
+      "csv_sha256": "e98db04b4ace3dcf55498d0804dffd90115393481c82a10f99c4370fb52af4fa",
+      "bytes": 1954,
+      "sample_id": "outdoor_C_0003",
+      "source_mat_file": "numeric/outdoor_C_0003.mat",
+      "source_mat_sha256": "933f538c85b6b88e359db0b3981a33c02d2bcfdafef90797e57041ace20603e7",
+      "source_archive": "Outdoor radar Data.7z",
+      "source_archive_sha256": "492b9bc35abbe62bf8396a02f3a575755690c49fd52906cd5085eb5fd5e368bc",
+      "source_member": "Outdoor radar Data/0/zxcvbnm/000/pc_ti_kinect_key_03.mat",
+      "source_field": "pc_xyz_key",
+      "shape": [
+        32,
+        3
+      ],
+      "source_dtype": "float64",
+      "source_array_sha256_c_order": "58d2ee3745ec441620dd1e312466a2b5cb0488b7ba258132ffd8215a45a7cbbb",
+      "float_format": "17 significant decimal digits (%.17g)",
+      "round_trip_original_dtype_byte_exact": true,
+      "coordinates_transformed": false,
+      "units": "Not certified by metadata in the supplied source MAT.",
+      "columns": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "column_semantics": "Original source column order; no reinterpretation of attributes as RGB.",
+      "rgb_correspondence": null,
+      "labels_supplied": false
+    }
+  ]
+}

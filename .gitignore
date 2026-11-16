@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+runtime_v5/
+checkpoints/
+*.bin
+*.safetensors
+*.7z

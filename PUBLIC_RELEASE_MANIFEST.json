@@ -1,0 +1,249 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 76,
+      "sha256": "5b96f378eb7c1277679706d27ee3da328cd9c5bcf3029f6282230311e063c393"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2262,
+      "sha256": "964d485a68cc5b43a8c61cf8c9a001f7c6966321bdd3c4a7c3d9e6100a246195"
+    },
+    {
+      "path": "examples/real_numeric/DATA_ACCESS.md",
+      "bytes": 697,
+      "sha256": "195cf5a9527f135c0a40310331b05ce88d6267a92313dc80f7e50b107a91c34d"
+    },
+    {
+      "path": "examples/real_numeric/README.md",
+      "bytes": 1564,
+      "sha256": "7b4b5447770b51730d13ccbf1b58752572f9958f6436167c10cb55f6bbc4dc60"
+    },
+    {
+      "path": "examples/real_numeric/SHA256SUMS",
+      "bytes": 1489,
+      "sha256": "68ec7469030198a33571ffde882c2e2866e64ef5bc5f298913792a01453a0086"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_A_0002__pc_xyz_key.csv",
+      "bytes": 1949,
+      "sha256": "740bb463798fa1fd8bcbf534b40251ee4b571012f906f7298fa27c51f11f13e3"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_A_0002__pc_xyziv_ti.csv",
+      "bytes": 3633,
+      "sha256": "5bc14025ed3d16ed0fad2432ede27a8833e6361adf6d5602d500d7df60740eb0"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_A_0003__pc_xyz_key.csv",
+      "bytes": 1941,
+      "sha256": "1ffcc75ae7d39f3c5bc670cc8d623824b68fc6234228de0de0b9f0b835feca06"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_A_0003__pc_xyziv_ti.csv",
+      "bytes": 2667,
+      "sha256": "044f33a5ad656e665fe6244e1608613d897fc11f564fe2e4490399f7e92ebbcb"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_B_0102__pc_xyz_key.csv",
+      "bytes": 1948,
+      "sha256": "cf25ae2d05cfa5c56d3586519ab82f5030b87776426fbe81c4c25026bd8b2c5f"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_B_0102__pc_xyziv_ti.csv",
+      "bytes": 3077,
+      "sha256": "862046cfe2a5bb344e35320969564d3ebf0a7fb50cacee3e14de7d1a7bcf2ffe"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_B_0103__pc_xyz_key.csv",
+      "bytes": 1949,
+      "sha256": "e160ef4d20f306db5814437895f0d60cf85875b2f3278c9caed0b1b9248c9e67"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_B_0103__pc_xyziv_ti.csv",
+      "bytes": 3155,
+      "sha256": "bebe9ae5c504024830818651f4c17c52d5055da3f69d0ddd64f4474ff71d925e"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_C_0002__pc_xyz_key.csv",
+      "bytes": 1950,
+      "sha256": "415acdb4107b1fe8488196828cac052f24b138e7c262585b1fc94a2e31f26332"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_C_0002__pc_xyziv_ti.csv",
+      "bytes": 1898,
+      "sha256": "e317a8ee0ac85309516cb4d0adc908a78590feaa6c81684e24533f0ca0264ec4"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_C_0003__pc_xyz_key.csv",
+      "bytes": 1954,
+      "sha256": "e98db04b4ace3dcf55498d0804dffd90115393481c82a10f99c4370fb52af4fa"
+    },
+    {
+      "path": "examples/real_numeric/outdoor_C_0003__pc_xyziv_ti.csv",
+      "bytes": 2553,
+      "sha256": "179440ac7cbecaf4df0f5a73dac9a96f635e5f360350ac5cf08bdd01acbdb014"
+    },
+    {
+      "path": "examples/real_numeric/provenance.json",
+      "bytes": 16104,
+      "sha256": "f6f4d503cc55a016afe533f027191bdffc61d4e82a082f8aeb8b774b802bd4ae"
+    },
+    {
+      "path": "examples/real_numeric/verify_csv.py",
+      "bytes": 788,
+      "sha256": "7055efafa3f613101935286345be23215a9736f998258d4c4d90d7298a091275"
+    },
+    {
+      "path": "pointllm/.gitignore",
+      "bytes": 59,
+      "sha256": "d236b07b2a9ec31202be271e9a97c1ac86b60e59c483196abcf66b711b77d5e6"
+    },
+    {
+      "path": "pointllm/README.md",
+      "bytes": 4297,
+      "sha256": "83991684546dbeb0351c200b66d219bb6748923d9b719e98bf868b879c06e71e"
+    },
+    {
+      "path": "pointllm/THIRD_PARTY_NOTICES.md",
+      "bytes": 1060,
+      "sha256": "368565b9287b6f3b954bccc9d63b3b291849f977791e856dff33fb2282707d4e"
+    },
+    {
+      "path": "pointllm/__init__.py",
+      "bytes": 58,
+      "sha256": "7d8764840fa7df35d731f8b254372826dfe92f824454bae071ac7c2e0899ec3e"
+    },
+    {
+      "path": "pointllm/build_claim_review.py",
+      "bytes": 2870,
+      "sha256": "de5f1ecd9721f9c78fe487df8a3ac390908dd24f8a7d4a8d6e2a6746161fadce"
+    },
+    {
+      "path": "pointllm/claim_annotation_protocol.md",
+      "bytes": 3351,
+      "sha256": "60a1d95b654f65648ca8048af7323e02eec699bf50dc3c343bc382529dfb1ef7"
+    },
+    {
+      "path": "pointllm/download_official.py",
+      "bytes": 3542,
+      "sha256": "5503dd5cf1865fa3add742bac34b7d9811b4a232967b7c0e7f4a88b1e16ab4d6"
+    },
+    {
+      "path": "pointllm/enqueue_fixed_claims.py",
+      "bytes": 2211,
+      "sha256": "404090f74eef8b95ccc4f2bec74c42a3adce734ff6af836932ff50ad766a6bae"
+    },
+    {
+      "path": "pointllm/evidence/added_tokens.json",
+      "bytes": 79,
+      "sha256": "024d44caddbf1ca0cdf469cd16b4069ef99fe7883473240ecbaf865b5cca4a35"
+    },
+    {
+      "path": "pointllm/evidence/config.json",
+      "bytes": 868,
+      "sha256": "e308892ee8b0a49602d4d3f8e7a1c75e8d57db7178ebb121ca8e3b36c0e76506"
+    },
+    {
+      "path": "pointllm/evidence/execution_environment.json",
+      "bytes": 371,
+      "sha256": "b2b57d8351bc50c9d2150ef9f1af9ff768d925ae8c3eb6c40aeaf61b95b1b121"
+    },
+    {
+      "path": "pointllm/evidence/generation_config.json",
+      "bytes": 137,
+      "sha256": "fd7ff399e5568cc21a0a8414f43df88ef7c424995b9b97a90563165d2cf79efd"
+    },
+    {
+      "path": "pointllm/evidence/official_download_manifest.json",
+      "bytes": 1238,
+      "sha256": "5f9236cacc06cffdad635edb58c9eb40024b4039c3adc2a6036e5d16b6f3392c"
+    },
+    {
+      "path": "pointllm/evidence/pointbert_source_manifest.json",
+      "bytes": 1285,
+      "sha256": "8a5c703511ef9e3e89c26588c12b5583fc88252a12057ed31804051f3aa7e2ae"
+    },
+    {
+      "path": "pointllm/evidence/pytorch_model.bin.index.json",
+      "bytes": 42089,
+      "sha256": "d7e596fb272adfb91f41c70216cb2ca86ef0632bc57feaeecb8cffd844e178aa"
+    },
+    {
+      "path": "pointllm/evidence/special_tokens_map.json",
+      "bytes": 435,
+      "sha256": "2ea88203b955648951a454e73a73967ff77ba4e79ae8ceb4400d4ab2cb040777"
+    },
+    {
+      "path": "pointllm/evidence/tokenizer_config.json",
+      "bytes": 778,
+      "sha256": "60e65829650cc502396bdcf2fd0103b5509093a997d371511ff71abb73377d5c"
+    },
+    {
+      "path": "pointllm/pointllm_cpu_infer.py",
+      "bytes": 9986,
+      "sha256": "aa9d7ea90ec649d2659d6eabea7302e9de9766839cca47b344dab6169f23d241"
+    },
+    {
+      "path": "pointllm/pointllm_worker.py",
+      "bytes": 3922,
+      "sha256": "78689aceac53deb190ae415f80d6cdbf0c7796f937dbf8bb93169ea31bcceaac"
+    },
+    {
+      "path": "pointllm/requirements_cpu.txt",
+      "bytes": 198,
+      "sha256": "9a2db754a6cb9184cbab6a37b85c1c02b4896484f0bf1f9336bd521d1a5b9dc8"
+    },
+    {
+      "path": "pointllm/run_claim_pilot.py",
+      "bytes": 4915,
+      "sha256": "5e6840541c554a785695413b1630b2908c9c0682f6df7fffbd799fa4aac37f79"
+    },
+    {
+      "path": "pointllm/runtime_freeze.txt",
+      "bytes": 948,
+      "sha256": "1b4193d199215d64608c08428ffefe513da2538be7912cc442322249b62e6248"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/UPSTREAM_ATTRIBUTION.txt",
+      "bytes": 509,
+      "sha256": "135c42cd3e7d9b57f19221bbb7c9484bca32e3bd70405a06e83a2735643dd640"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/__init__.py",
+      "bytes": 44,
+      "sha256": "45000abc69b5d166efe7105285dd66110d6e6dfb4f18b6b4cd87e1da8c9979d7"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/checkpoint.py",
+      "bytes": 3910,
+      "sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/compat.py",
+      "bytes": 435,
+      "sha256": "e9c91a18c337df7c97c8f22886ca7a44ed2996e0a19bec53d52b9c7f40864d7f"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/dvae.py",
+      "bytes": 13750,
+      "sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/logger.py",
+      "bytes": 4922,
+      "sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/misc.py",
+      "bytes": 9292,
+      "sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927"
+    },
+    {
+      "path": "pointllm/vendor_pointbert/point_encoder.py",
+      "bytes": 7560,
+      "sha256": "56623d4828780726a9beb93a57492831ab517ff3ade5909641674218a090a706"
+    }
+  ]
+}

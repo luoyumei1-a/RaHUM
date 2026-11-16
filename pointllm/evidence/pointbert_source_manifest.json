@@ -1,0 +1,32 @@
+[
+  {
+    "file": "point_encoder.py",
+    "upstream_sha256": "ecc6be1228ce6e9c9285fd817af00fcdb5f7faf9084a149d622a306ede2eace0",
+    "local_sha256": "56623d4828780726a9beb93a57492831ab517ff3ade5909641674218a090a706",
+    "modification": "timm DropPath import replaced by inference-compatible pure-torch implementation"
+  },
+  {
+    "file": "dvae.py",
+    "upstream_sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1",
+    "local_sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1",
+    "modification": "none"
+  },
+  {
+    "file": "misc.py",
+    "upstream_sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927",
+    "local_sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927",
+    "modification": "none"
+  },
+  {
+    "file": "logger.py",
+    "upstream_sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69",
+    "local_sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69",
+    "modification": "none"
+  },
+  {
+    "file": "checkpoint.py",
+    "upstream_sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946",
+    "local_sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946",
+    "modification": "none"
+  }
+]

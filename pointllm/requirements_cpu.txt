@@ -1,0 +1,11 @@
+transformers==4.57.6
+bitsandbytes==0.50.2
+accelerate==1.15.0
+huggingface-hub==0.36.2
+sentencepiece==0.2.3
+numpy==2.5.5
+scipy==1.18.1
+easydict==1.14
+PyYAML==6.0.3
+termcolor==3.3.0
+matplotlib==3.11.2
