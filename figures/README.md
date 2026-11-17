@@ -1,7 +1,10 @@
-# Article plotting source
+# Article figure source
 
-`RaHUM_Figures_v7.m` is one self-contained MATLAB file, ordered as article Figure 2 (four nonexclusive response-error types) then Figure 3 (outdoor auxiliary sensing rates). It was executed in MATLAB Online R2026b Update 2 (`26.2.0.3437455`); final source SHA-256: `4ee526cf2787850681358ec604235d39ce6b3e9b1428dc04e97fb1bf0094809a`.
+The active v8 plots use the actual native-adapter reliability inspection and
+fixed-checkpoint local-memory sensitivity CSVs under
+`pointllm_native_v6/diagnostics/`.
 
-The source measurements are the existing author-reported HiRAC full-adaptation values, displayed as RaHUM (full adaptation). They are not newly measured performance of the separately recorded two-update frozen-prefix checkpoint in `pointllm_native_v6`. No samples or uncertainty intervals are invented from rounded rates.
-
-Run `RaHUM_Figures_v7(outputDirectory,'all')` in MATLAB Online. The file exports editable FIG, vector PDF, PNG and provenance JSON in article order.
+The previous v7 plotting source is superseded and is not active measured result
+evidence. The article-ordered v8 MATLAB source and online-export receipts are
+published together after their final export is verified. No irregularity is
+introduced into measurement values to change the appearance of a plot.

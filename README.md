@@ -2,44 +2,62 @@
 
 Radar Hallucination Understanding and Mitigation.
 
-This repository provides measured radar examples, an official PointLLM-7B inference adapter, and reproducible support-analysis tools. Measurement artifacts, independently annotated return labels, and generated semantic assertions are evaluated separately.
+This repository provides real radar examples, native point-token correction for
+PointLLM-7B, source/data provenance, and reproducible internal diagnostics.
+Measurement artifacts, independently annotated returns, and generated semantic
+assertions have separate evaluation units.
 
-## Real examples
+## Native PointLLM implementation
 
-The small numeric examples preserve the exact radar and skeleton values from six original author-provided MAT records. No RGB pairing is inferred. Source hashes, shapes, field names, and round-trip checks are in `examples/real_numeric/provenance.json`.
+The [`pointllm_native_v6/`](pointllm_native_v6/README.md) directory contains the
+versioned native implementation: measured radar → official PointBERT → corrected
+97 point tokens → original projector → complete frozen PointLLM-7B decoder.
+Its recorded execution used two TRAIN language-objective updates and a matched
+projector-only baseline. This engineering example is not a held-out
+hallucination-reduction benchmark. Original raw generated responses and receipts
+are retained without answer rewriting.
 
-```bash
-python -m pip install numpy
-python examples/real_numeric/verify_csv.py
-```
+The v8 diagnostics restore that recorded adapter against its exact frozen source
+and real feature-cache hashes. The input contains three frames, 96 radar groups
+per frame and 256 RGB patch tokens. Of 288 radar groups, 42 have valid RGB
+projection support. The fixed checkpoint uses local memory K=8 and spatial
+bandwidth 49.2247619629 native camera pixels. Its learned two-way utility softmax
+does not multiply logits by normalized candidate attention. The same weights are
+also inspected at local K=1,2,4,8,12,16,24,32; this is inference sensitivity,
+not a retrained-model performance comparison.
 
-Full source MAT examples are included in the downloadable code-and-example bundle. The linked acquisition corpus contains mmWave raw IQ, point clouds, and Kinect records. The authors report a total corpus size of 14 TB; individual released experiments identify the exact files and annotations they use.
+See [`pointllm_native_v6/diagnostics/`](pointllm_native_v6/diagnostics/README.md)
+for actual CSVs, receipts and reproduction scripts. Adapter-only CPU times
+exclude the sensor encoders, projector and 7B decoder. The full official
+pretrained weights are downloaded from their publisher, not committed here.
+Small adaptation checkpoints are available in the code-and-example bundle or
+can be regenerated using the documented training commands.
+
+## Real examples and source corpus
+
+The existing [`examples/real_numeric/`](examples/real_numeric/) files preserve
+the exact numeric measurements from six original MAT records; no RGB pairing is
+inferred from their names. The native radar–RGB feature example has SHA256
+`01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0`.
+It derives from a real official nuScenes-mini TRAIN window and is separate from
+the author-provided acquisition corpus linked below. The authors describe that
+corpus as 14 TB; this does not identify an evaluated split or annotation count.
 
 | Data Type | Google Links | Baidu Links |
 |---|---|---|
 | mmWave raw IQ, mmWave Point Cloud, Kinect | [Google Drive](https://drive.google.com/drive/folders/1Hk5WnxPbsS_3Ilbs9x-ut50CIZU6m9Ns?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1lbIBcwvK1LpAyI_cy62UUA?pwd=o3g5) |
 
-## Official PointLLM execution
+## Historical source
 
-See `pointllm/README.md` for the pinned official checkpoint, CPU NF4 configuration, measured-row preprocessing, and execution commands. The complete official 7B weights are obtained from their publisher, with hashes checked by the supplied downloader. Weights are not included in this repository. Official PointLLM provides 7B and 13B variants; a separate model is not renamed PointLLM-3B.
+[`reference_full_adaptation/`](reference_full_adaptation/README.md) preserves a
+different historical CHR-LMM/HiRAC source design. Its configuration metadata is
+not an executed benchmark and its old reported performance values are not
+active experimental evidence in this release. The original code bytes and
+source hashes remain explicit; they are not silently relabelled as the native
+checkpoint used by the v8 diagnostics.
 
-## Data and attribution
+## Attribution
 
-Examples are real recorded numeric measurements. They do not include independent per-return artifact labels or full-scene semantic annotations. Coordinate/channel semantics require the relevant acquisition documentation. Geometric support, return classification, and verifiable semantic claims have separate denominators.
-
-Third-party source, checkpoints, and public datasets retain their respective licenses. See `pointllm/THIRD_PARTY_NOTICES.md` and source-specific notices. No blanket license for this repository overrides those terms.
-
-## Native PointLLM training and real radar–RGB example
-
-The versioned [`pointllm_native_v6/`](pointllm_native_v6/README.md) entry point implements measured radar → official PointBERT → corrected native point tokens → original projector → the complete frozen PointLLM-7B decoder. The release includes train/eval CLIs, a pinned official-model downloader, source/data notices, a small real radar–RGB feature example, and the original recorded training/generation receipts and response text.
-
-The supplied execution is a two-update TRAIN engineering check with a matched projector baseline; it is not a held-out hallucination-reduction result. Model weights and adaptation checkpoints are not committed to this repository. See the v6 README for reproducible training and generation commands, source hashes, feature verification and independent claim-annotation requirements.
-
-
-## Original full-adaptation reference source
-
-The [`reference_full_adaptation/`](reference_full_adaptation/README.md) snapshot preserves the author-supplied CHR-LMM/HiRAC PointLLM implementation, its original default configuration, source hashes and training interfaces. Its author-reported 20+30-stage reference experiment is distinct from the recorded frozen-prefix engineering execution in `pointllm_native_v6`. No new full-training reproduction or held-out performance is claimed by this source release. See that snapshot's README and `SOURCE_PROVENANCE.json` before choosing a configuration.
-
-## Article-ordered MATLAB figures
-
-[`figures/RaHUM_Figures_v7.m`](figures/RaHUM_Figures_v7.m) is the single plotting source, executed in MATLAB Online R2026b Update 2. Its two default article figures use the existing author-reported full-adaptation measurements, separately from the v6 prefix-training engineering records. See [`figures/README.md`](figures/README.md) for the exact source hash and scope.
+Retain all PointLLM, PointBERT, DINOv2, nuScenes and Radar Ghost licence and source
+notices. Public datasets and pretrained checkpoints retain their own terms.
+No blanket repository licence overrides those restrictions.

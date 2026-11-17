@@ -144,3 +144,12 @@ Run `python verify_example.py` from this directory. The verifier checks exact
 artifact hashes, sensory shapes, source sample bindings and target separation.
 It does not load a language model or assign generated-claim truth values.
 See `DATA_LICENSE.md` for the nuScenes-derived example attribution and terms.
+
+
+## Actual v8 reliability and local-memory diagnostics
+
+See `diagnostics/README.md`. The scripts strictly restore the recorded native adapter against its frozen source hash and real feature-cache hash. Observed reference count is 256; local attention budget is 8; spatial bandwidth is 49.2247619629 native camera pixels. Of 288 radar groups in the real three-frame TRAIN window, 42 have valid local RGB projection support. The remaining groups use radar-only utility and remain represented; their radar/temporal residual features can still change.
+
+The actual utility distribution and fixed-checkpoint local K=1,2,4,8,12,16,24,32 analysis are recorded as CSV/JSON. The recorded checkpoint was trained with K=8, and the other budgets change only inference memory, without retraining. Adapter-only CPU timings exclude sensor encoders, projector and 7B decoder. These internal diagnostics are not recognition or hallucination benchmark measurements.
+
+The active v8 protocol removes deprecated reference-result assertions. Exact original execution hashes stay in the unchanged training/generation receipts; the edited metadata protocol is not byte-identical to the old training contract. Full exact training resume therefore requires the original execution contract. Inference and feature-verification scripts do not bypass checkpoint/source integrity guards.

@@ -37,19 +37,11 @@
     71
   ],
   "seed_list_is_protocol_not_completed_run_claim": true,
-  "existing_hirac_measurements": {
-    "role": "author-supplied prior report; not new RaHUM-run output",
-    "auxiliary_detection_outdoor_mean_pct": 92.7,
-    "auxiliary_recognition_outdoor_mean_pct": 83.1,
-    "nonexclusive_error_rate_sum": 48.8,
-    "cmac_nonexclusive_error_rate_sum": 71.4,
-    "dsp_pcqa_nonexclusive_error_rate_sum": 60.0,
-    "claim_response_count": null
-  },
-  "parent_method_contract_sha256": "a86377cf9e0917562931b861a1ae7ea1040cb14efddb6e677950d882b6329807",
+  "parent_method_contract_sha256": "a354a07238be2ac6813b0b578ea55d7ac05514320ab52a8c22c36bfba396323f",
   "execution_scope": "TRAINengineeringonly;2fixedupdates;noheldoutclaims",
   "engineering_fixed_update_budget": 2,
   "engineering_checkpoint_selection": "latestfixedbudget,notvalidation/testselection",
   "engineering_aux_weight": 0.0,
-  "engineering_target": "IndependentGTsupportedpartialresponse;noexhaustivecaptionorvisibilitytruth"
+  "engineering_target": "IndependentGTsupportedpartialresponse;noexhaustivecaptionorvisibilitytruth",
+  "protocol_metadata_revision": "v8 removes deprecated reference-result assertions; no numerical sensor feature, target, execution receipt or model state was changed"
 }

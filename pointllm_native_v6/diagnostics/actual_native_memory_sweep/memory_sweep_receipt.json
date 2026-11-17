@@ -1,0 +1,215 @@
+{
+  "status": "completed_real_input_fixed_checkpoint_local_memory_sensitivity",
+  "scope": "Real-input sensitivity of local memory size at one fixed native checkpoint.\n\nThe checkpoint was trained for two engineering updates with K=8. Other K\nvalues change inference memory only. This is not a retrained-model ablation,\nlanguage-generation evaluation, or recognition/hallucination benchmark.",
+  "checkpoint_sha256": "f39fc35d0d766c86485f3c630448e63554f7dac5b75a969da1ee7a2b6b2bfa76",
+  "feature_cache_sha256": "01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0",
+  "adapter_source_sha256": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e",
+  "diagnostic_script_sha256": "f91bbe4355683f72a3b3eecc465feb987538efd583f5592f5d15e6b2bb565092",
+  "checkpoint_completed_steps": 2,
+  "checkpoint_config": {
+    "token_dim": 384,
+    "reference_dim": 384,
+    "groups": 96,
+    "reference_has_cls": false,
+    "reference_kind": "rgb_patch",
+    "local_memory": 8,
+    "geometry_dims": 2,
+    "spatial_sigma": 49.224761962890625,
+    "history_window": 5,
+    "history_sigma_m": 1.0,
+    "attribute_dim": 2,
+    "num_experts": 5,
+    "num_categories": 23,
+    "disable_reference": false
+  },
+  "observed_reference_tokens": 256,
+  "timing": {
+    "device": "cpu",
+    "torch_threads": 2,
+    "warmup_forwards_per_K": 1,
+    "recorded_forwards_per_K": 5,
+    "measured_component": "adapter-only forward, complete three-frame cached-feature window; excludes encoders, projector and 7B decoder",
+    "recorded_forward_ms_by_K": {
+      "1": [
+        20.517309000751993,
+        22.788051999668824,
+        15.946346999953676,
+        19.888990999788803,
+        17.9656159998558
+      ],
+      "2": [
+        17.479278999417147,
+        19.243136000113736,
+        19.12428400009958,
+        15.63102600084676,
+        16.860761999851093
+      ],
+      "4": [
+        17.872227000225394,
+        17.227013000592706,
+        17.057781999938015,
+        17.153157999928226,
+        20.814043000427773
+      ],
+      "8": [
+        21.32170899949415,
+        22.43428700057848,
+        20.20664300016506,
+        20.009888999993564,
+        19.43746699998883
+      ],
+      "12": [
+        26.88734999992448,
+        25.676299999759067,
+        27.390002999709395,
+        23.630269000022963,
+        26.798175999829255
+      ],
+      "16": [
+        26.54541700030677,
+        33.898814999702154,
+        30.789577000177815,
+        28.20515800067369,
+        31.942998999511474
+      ],
+      "24": [
+        35.077106000244385,
+        34.52111699971283,
+        33.71746799984976,
+        32.88702499958163,
+        36.804014000153984
+      ],
+      "32": [
+        44.58124400025554,
+        40.4917400001068,
+        40.33823600002506,
+        38.71964100017067,
+        48.76567700011947
+      ]
+    }
+  },
+  "torch": "2.15.0+cpu",
+  "rows": [
+    {
+      "local_K": 1,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.5791550817943755,
+      "native_radar_utility_min": 0.4099437892436981,
+      "native_radar_utility_max": 0.7099421620368958,
+      "attention_entropy_nats_mean": 0.0,
+      "attention_max_mean": 1.0,
+      "corrected_sequence_relative_L2_change_from_native": 0.026811568066477776,
+      "forward_ms_median": 19.888990999788803,
+      "forward_ms_min": 15.946346999953676,
+      "forward_ms_max": 22.788051999668824,
+      "relative_L2_change_from_trained_K_output": 0.0005246822256594896
+    },
+    {
+      "local_K": 2,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.6003123770157496,
+      "native_radar_utility_min": 0.45992177724838257,
+      "native_radar_utility_max": 0.7119278311729431,
+      "attention_entropy_nats_mean": 0.6770354537736802,
+      "attention_max_mean": 0.5735393578097934,
+      "corrected_sequence_relative_L2_change_from_native": 0.02690276876091957,
+      "forward_ms_median": 17.479278999417147,
+      "forward_ms_min": 15.63102600084676,
+      "forward_ms_max": 19.243136000113736,
+      "relative_L2_change_from_trained_K_output": 0.00029711861861869693
+    },
+    {
+      "local_K": 4,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.6026128594364438,
+      "native_radar_utility_min": 0.4303555190563202,
+      "native_radar_utility_max": 0.7053068280220032,
+      "attention_entropy_nats_mean": 1.3556306191853114,
+      "attention_max_mean": 0.32856183534576777,
+      "corrected_sequence_relative_L2_change_from_native": 0.026947658509016037,
+      "forward_ms_median": 17.227013000592706,
+      "forward_ms_min": 17.057781999938015,
+      "forward_ms_max": 20.814043000427773,
+      "relative_L2_change_from_trained_K_output": 0.00010700814164010808
+    },
+    {
+      "local_K": 8,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.5995345236290068,
+      "native_radar_utility_min": 0.43875351548194885,
+      "native_radar_utility_max": 0.7160515189170837,
+      "attention_entropy_nats_mean": 1.9824524465061368,
+      "attention_max_mean": 0.21876724170786993,
+      "corrected_sequence_relative_L2_change_from_native": 0.026968499645590782,
+      "forward_ms_median": 20.20664300016506,
+      "forward_ms_min": 19.43746699998883,
+      "forward_ms_max": 22.43428700057848,
+      "relative_L2_change_from_trained_K_output": 0.0
+    },
+    {
+      "local_K": 12,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.6024890570413499,
+      "native_radar_utility_min": 0.4395385980606079,
+      "native_radar_utility_max": 0.7155665159225464,
+      "attention_entropy_nats_mean": 2.3108263867241994,
+      "attention_max_mean": 0.18473099846215474,
+      "corrected_sequence_relative_L2_change_from_native": 0.02698233351111412,
+      "forward_ms_median": 26.798175999829255,
+      "forward_ms_min": 23.630269000022963,
+      "forward_ms_max": 27.390002999709395,
+      "relative_L2_change_from_trained_K_output": 6.05715140409302e-05
+    },
+    {
+      "local_K": 16,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.6025540644214267,
+      "native_radar_utility_min": 0.4413405656814575,
+      "native_radar_utility_max": 0.7169089317321777,
+      "attention_entropy_nats_mean": 2.4958344527653287,
+      "attention_max_mean": 0.17177462719735645,
+      "corrected_sequence_relative_L2_change_from_native": 0.026986001059412956,
+      "forward_ms_median": 30.789577000177815,
+      "forward_ms_min": 26.54541700030677,
+      "forward_ms_max": 33.898814999702154,
+      "relative_L2_change_from_trained_K_output": 7.300452125491574e-05
+    },
+    {
+      "local_K": 24,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.6022438868170693,
+      "native_radar_utility_min": 0.4379099905490875,
+      "native_radar_utility_max": 0.71422278881073,
+      "attention_entropy_nats_mean": 2.6687286297480264,
+      "attention_max_mean": 0.16312854914438157,
+      "corrected_sequence_relative_L2_change_from_native": 0.026988402009010315,
+      "forward_ms_median": 34.52111699971283,
+      "forward_ms_min": 32.88702499958163,
+      "forward_ms_max": 36.804014000153984,
+      "relative_L2_change_from_trained_K_output": 8.273338607978076e-05
+    },
+    {
+      "local_K": 32,
+      "checkpoint_trained_local_K": 8,
+      "available_radar_groups": 42,
+      "native_radar_utility_mean": 0.6020177155733109,
+      "native_radar_utility_min": 0.43710073828697205,
+      "native_radar_utility_max": 0.7141806483268738,
+      "attention_entropy_nats_mean": 2.733989045733497,
+      "attention_max_mean": 0.16078247804017293,
+      "corrected_sequence_relative_L2_change_from_native": 0.026989061385393143,
+      "forward_ms_median": 40.4917400001068,
+      "forward_ms_min": 38.71964100017067,
+      "forward_ms_max": 48.76567700011947,
+      "relative_L2_change_from_trained_K_output": 8.586528565501794e-05
+    }
+  ],
+  "csv_sha256": "7fcc180a0bc0910403e5596817c6f9b6a0959407f93ce1d4bcf911ec77b85f68"
+}

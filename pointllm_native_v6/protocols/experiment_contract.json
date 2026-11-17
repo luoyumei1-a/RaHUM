@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "method": "RaHUM PointLLM-native token correction",
+  "official_backbone": "RunsenXu/PointLLM_7B_v1.2",
+  "official_revision": "37d8c15aaff8e7e05f04729dcb6960d5758e9f86",
+  "pointbert_feature_dim": 384,
+  "pointbert_groups": 96,
+  "point_tokens_including_cls": 97,
+  "same_budget_baseline_required": true,
+  "model_comparisons": [
+    "pointllm_pretrained",
+    "pointllm_projector_adapted",
+    "rahum_pointllm"
+  ],
+  "reference_types_must_be_separate": [
+    "rgb_patch",
+    "lidar_geometry"
+  ],
+  "training_targets": "independent object/response annotations, never model pseudo-responses",
+  "evaluation_unit": "unmodified generated response and independently annotated claims",
+  "response_error_types_nonexclusive": [
+    "phantom_existence",
+    "wrong_category",
+    "spatial",
+    "temporal"
+  ],
+  "coverage_and_unverifiable_counts_required": true,
+  "fixed_test_case_manifest_required": true,
+  "checkpoint_selection": "validation only",
+  "split_unit": "recording or official scene",
+  "uncertainty_unit": "recording or scene, not individual radar points",
+  "target_main_experiment_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "seed_list_is_protocol_not_completed_run_claim": true,
+  "protocol_metadata_revision": "v8 removes deprecated reference-result assertions; no numerical sensor feature, target, execution receipt or model state was changed"
+}

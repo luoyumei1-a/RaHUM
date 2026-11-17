@@ -1,0 +1,140 @@
+{
+  "status": "completed_strict_restore_real_feature_adapter_forward",
+  "scope": "One real TRAIN engineering window and a native adapter checkpoint after two updates; not a held-out benchmark or a measurement of the original reference gate.",
+  "no_decoder_or_new_training_run": true,
+  "checkpoint_sha256": "f39fc35d0d766c86485f3c630448e63554f7dac5b75a969da1ee7a2b6b2bfa76",
+  "feature_cache_sha256": "01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0",
+  "adapter_source_sha256": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e",
+  "diagnostic_script_sha256": "b3569f4537207c818480e10eeaa213f83a8196b47b37e6b5891f9b1a41de028a",
+  "checks": {
+    "adapter_strict_state_restore": true,
+    "frozen_source_matches_checkpoint": true,
+    "reconstructed_tokens_finite": true,
+    "utility_normalized": true,
+    "attention_normalized_on_available_only": true,
+    "missing_reference_utility_exact_zero": true,
+    "no_ground_truth_in_forward": true
+  },
+  "checkpoint_metadata_completed_steps": 2,
+  "checkpoint_dataset_manifest_sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2",
+  "checkpoint_engineering_scope": "One real nuScenes-mini TRAIN window; two-step actualRGBPointLLM engineering connectivity smoke, not heldoutperformance or authors14TB11classresults",
+  "config_from_strictly_restored_checkpoint": {
+    "token_dim": 384,
+    "reference_dim": 384,
+    "groups": 96,
+    "reference_has_cls": false,
+    "reference_kind": "rgb_patch",
+    "local_memory": 8,
+    "geometry_dims": 2,
+    "spatial_sigma": 49.224761962890625,
+    "history_window": 5,
+    "history_sigma_m": 1.0,
+    "attribute_dim": 2,
+    "num_experts": 5,
+    "num_categories": 23,
+    "disable_reference": false
+  },
+  "observed_reference_tokens": 256,
+  "observed_local_attention_candidates": 8,
+  "observed_batch_frames_radar_tokens": [
+    1,
+    3,
+    97,
+    384
+  ],
+  "observed_batch_frames_reference_tokens": [
+    1,
+    3,
+    256,
+    384
+  ],
+  "observed_available_radar_groups": 42,
+  "observed_radar_groups": 288,
+  "native_radar_utility_available_only": {
+    "count": 42,
+    "mean": 0.5995345236290068,
+    "std_population": 0.04636730469296707,
+    "quantiles": {
+      "min": 0.43875351548194885,
+      "p01": 0.4651942649483681,
+      "p05": 0.529912993311882,
+      "p25": 0.5789512544870377,
+      "median": 0.6060719788074493,
+      "p75": 0.6295723766088486,
+      "p95": 0.6567955195903777,
+      "p99": 0.6933187937736509,
+      "max": 0.7160515189170837
+    }
+  },
+  "native_fraction_abs_utility_minus_half_lt_001_available_only": 0.023809523809523808,
+  "native_attention_entropy_nats_available_only": {
+    "count": 42,
+    "mean": 1.9824524408295041,
+    "std_population": 0.035072447633325954,
+    "quantiles": {
+      "min": 1.8872097730636597,
+      "p01": 1.8924089860916138,
+      "p05": 1.9087964177131653,
+      "p25": 1.9721907377243042,
+      "median": 1.9914260506629944,
+      "p75": 2.004885971546173,
+      "p95": 2.0219651222229005,
+      "p99": 2.0353022265434264,
+      "max": 2.0395596027374268
+    }
+  },
+  "native_attention_max_available_only": {
+    "count": 42,
+    "mean": 0.21876724170786993,
+    "std_population": 0.024992723106522032,
+    "quantiles": {
+      "min": 0.182209774851799,
+      "p01": 0.18221373990178108,
+      "p05": 0.1835116297006607,
+      "p25": 0.19760103896260262,
+      "median": 0.21702323108911514,
+      "p75": 0.22933486104011536,
+      "p95": 0.2673021018505096,
+      "p99": 0.27484335660934445,
+      "max": 0.2784394919872284
+    }
+  },
+  "native_history_count_all_measured_groups": {
+    "count": 288,
+    "mean": 1.0,
+    "std_population": 0.816496580927726,
+    "quantiles": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "p25": 0.0,
+      "median": 1.0,
+      "p75": 2.0,
+      "p95": 2.0,
+      "p99": 2.0,
+      "max": 2.0
+    }
+  },
+  "native_geometric_logprior_std_available_only": {
+    "count": 42,
+    "mean": 0.39620616677261533,
+    "std_population": 0.06830444608616884,
+    "quantiles": {
+      "min": 0.31683963537216187,
+      "p01": 0.31750141382217406,
+      "p05": 0.31966479271650317,
+      "p25": 0.3572024032473564,
+      "median": 0.37520961463451385,
+      "p75": 0.4201182797551155,
+      "p95": 0.5570417046546933,
+      "p99": 0.616359923481941,
+      "max": 0.6408032774925232
+    }
+  },
+  "original_reference_gate_distribution": null,
+  "original_reference_gate_distribution_reason": "No original full-adaptation trained checkpoint or recorded attention/reliability tensors supplied to this diagnostic.",
+  "torch": "2.15.0+cpu",
+  "elapsed_s": 0.2257457030000296,
+  "per_group_diagnostics.csv_sha256": "eb1df3d436c7fb54d2ceaf89941b2bdd27d19fceeaaeb493d652f56bce58e992",
+  "observed_native_diagnostics.npz_sha256": "2fbbcb9f43121213d0d2c21611d68fb9307bba1f495b0f5e14384038160937d4"
+}
