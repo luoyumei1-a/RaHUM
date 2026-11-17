@@ -1,7 +1,7 @@
 {
-  "version": "v8",
-  "scope": "Listed public source and real numeric example files. v8 figures use recorded native PointLLM execution diagnostics. Full pretrained weights and large raw sensor datasets remain under source-specific access and license terms.",
-  "content_commit": "3dd486c4beaff96bdf302e4b42a6817329fefbc4",
+  "version": "v9",
+  "parent_commit": "9d1d290862b7d9990ca7a0d496dcbf7860a21b1b",
+  "scope": "Exact HiRAC predecessor summaries are distinguished from actual native PointLLM execution and fixed-checkpoint diagnostics. The manifest lists public source and real example files.",
   "files": [
     {
       "path": ".gitignore",
@@ -9,9 +9,24 @@
       "sha256": "5b96f378eb7c1277679706d27ee3da328cd9c5bcf3029f6282230311e063c393"
     },
     {
+      "path": "README.md",
+      "bytes": 4120,
+      "sha256": "64cb759f307b9583cf915329a86f6544941cb6c03397182669c4e1e4aeba259a"
+    },
+    {
       "path": "examples/real_numeric/DATA_ACCESS.md",
       "bytes": 697,
       "sha256": "195cf5a9527f135c0a40310331b05ce88d6267a92313dc80f7e50b107a91c34d"
+    },
+    {
+      "path": "examples/real_numeric/README.md",
+      "bytes": 1564,
+      "sha256": "7b4b5447770b51730d13ccbf1b58752572f9958f6436167c10cb55f6bbc4dc60"
+    },
+    {
+      "path": "examples/real_numeric/SHA256SUMS",
+      "bytes": 1489,
+      "sha256": "68ec7469030198a33571ffde882c2e2866e64ef5bc5f298913792a01453a0086"
     },
     {
       "path": "examples/real_numeric/outdoor_A_0002__pc_xyz_key.csv",
@@ -79,109 +94,69 @@
       "sha256": "f6f4d503cc55a016afe533f027191bdffc61d4e82a082f8aeb8b774b802bd4ae"
     },
     {
-      "path": "examples/real_numeric/README.md",
-      "bytes": 1564,
-      "sha256": "7b4b5447770b51730d13ccbf1b58752572f9958f6436167c10cb55f6bbc4dc60"
-    },
-    {
-      "path": "examples/real_numeric/SHA256SUMS",
-      "bytes": 1489,
-      "sha256": "68ec7469030198a33571ffde882c2e2866e64ef5bc5f298913792a01453a0086"
-    },
-    {
       "path": "examples/real_numeric/verify_csv.py",
       "bytes": 788,
       "sha256": "7055efafa3f613101935286345be23215a9736f998258d4c4d90d7298a091275"
     },
     {
-      "path": "figures/RaHUM_Figures_v8.m",
-      "bytes": 9300,
-      "sha256": "a47d5f39ea866b165314a556b898ee69e37672437f2e32c9d08a74e3a4cb9797"
-    },
-    {
       "path": "figures/README.md",
-      "bytes": 496,
-      "sha256": "e06dd372b38e1f4476ab64ea5f27072b39d76792d69b8e1477620951d3032c4c"
+      "bytes": 548,
+      "sha256": "84985e31d51a381ea8e1554b1b81101f15dd56054c9cbe648bcd8737b5d622f8"
     },
     {
-      "path": "pointllm_native_v6/backbone/nuscenes_real_rgb_probe/runner_protocol.json",
-      "bytes": 1844,
-      "sha256": "baab83393f49f18d051456ab83459aa202e629fbca09934a514bd8ec0798d7b4"
+      "path": "figures/RaHUM_Figures_v9.m",
+      "bytes": 12931,
+      "sha256": "fec52cc01291877491a08bc2afe91e69c0c8849323214704ee362af389628fbe"
     },
     {
-      "path": "pointllm_native_v6/diagnostics/actual_native_memory_sweep/local_memory_sweep.csv",
-      "bytes": 1895,
-      "sha256": "7fcc180a0bc0910403e5596817c6f9b6a0959407f93ce1d4bcf911ec77b85f68"
+      "path": "figures/actual_plot_data_v9.json",
+      "bytes": 29655,
+      "sha256": "d11b3090edc14d5cb3d3467eb0a2fcc66e754e594f9b49add5889d885bd4b163"
     },
     {
-      "path": "pointllm_native_v6/diagnostics/actual_native_memory_sweep/memory_sweep_receipt.json",
-      "bytes": 8221,
-      "sha256": "4470e12e423989c3082e1eba12854fad4e92493cb54d610fb7d1f1cebf7ac909"
+      "path": "historical_summary/README.md",
+      "bytes": 1388,
+      "sha256": "6756cb6b9bec3d0f770c445eea2919e4a6605e009b58ab01777f3acafcdd82de"
     },
     {
-      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/diagnostic_receipt.json",
-      "bytes": 4851,
-      "sha256": "90d8629085fdad32bd10b7aff22387073e61899524794970fe512cedfe0ce90d"
+      "path": "historical_summary/SOURCE_PROVENANCE.json",
+      "bytes": 2072,
+      "sha256": "5aaf52702a674b56ed4dbbf743c91194cd75bbdb39bb58d02d00067a6cfa0188"
     },
     {
-      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/per_group_diagnostics.csv",
-      "bytes": 14468,
-      "sha256": "eb1df3d436c7fb54d2ceaf89941b2bdd27d19fceeaaeb493d652f56bce58e992"
+      "path": "historical_summary/table2_hirac_sensing.csv",
+      "bytes": 4071,
+      "sha256": "46517d3afa4235d42276e438982cc27a06e0df176b4166e1573ad92c813bd9d7"
     },
     {
-      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/radar_utility_ecdf.csv",
-      "bytes": 1841,
-      "sha256": "d59964ef508c532eb05e3cf7ca85d7a4a93614b52bc9a3133b32eb0db99aed7e"
+      "path": "historical_summary/table3_hirac_response_errors.csv",
+      "bytes": 300,
+      "sha256": "8d1c201f0f78e46aaa136e288d995accc5d9683024361a98f369fce55892e312"
     },
     {
-      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/radar_utility_histogram.csv",
-      "bytes": 654,
-      "sha256": "ab4ceba9fbd25f57d63f893805e0cb12b09a6bd51ee0b28819f2af1c462b5d69"
-    },
-    {
-      "path": "pointllm_native_v6/diagnostics/inspect_native_reliability.py",
-      "bytes": 9296,
-      "sha256": "b3569f4537207c818480e10eeaa213f83a8196b47b37e6b5891f9b1a41de028a"
-    },
-    {
-      "path": "pointllm_native_v6/diagnostics/README.md",
-      "bytes": 3319,
-      "sha256": "4749c0536053044b9c1c6ade0bc81065ec926cc272969bcb33916a92a9a6a6e2"
-    },
-    {
-      "path": "pointllm_native_v6/diagnostics/summarize_reference_gate.py",
-      "bytes": 4736,
-      "sha256": "fce3d5a1283201b6a53e597e2167b9bb7593e1baa411eeaeb14f6f9f0fe5bf3a"
-    },
-    {
-      "path": "pointllm_native_v6/diagnostics/sweep_native_memory.py",
-      "bytes": 6617,
-      "sha256": "f91bbe4355683f72a3b3eecc465feb987538efd583f5592f5d15e6b2bb565092"
-    },
-    {
-      "path": "pointllm_native_v6/protocols/experiment_contract.json",
-      "bytes": 1404,
-      "sha256": "a354a07238be2ac6813b0b578ea55d7ac05514320ab52a8c22c36bfba396323f"
-    },
-    {
-      "path": "pointllm_native_v6/README.md",
-      "bytes": 8848,
-      "sha256": "8141837af24952f61acd339f5cc13b34621772513f0cc51ad5490947d4ffc22c"
-    },
-    {
-      "path": "pointllm_native_v6/VERSION_MIGRATION_V8.json",
-      "bytes": 1256,
-      "sha256": "73e7fd991f6797518be9ce73140c3ab4a10f8414ffb90fab65a242e2c5de7b35"
-    },
-    {
-      "path": "pointllm/__init__.py",
-      "bytes": 58,
-      "sha256": "7d8764840fa7df35d731f8b254372826dfe92f824454bae071ac7c2e0899ec3e"
+      "path": "historical_summary/table4_hirac_sunny_ablation.csv",
+      "bytes": 249,
+      "sha256": "0e6956819d734332dda1b3500eded9cadc2c14a380b66fd76abe6ddc7570bd36"
     },
     {
       "path": "pointllm/.gitignore",
       "bytes": 59,
       "sha256": "d236b07b2a9ec31202be271e9a97c1ac86b60e59c483196abcf66b711b77d5e6"
+    },
+    {
+      "path": "pointllm/README.md",
+      "bytes": 4297,
+      "sha256": "83991684546dbeb0351c200b66d219bb6748923d9b719e98bf868b879c06e71e"
+    },
+    {
+      "path": "pointllm/THIRD_PARTY_NOTICES.md",
+      "bytes": 1060,
+      "sha256": "368565b9287b6f3b954bccc9d63b3b291849f977791e856dff33fb2282707d4e"
+    },
+    {
+      "path": "pointllm/__init__.py",
+      "bytes": 58,
+      "sha256": "7d8764840fa7df35d731f8b254372826dfe92f824454bae071ac7c2e0899ec3e"
     },
     {
       "path": "pointllm/build_claim_review.py",
@@ -259,11 +234,6 @@
       "sha256": "78689aceac53deb190ae415f80d6cdbf0c7796f937dbf8bb93169ea31bcceaac"
     },
     {
-      "path": "pointllm/README.md",
-      "bytes": 4297,
-      "sha256": "83991684546dbeb0351c200b66d219bb6748923d9b719e98bf868b879c06e71e"
-    },
-    {
       "path": "pointllm/requirements_cpu.txt",
       "bytes": 198,
       "sha256": "9a2db754a6cb9184cbab6a37b85c1c02b4896484f0bf1f9336bd521d1a5b9dc8"
@@ -279,9 +249,9 @@
       "sha256": "1b4193d199215d64608c08428ffefe513da2538be7912cc442322249b62e6248"
     },
     {
-      "path": "pointllm/THIRD_PARTY_NOTICES.md",
-      "bytes": 1060,
-      "sha256": "368565b9287b6f3b954bccc9d63b3b291849f977791e856dff33fb2282707d4e"
+      "path": "pointllm/vendor_pointbert/UPSTREAM_ATTRIBUTION.txt",
+      "bytes": 509,
+      "sha256": "135c42cd3e7d9b57f19221bbb7c9484bca32e3bd70405a06e83a2735643dd640"
     },
     {
       "path": "pointllm/vendor_pointbert/__init__.py",
@@ -319,14 +289,84 @@
       "sha256": "56623d4828780726a9beb93a57492831ab517ff3ade5909641674218a090a706"
     },
     {
-      "path": "pointllm/vendor_pointbert/UPSTREAM_ATTRIBUTION.txt",
-      "bytes": 509,
-      "sha256": "135c42cd3e7d9b57f19221bbb7c9484bca32e3bd70405a06e83a2735643dd640"
+      "path": "pointllm_native_v6/README.md",
+      "bytes": 8848,
+      "sha256": "8141837af24952f61acd339f5cc13b34621772513f0cc51ad5490947d4ffc22c"
     },
     {
-      "path": "README.md",
-      "bytes": 3475,
-      "sha256": "4321a88feae7bc37f734df6a477089214f592c16f234fbf52ae8bf898f2ed3e1"
+      "path": "pointllm_native_v6/VERSION_MIGRATION_V8.json",
+      "bytes": 1256,
+      "sha256": "73e7fd991f6797518be9ce73140c3ab4a10f8414ffb90fab65a242e2c5de7b35"
+    },
+    {
+      "path": "pointllm_native_v6/backbone/nuscenes_real_rgb_probe/runner_protocol.json",
+      "bytes": 1844,
+      "sha256": "baab83393f49f18d051456ab83459aa202e629fbca09934a514bd8ec0798d7b4"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/README.md",
+      "bytes": 3319,
+      "sha256": "4749c0536053044b9c1c6ade0bc81065ec926cc272969bcb33916a92a9a6a6e2"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_frame_memory_sweep/frame_memory_replay.json",
+      "bytes": 17662,
+      "sha256": "e673af52e9efcd9c4676c97bd8699702161be49b690e4d4224bcaff01269a2dc"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_frame_memory_sweep/replay_frame_memory.py",
+      "bytes": 3583,
+      "sha256": "93f4b27d6d3b4dacd4f4eee2b0c8a00c611e119095862b8c4a59556ca8336286"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_native_memory_sweep/local_memory_sweep.csv",
+      "bytes": 1895,
+      "sha256": "7fcc180a0bc0910403e5596817c6f9b6a0959407f93ce1d4bcf911ec77b85f68"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_native_memory_sweep/memory_sweep_receipt.json",
+      "bytes": 8221,
+      "sha256": "4470e12e423989c3082e1eba12854fad4e92493cb54d610fb7d1f1cebf7ac909"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/diagnostic_receipt.json",
+      "bytes": 4851,
+      "sha256": "90d8629085fdad32bd10b7aff22387073e61899524794970fe512cedfe0ce90d"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/per_group_diagnostics.csv",
+      "bytes": 14468,
+      "sha256": "eb1df3d436c7fb54d2ceaf89941b2bdd27d19fceeaaeb493d652f56bce58e992"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/radar_utility_ecdf.csv",
+      "bytes": 1841,
+      "sha256": "d59964ef508c532eb05e3cf7ca85d7a4a93614b52bc9a3133b32eb0db99aed7e"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/actual_native_reliability/radar_utility_histogram.csv",
+      "bytes": 654,
+      "sha256": "ab4ceba9fbd25f57d63f893805e0cb12b09a6bd51ee0b28819f2af1c462b5d69"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/inspect_native_reliability.py",
+      "bytes": 9296,
+      "sha256": "b3569f4537207c818480e10eeaa213f83a8196b47b37e6b5891f9b1a41de028a"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/summarize_reference_gate.py",
+      "bytes": 4736,
+      "sha256": "fce3d5a1283201b6a53e597e2167b9bb7593e1baa411eeaeb14f6f9f0fe5bf3a"
+    },
+    {
+      "path": "pointllm_native_v6/diagnostics/sweep_native_memory.py",
+      "bytes": 6617,
+      "sha256": "f91bbe4355683f72a3b3eecc465feb987538efd583f5592f5d15e6b2bb565092"
+    },
+    {
+      "path": "pointllm_native_v6/protocols/experiment_contract.json",
+      "bytes": 1404,
+      "sha256": "a354a07238be2ac6813b0b578ea55d7ac05514320ab52a8c22c36bfba396323f"
     },
     {
       "path": "reference_full_adaptation/README.md",

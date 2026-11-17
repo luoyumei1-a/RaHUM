@@ -1,0 +1,7 @@
+method,phantom_percent,category_percent,spatial_percent,temporal_percent,nonexclusive_error_type_sum_percent
+VCD,31.4,37.0,31.6,30.6,130.6
+VEP,24.8,26.8,23.2,22.2,97.0
+LIBA,20.1,24.0,19.5,18.5,82.1
+CMAC,18.4,21.2,16.7,15.1,71.4
+DSP-PCQA,15.4,17.7,14.0,12.9,60.0
+HiRAC,12.4,14.3,11.3,10.8,48.8

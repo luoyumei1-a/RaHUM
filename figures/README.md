@@ -1,10 +1,9 @@
-# Article figure source
+# Article-ordered MATLAB figures (v9)
 
-The active v8 plots use the actual native-adapter reliability inspection and
-fixed-checkpoint local-memory sensitivity CSVs under
-`pointllm_native_v6/diagnostics/`.
-
-The previous v7 plotting source is superseded and is not active measured result
-evidence. The article-ordered v8 MATLAB source and online-export receipts are
-published together after their final export is verified. No irregularity is
-introduced into measurement values to change the appearance of a plot.
+Run `RaHUM_Figures_v9('figures','all')` in MATLAB Online.
+The single source exports Figures 2, 3, 10, 11, and 12 in article order.
+Figures 2/3/10/11 use the actual native checkpoint diagnostics. Figure 12
+reproduces the original five-class HiRAC predecessor matrix, separately scoped
+from native PointLLM generation. The local-memory sweep uses fixed weights.
+Entropy P10/P90 are descriptive group quantiles, not confidence intervals.
+Adapter-only CPU timing excludes the encoders, projector, and 7B decoder.

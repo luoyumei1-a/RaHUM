@@ -1,0 +1,49 @@
+{
+  "identity": "HiRAC predecessor summaries inherited by the RaHUM manuscript",
+  "source_role": "Prior author-reported experiment summaries; values transcribed exactly, not recomputed from current native PointLLM checkpoint",
+  "author_confirmation": {
+    "date": "2026-11-17",
+    "statement": "The author confirms that the HiRAC data are from earlier real experiments and that RaHUM evolved from HiRAC."
+  },
+  "current_native_checkpoint_results": false,
+  "new_full_backbone_training_asserted": false,
+  "source_tables": [
+    {
+      "path": "v7_table_auxiliary.tex",
+      "sha256": "67615f865705b225d3ca57573a28aeac53872f4c41eb00f2fea1bc9c33fcccef"
+    },
+    {
+      "path": "v7_table_claims.tex",
+      "sha256": "bdcec573319f376093923f5958ff642b5a3eac7326af08807a8843caf32ad1f6"
+    },
+    {
+      "path": "v7_table_components.tex",
+      "sha256": "039a988d4b0a055d94b7d4074e2bbd3014080f313988de76eff65183fdc0b9bc"
+    }
+  ],
+  "original_hirac_experiment_source_sha256": "28741bc3f27febdd1bbff59853167d3b4218330da52795f4c02ff433d2e6cabd",
+  "metric_units": {
+    "Rate": "Percent, with task-specific target detection or recognition denominator",
+    "F/P": "PFLOPs for one fixed-prompt 25-frame sensing forward / total parameters in billions; not false-positive rate",
+    "F_P_exclusions": [
+      "sensor acquisition",
+      "input/output",
+      "autoregressive token generation"
+    ],
+    "R_sum": "Sum of four non-exclusive response error-type rates; not probability of any error"
+  },
+  "conditions": [
+    "Sunny",
+    "Rainy",
+    "Nighttime",
+    "Foggy",
+    "Controlled indoor"
+  ],
+  "row_counts": {
+    "table2": 80,
+    "table3": 6,
+    "table4": 5
+  },
+  "separation_from_native_revision": "HiRAC K=32/64/96 selects predecessor reliable groups. Current native adapter local K=1/2/4/8/12/16/24/32 is a different reference-memory budget and preserves 97 point tokens.",
+  "confusion_matrix": "Stored separately in matlab/actual_plot_data_v9.json with original HiRAC source identity; not a current native-checkpoint classification evaluation."
+}

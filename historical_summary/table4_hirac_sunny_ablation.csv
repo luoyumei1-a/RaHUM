@@ -1,0 +1,6 @@
+predecessor_configuration,detection_percent,recognition_percent
+w/o spatial--semantic alignment,68.2,38.7
+w/o discrepancy indicator,85.8,72.1
+w/o reliability weighting,92.7,77.9
+w/o Transformer/expert correction,93.5,80.6
+Full HiRAC,96.7,87.3

@@ -17,7 +17,7 @@ projector-only baseline. This engineering example is not a held-out
 hallucination-reduction benchmark. Original raw generated responses and receipts
 are retained without answer rewriting.
 
-The v8 diagnostics restore that recorded adapter against its exact frozen source
+The native diagnostics restore that recorded adapter against its exact frozen source
 and real feature-cache hashes. The input contains three frames, 96 radar groups
 per frame and 256 RGB patch tokens. Of 288 radar groups, 42 have valid RGB
 projection support. The fixed checkpoint uses local memory K=8 and spatial
@@ -47,17 +47,28 @@ corpus as 14 TB; this does not identify an evaluated split or annotation count.
 |---|---|---|
 | mmWave raw IQ, mmWave Point Cloud, Kinect | [Google Drive](https://drive.google.com/drive/folders/1Hk5WnxPbsS_3Ilbs9x-ut50CIZU6m9Ns?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1lbIBcwvK1LpAyI_cy62UUA?pwd=o3g5) |
 
-## Historical source
+## HiRAC predecessor summaries and figure revision
 
-[`reference_full_adaptation/`](reference_full_adaptation/README.md) preserves a
-different historical CHR-LMM/HiRAC source design. Its configuration metadata is
-not an executed benchmark and its old reported performance values are not
-active experimental evidence in this release. The original code bytes and
-source hashes remain explicit; they are not silently relabelled as the native
-checkpoint used by the v8 diagnostics.
+RaHUM evolved from HiRAC. The authors confirmed the prior HiRAC experiment
+summaries as their earlier results. `historical_summary/` retains their exact
+weather sensing, response-incidence, and ablation summaries, with source hashes
+and metric units. These predecessor summaries are not assigned to the new native
+adapter checkpoint or presented as new runs of its revised utility gate.
+
+The v9 MATLAB source retains the original five-class HiRAC confusion matrix and
+visual style in a separately attributed panel. The other v9 plot extensions use
+actual fixed-checkpoint diagnostics: three frame-utility curves and descriptive
+entropy quantiles across eight local-memory budgets. No values were jittered or
+interpolated into additional training epochs. See `figures/` and
+`pointllm_native_v6/diagnostics/actual_frame_memory_sweep/` for their inputs.
+
+`reference_full_adaptation/` preserves the different historical CHR-LMM/HiRAC
+source design and original file hashes. It remains separate from the executed
+native PointLLM interface.
 
 ## Attribution
 
 Retain all PointLLM, PointBERT, DINOv2, nuScenes and Radar Ghost licence and source
 notices. Public datasets and pretrained checkpoints retain their own terms.
 No blanket repository licence overrides those restrictions.
+

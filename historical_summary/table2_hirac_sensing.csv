@@ -1,0 +1,81 @@
+method,predecessor_group_budget_K,task,condition,rate_percent,sensing_forward_PFLOPs,total_parameters_B
+VCD,,Target detection,Sunny,81.9,8.6,9.12
+VCD,,Target detection,Rainy,75.4,8.6,9.12
+VCD,,Target detection,Nighttime,72.8,8.6,9.12
+VCD,,Target detection,Foggy,68.3,8.6,9.12
+VCD,,Target detection,Controlled indoor,83.9,8.6,9.12
+VEP,,Target detection,Sunny,87.2,5.2,8.40
+VEP,,Target detection,Rainy,82.1,5.2,8.40
+VEP,,Target detection,Nighttime,79.6,5.2,8.40
+VEP,,Target detection,Foggy,75.9,5.2,8.40
+VEP,,Target detection,Controlled indoor,88.9,5.2,8.40
+LIBA,,Target detection,Sunny,91.5,4.6,8.28
+LIBA,,Target detection,Rainy,86.7,4.6,8.28
+LIBA,,Target detection,Nighttime,84.4,4.6,8.28
+LIBA,,Target detection,Foggy,80.8,4.6,8.28
+LIBA,,Target detection,Controlled indoor,93.1,4.6,8.28
+CMAC,,Target detection,Sunny,93.7,3.6,8.19
+CMAC,,Target detection,Rainy,89.4,3.6,8.19
+CMAC,,Target detection,Nighttime,87.2,3.6,8.19
+CMAC,,Target detection,Foggy,83.6,3.6,8.19
+CMAC,,Target detection,Controlled indoor,95.2,3.6,8.19
+DSP-PCQA,,Target detection,Sunny,95.2,3.4,8.10
+DSP-PCQA,,Target detection,Rainy,91.4,3.4,8.10
+DSP-PCQA,,Target detection,Nighttime,89.5,3.4,8.10
+DSP-PCQA,,Target detection,Foggy,86.3,3.4,8.10
+DSP-PCQA,,Target detection,Controlled indoor,96.6,3.4,8.10
+HiRAC,32,Target detection,Sunny,93.2,1.0,7.37
+HiRAC,32,Target detection,Rainy,88.9,1.0,7.37
+HiRAC,32,Target detection,Nighttime,86.7,1.0,7.37
+HiRAC,32,Target detection,Foggy,83.1,1.0,7.37
+HiRAC,32,Target detection,Controlled indoor,94.7,1.0,7.37
+HiRAC,64,Target detection,Sunny,95.8,1.7,7.69
+HiRAC,64,Target detection,Rainy,91.6,1.7,7.69
+HiRAC,64,Target detection,Nighttime,89.5,1.7,7.69
+HiRAC,64,Target detection,Foggy,86.2,1.7,7.69
+HiRAC,64,Target detection,Controlled indoor,97.2,1.7,7.69
+HiRAC,96,Target detection,Sunny,96.7,2.9,7.98
+HiRAC,96,Target detection,Rainy,93.4,2.9,7.98
+HiRAC,96,Target detection,Nighttime,91.8,2.9,7.98
+HiRAC,96,Target detection,Foggy,88.9,2.9,7.98
+HiRAC,96,Target detection,Controlled indoor,97.9,2.9,7.98
+VCD,,Target recognition,Sunny,69.2,2.6,7.85
+VCD,,Target recognition,Rainy,63.1,2.6,7.85
+VCD,,Target recognition,Nighttime,60.5,2.6,7.85
+VCD,,Target recognition,Foggy,55.7,2.6,7.85
+VCD,,Target recognition,Controlled indoor,71.2,2.6,7.85
+VEP,,Target recognition,Sunny,78.7,1.6,7.12
+VEP,,Target recognition,Rainy,73.4,1.6,7.12
+VEP,,Target recognition,Nighttime,70.2,1.6,7.12
+VEP,,Target recognition,Foggy,66.8,1.6,7.12
+VEP,,Target recognition,Controlled indoor,80.5,1.6,7.12
+LIBA,,Target recognition,Sunny,81.2,1.4,7.08
+LIBA,,Target recognition,Rainy,76.3,1.4,7.08
+LIBA,,Target recognition,Nighttime,73.5,1.4,7.08
+LIBA,,Target recognition,Foggy,69.4,1.4,7.08
+LIBA,,Target recognition,Controlled indoor,83.0,1.4,7.08
+CMAC,,Target recognition,Sunny,85.4,1.2,7.06
+CMAC,,Target recognition,Rainy,80.8,1.2,7.06
+CMAC,,Target recognition,Nighttime,78.1,1.2,7.06
+CMAC,,Target recognition,Foggy,74.3,1.2,7.06
+CMAC,,Target recognition,Controlled indoor,87.1,1.2,7.06
+DSP-PCQA,,Target recognition,Sunny,86.4,1.1,7.09
+DSP-PCQA,,Target recognition,Rainy,82.5,1.1,7.09
+DSP-PCQA,,Target recognition,Nighttime,80.2,1.1,7.09
+DSP-PCQA,,Target recognition,Foggy,76.5,1.1,7.09
+DSP-PCQA,,Target recognition,Controlled indoor,87.9,1.1,7.09
+HiRAC,32,Target recognition,Sunny,82.1,0.4,7.18
+HiRAC,32,Target recognition,Rainy,77.6,0.4,7.18
+HiRAC,32,Target recognition,Nighttime,75.4,0.4,7.18
+HiRAC,32,Target recognition,Foggy,71.8,0.4,7.18
+HiRAC,32,Target recognition,Controlled indoor,83.6,0.4,7.18
+HiRAC,64,Target recognition,Sunny,85.3,0.6,7.21
+HiRAC,64,Target recognition,Rainy,80.9,0.6,7.21
+HiRAC,64,Target recognition,Nighttime,78.6,0.6,7.21
+HiRAC,64,Target recognition,Foggy,74.7,0.6,7.21
+HiRAC,64,Target recognition,Controlled indoor,86.9,0.6,7.21
+HiRAC,96,Target recognition,Sunny,87.3,1.1,7.29
+HiRAC,96,Target recognition,Rainy,84.2,1.1,7.29
+HiRAC,96,Target recognition,Nighttime,82.3,1.1,7.29
+HiRAC,96,Target recognition,Foggy,78.6,1.1,7.29
+HiRAC,96,Target recognition,Controlled indoor,88.6,1.1,7.29
