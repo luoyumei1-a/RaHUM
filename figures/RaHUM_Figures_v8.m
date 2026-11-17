@@ -9,9 +9,9 @@ function RaHUM_Figures_v8(outDir, figureToDraw)
 % Usage: RaHUM_Figures_v8('figures','all')
 % Article order: Fig2, Fig3, Fig10, Fig11, Fig12. Fig10/11 are separate square
 % figures placed next to each other in one manuscript column, without subfigure.
-if nargin < 1 || isempty(outDir), outDir = 'figures'; end
+if nargin < 1 || isempty(outDir), outDir = fullfile(pwd,'figures'); end
 if nargin < 2 || isempty(figureToDraw), figureToDraw = 'all'; end
-if ~exist(outDir,'dir'), mkdir(outDir); end
+if ~isfolder(outDir), mkdir(outDir); end
 fontName = 'Times New Roman';
 colors.radar = [211 72 54]/255;
 colors.reference = [48 100 141]/255;
