@@ -1,0 +1,20 @@
+{
+  "release": "RaHUM_PointLLM_Code_and_Real_Examples_v10",
+  "base_release": "RaHUM_PointLLM_Code_and_Real_Examples_v9",
+  "recorded_sensor_features_changed": false,
+  "learned_checkpoint_tensors_changed": false,
+  "frozen_source_snapshots_changed": false,
+  "original_generation_receipts_changed": false,
+  "new_executions": [
+    "Actual fixed-checkpoint K=8,16,24,32,48,64,96,128 adapter-only CPU sensitivity",
+    "Actual MATLAB Online R2026b rendering of the single v10 source"
+  ],
+  "new_docs": [
+    "Exact PointLLM input convention and point/token budgets",
+    "RCS dBsm, radial projection m/s and image-pixel sigma semantics"
+  ],
+  "scope_separation": "Author-provided earlier-configuration summaries do not become independently reproduced native PointLLM results. Recorded input/annotation panels are not recognition predictions.",
+  "source_provenance_policy": "SOURCE_PROVENANCE.json keeps its original v8 identity and all historical frozen source/hash rows unchanged. This migration record identifies the current packaging revision.",
+  "active_matlab_source_sha256": "151959c1f85e98116fbad6d0c51adf32515c0bf3a1c08215e18163eb828c48b8",
+  "active_K_csv_sha256": "356ba1dcf2bd2be0922d059e96b94f23bb3b575b476895317bd5e9f6b665e126"
+}

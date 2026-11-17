@@ -1,0 +1,77 @@
+{
+  "scope": "Real paired RGB/radar inputs and independent annotations, not method prediction outputs",
+  "selection_rule": "Named scene conditions, midpoint available causal anchor per scene, independent of predictions",
+  "cases": [
+    {
+      "scene_name": "scene-0061",
+      "display_title": "Urban turn",
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "rgb_path": "c844bf5a9f2243ff8f4bf2c85fe218ff_rgb.jpg",
+      "rgb_sha256": "d9eb67d7ec1c11358b673c5adba5df86ce4f84581bf77be75b9c87e7293d9804",
+      "measurement_npz": "/workspace/scratch/e249ad48ec8b/work/v10_qual/recovered_sources/paired_causal/measurements/c844bf5a9f2243ff8f4bf2c85fe218ff.npz",
+      "measurement_sha256": "57ae6ded504dc89ca3804f98f5f6f105f8bf58c7a5aa059949f7b4731d8b52b6",
+      "radar_display_csv": "c844bf5a9f2243ff8f4bf2c85fe218ff_radar_ego_xyz.csv",
+      "gt_display_csv": "c844bf5a9f2243ff8f4bf2c85fe218ff_gt_corners_ego.csv",
+      "raw_radar_rows": 511,
+      "standard_rows": 231,
+      "front_display_rows": 54,
+      "projected_gt_boxes": 28,
+      "radar_age_us": [
+        34565,
+        16999,
+        34700,
+        55617,
+        73612
+      ],
+      "annotation_camera_offset_us": 35540
+    },
+    {
+      "scene_name": "scene-0103",
+      "display_title": "Pedestrian corridor",
+      "sample_token": "5b03af7a953245b5a3b23191ed4da62a",
+      "rgb_path": "5b03af7a953245b5a3b23191ed4da62a_rgb.jpg",
+      "rgb_sha256": "1ba630cbdbb6a7fda55b3cdc40225da0cf828a7b1be4061f2960d54f24c4e72a",
+      "measurement_npz": "/workspace/scratch/e249ad48ec8b/work/v10_qual/recovered_sources/paired_causal/measurements/5b03af7a953245b5a3b23191ed4da62a.npz",
+      "measurement_sha256": "591cb0235a957429e0fed326154a0b468958b7750ca72b22e275429cdb6f5764",
+      "radar_display_csv": "5b03af7a953245b5a3b23191ed4da62a_radar_ego_xyz.csv",
+      "gt_display_csv": "5b03af7a953245b5a3b23191ed4da62a_gt_corners_ego.csv",
+      "raw_radar_rows": 413,
+      "standard_rows": 200,
+      "front_display_rows": 53,
+      "projected_gt_boxes": 26,
+      "radar_age_us": [
+        13897,
+        73245,
+        6761,
+        56476,
+        27108
+      ],
+      "annotation_camera_offset_us": 35616
+    },
+    {
+      "scene_name": "scene-1094",
+      "display_title": "Night after rain",
+      "sample_token": "0e837c21890a4515874247ceb3dbf5c3",
+      "rgb_path": "0e837c21890a4515874247ceb3dbf5c3_rgb.jpg",
+      "rgb_sha256": "f21d1febb31f6f26b5e1ecf4b8e395a6ad84502cebca251b9c6bf477bd40d510",
+      "measurement_npz": "/workspace/scratch/e249ad48ec8b/work/v10_qual/recovered_sources/paired_causal/measurements/0e837c21890a4515874247ceb3dbf5c3.npz",
+      "measurement_sha256": "df8ef74e01bf33d2a67af39c5812a3081548574a6be50d2a286ace186137c9d3",
+      "radar_display_csv": "0e837c21890a4515874247ceb3dbf5c3_radar_ego_xyz.csv",
+      "gt_display_csv": "0e837c21890a4515874247ceb3dbf5c3_gt_corners_ego.csv",
+      "raw_radar_rows": 419,
+      "standard_rows": 225,
+      "front_display_rows": 50,
+      "projected_gt_boxes": 10,
+      "radar_age_us": [
+        13349,
+        61679,
+        32499,
+        61857,
+        14399
+      ],
+      "annotation_camera_offset_us": 37269
+    }
+  ],
+  "raw_sensor_redistribution": false,
+  "prediction_artifacts_available": false
+}

@@ -1,0 +1,87 @@
+{
+  "status": "PASS_ACTUAL_MATLAB_ONLINE_EXPORT",
+  "source_sha256": "151959c1f85e98116fbad6d0c51adf32515c0bf3a1c08215e18163eb828c48b8",
+  "source_byte_identical": true,
+  "PDF_count": 11,
+  "FIG_count": 11,
+  "zero_byte_files": [],
+  "MATLAB_execution": "MATLAB 26.2.0.3437455 (R2026b) Update 2\nRelease 2026b\nNative diagnostic populations: 42 supported radar groups, 3 frames, one feature window.\nAdditional recorded-input illustrations: 6 panels from 3 separately identified scenes.\nCheckpoint: 2 TRAIN updates; fixed weights across inference K.\nFrame utility and entropy quantiles: strict K=8..128 replay, real cached features.\nLocal K timing: five repeats after warm-up, adapter-only CPU; 3296719 fixed parameters.\n",
+  "PDFs": [
+    {
+      "file": "scene02_radar.pdf",
+      "bytes": 11891,
+      "sha256": "4eed9777cbdd59e37f549bfb0f0b4ba7b2a87c43c3d3318542e2f80b05ad570e"
+    },
+    {
+      "file": "fig12_reference_attention.pdf",
+      "bytes": 23953,
+      "sha256": "8719636e2efdca0e3467089715848c6f0775e8400d20d5b0830219f63329ab4d"
+    },
+    {
+      "file": "scene03_radar.pdf",
+      "bytes": 10789,
+      "sha256": "2fb6cf227578f88211076b084db17c6487ad7fd2043b52839ae85deff3f72a5d"
+    },
+    {
+      "file": "fig03_weather.pdf",
+      "bytes": 13468,
+      "sha256": "30171930a27317101bec790c01f2618d847a9b7a5af547c0c7d2284f4fb4042a"
+    },
+    {
+      "file": "fig11_adapter_time.pdf",
+      "bytes": 10371,
+      "sha256": "e960feaa3390cab950636b9db5cde4419a48e258d32a716dfe0edd4a068fa903"
+    },
+    {
+      "file": "scene01_radar.pdf",
+      "bytes": 11802,
+      "sha256": "d9724c8f3e6374eac55e387185dc6b4bfa8c53585e7c366b380d6d400181627a"
+    },
+    {
+      "file": "scene03_reference.pdf",
+      "bytes": 11254,
+      "sha256": "1b6c0fb2ff657f55aef2dd2434927f50b1196b1875514a6fcf96ba0f0eea52e5"
+    },
+    {
+      "file": "scene01_reference.pdf",
+      "bytes": 13310,
+      "sha256": "e7c06c4bf035b7c516bbe7c26d4b95bcb391dfadc2c836e82cce6e3824ea79f1"
+    },
+    {
+      "file": "fig02_claim_types.pdf",
+      "bytes": 11054,
+      "sha256": "26bea6144f93adf5852f764048cf4bbdf9b285d16f53adb101101f6f9805d2ba"
+    },
+    {
+      "file": "scene02_reference.pdf",
+      "bytes": 13120,
+      "sha256": "46242e55bd1f7a25e54647a3b938e954679c4c5f7ec3ed0df3cfb48ada39996e"
+    },
+    {
+      "file": "fig10_memory_entropy.pdf",
+      "bytes": 13658,
+      "sha256": "0cbaca434c4affdc156a790de5f05ecc8f05b7c231712f3f59eb624a79643c4a"
+    }
+  ],
+  "PNG_scope": "Local raster previews of the actual MATLAB vector PDFs; not alternative plotting or model outputs",
+  "case_order": [
+    "c844bf5a9f2243ff8f4bf2c85fe218ff",
+    "5b03af7a953245b5a3b23191ed4da62a",
+    "0e837c21890a4515874247ceb3dbf5c3"
+  ],
+  "article_export_order": [
+    "fig02_claim_types",
+    "fig03_weather",
+    "scene01_radar",
+    "scene01_reference",
+    "scene02_radar",
+    "scene02_reference",
+    "scene03_radar",
+    "scene03_reference",
+    "fig10_memory_entropy",
+    "fig11_adapter_time",
+    "fig12_reference_attention"
+  ],
+  "verified_online_stdout_order": true,
+  "download_zip_sha256": "ffd8539d0024e85d38fbd84342076005a11b5881b55bdd7006d1db1db0b310a9"
+}

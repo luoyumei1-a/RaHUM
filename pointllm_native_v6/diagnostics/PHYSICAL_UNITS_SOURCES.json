@@ -1,0 +1,22 @@
+{
+  "source_fields": {
+    "radar_position": "metres",
+    "vx_comp_vy_comp": "m/s",
+    "derived_radial_velocity": "m/s",
+    "rcs": "dBsm",
+    "rgb_geometry_sigma": "native camera pixels",
+    "timestamps": "microseconds"
+  },
+  "source_values_changed": false,
+  "sources": [
+    {
+      "url": "https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/utils/data_classes.py",
+      "inspected_blob_sha": "fcc757b839079895865a788a077fd7f733535544",
+      "scope": "18 source fields and velocity convention; unit of rcs not spelled out in inspected comments"
+    },
+    {
+      "url": "https://nvidia.github.io/ncore/conversions/nuscenes/nuscenes.html",
+      "scope": "explicit rcs_dBsm and radial_velocity_m_s mapping"
+    }
+  ]
+}

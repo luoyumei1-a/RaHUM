@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "K": [
+    8,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "frame_rows": 24,
+  "supported_groups_each_K": 42,
+  "adapter_parameters_each_K": 3296719,
+  "source_sha256": "151959c1f85e98116fbad6d0c51adf32515c0bf3a1c08215e18163eb828c48b8",
+  "actual_sweep_receipt_sha256": "7cf03a0138e9c4956b08d1aded176eb21b949d0d0d4b1b272c4318c4141e4d7d",
+  "checkpoint_sha256": "f39fc35d0d766c86485f3c630448e63554f7dac5b75a969da1ee7a2b6b2bfa76",
+  "feature_cache_sha256": "01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0",
+  "torch": "2.15.0+cpu",
+  "numeric_data_are_actual_inference": true,
+  "semantic_hallucination_evaluation_performed": false,
+  "earlier_matrix_not_new_native_evaluation": true,
+  "recorded_input_panels": 6,
+  "predicted_model_output_panels": 0,
+  "article_export_order": [
+    "fig02_claim_types",
+    "fig03_weather",
+    "scene01_radar",
+    "scene01_reference",
+    "scene02_radar",
+    "scene02_reference",
+    "scene03_radar",
+    "scene03_reference",
+    "fig10_memory_entropy",
+    "fig11_adapter_time",
+    "fig12_reference_attention"
+  ]
+}

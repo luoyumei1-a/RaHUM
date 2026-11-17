@@ -1,0 +1,18 @@
+[
+  {
+    "path": "backbone/evidence/config.json",
+    "sha256": "e308892ee8b0a49602d4d3f8e7a1c75e8d57db7178ebb121ca8e3b36c0e76506"
+  },
+  {
+    "path": "backbone/run02_source_frozen/runtime.py",
+    "sha256": "e93b656e79df3823e0f938b1f7278d1a160a0c9a5be605fb582ee832aef294c1"
+  },
+  {
+    "path": "backbone/nuscenes_real_rgb_probe/pointbert_actual/actual_pointbert_tokens_receipt.json",
+    "sha256": "c2d690d494ee8ee53358c67c33b3b97dd95034a67db221c1a69f7a3d5f0ed712"
+  },
+  {
+    "path": "reference_full_adaptation/CHRLMM/model/pointbert/PointTransformer_8192point_2layer.yaml",
+    "sha256": "95a83fe87a66dd437477d5e3d758642f6cb54db5b634b0c322c360335c802e67"
+  }
+]

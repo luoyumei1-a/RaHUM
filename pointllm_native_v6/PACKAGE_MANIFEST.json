@@ -1,0 +1,1256 @@
+{
+  "release": "v10",
+  "status": "verified code/example stage",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 108,
+      "sha256": "aa836d6b559240ca19c415180713c01bc9aaff1937896225eb6ef09115e74d96"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12192,
+      "sha256": "acb9698967b409c43cd2b8d553c53e831700c733ce3734d8b0553d2e194836a4"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 11814,
+      "sha256": "a68827246f28490f7d240d5d23a762da1a6fcd16a192c68eedc7a3499eff05e8"
+    },
+    {
+      "path": "VERSION_MIGRATION_V10.json",
+      "bytes": 1247,
+      "sha256": "825a1a2b787dd6507c27b4045f3be052aeb003032c157f7eec58a758b7adc3cc"
+    },
+    {
+      "path": "VERSION_MIGRATION_V8.json",
+      "bytes": 1879,
+      "sha256": "1ca0c83a3ea3d4b1df6260b8c8ac63d2f7de3cd6e1e15ea8bc12a4206970979f"
+    },
+    {
+      "path": "backbone/ADAPTER_V2_CONTRACT.md",
+      "bytes": 6283,
+      "sha256": "d19fe66ce52016901b93daa25af95326dcf56d270012f8c9f8186d652c00a876"
+    },
+    {
+      "path": "backbone/CACHED_DATA_CONTRACT.md",
+      "bytes": 10162,
+      "sha256": "6ffe148ae4d8d49a8a3b8cea006a691404f7e7750563ce15fd4677e739a6cbb5"
+    },
+    {
+      "path": "backbone/THIRD_PARTY_NOTICES.md",
+      "bytes": 2478,
+      "sha256": "1f7a47551202459eba77fd64d7204b6439921e2ab5a62162ccafc895d290d8b0"
+    },
+    {
+      "path": "backbone/actual_engineering_summary.json",
+      "bytes": 5450,
+      "sha256": "dab337ecbded08dbe03fd54fbcb73b7d0755360096c1841373665eaf5648b4ba"
+    },
+    {
+      "path": "backbone/adapter.py",
+      "bytes": 25304,
+      "sha256": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e"
+    },
+    {
+      "path": "backbone/adapter_contract_test_result.json",
+      "bytes": 854,
+      "sha256": "6c21ecab3eb08e643f64973ef5ef4d5332f740bd13939d78d183792c9ab68181"
+    },
+    {
+      "path": "backbone/adapter_source_freeze.json",
+      "bytes": 1418,
+      "sha256": "fe7ff25f6386de3b10ce92b826f10d0346b1546b91b95a1f1190b2399f432b9c"
+    },
+    {
+      "path": "backbone/adapter_source_freeze_v2.json",
+      "bytes": 2914,
+      "sha256": "65f4a5bf3f1b3cf2167abd7ad759d30c7e7bf31abf96be441b3b7868a1204e44"
+    },
+    {
+      "path": "backbone/audit_official_categories.py",
+      "bytes": 2258,
+      "sha256": "e2b2fa3fc00da7b0e90b226d82184c118cb1c7b0b989549d0fabf547efbf9769"
+    },
+    {
+      "path": "backbone/cache_native_points.py",
+      "bytes": 3051,
+      "sha256": "ef8373ca35f81de143b8c704acc2d4fb3ff5e5b4e9a5b7d16a999e2d8b8e1209"
+    },
+    {
+      "path": "backbone/cached_data.py",
+      "bytes": 7557,
+      "sha256": "9d7b67ea44c4e3a0aa229d13ec337d8520cb3c47e0f96d7ab309949ce810cb76"
+    },
+    {
+      "path": "backbone/download_official.py",
+      "bytes": 3542,
+      "sha256": "5503dd5cf1865fa3add742bac34b7d9811b4a232967b7c0e7f4a88b1e16ab4d6"
+    },
+    {
+      "path": "backbone/download_official_model.py",
+      "bytes": 4137,
+      "sha256": "80f3deab5eb73f16fd4aab84c2b275b2602730e59fd8738ad7d32c9fa6be8122"
+    },
+    {
+      "path": "backbone/eval_pointllm.py",
+      "bytes": 9221,
+      "sha256": "e394e532c94d85a9554354c01d322913d0f83b8d1bb1ce6b12bad5dc1b09a270"
+    },
+    {
+      "path": "backbone/evaluation/claim_metrics.py",
+      "bytes": 7879,
+      "sha256": "cbc9fbac32b61ab9c9e00c403c12e3cc8dffbce1d19c80ad7389e082c2693b90"
+    },
+    {
+      "path": "backbone/evaluation/test_claim_metrics.py",
+      "bytes": 3918,
+      "sha256": "c4d4f555affec74cd6b8231f5aa5b1c7430e6bf8765d9347584e51c94e3e2b9e"
+    },
+    {
+      "path": "backbone/evidence/added_tokens.json",
+      "bytes": 79,
+      "sha256": "024d44caddbf1ca0cdf469cd16b4069ef99fe7883473240ecbaf865b5cca4a35"
+    },
+    {
+      "path": "backbone/evidence/architecture_parameter_counts.json",
+      "bytes": 498,
+      "sha256": "25a3bf19090135fcf9a263cb66f00174f8fd53bcbe100dd89c1ef9af5da2a34d"
+    },
+    {
+      "path": "backbone/evidence/config.json",
+      "bytes": 868,
+      "sha256": "e308892ee8b0a49602d4d3f8e7a1c75e8d57db7178ebb121ca8e3b36c0e76506"
+    },
+    {
+      "path": "backbone/evidence/execution_environment.json",
+      "bytes": 371,
+      "sha256": "b2b57d8351bc50c9d2150ef9f1af9ff768d925ae8c3eb6c40aeaf61b95b1b121"
+    },
+    {
+      "path": "backbone/evidence/final24_validation_report.json",
+      "bytes": 10418,
+      "sha256": "cebc24d481e44f1c33e4d4b21a539c7862edc5bae42a0e4a743f419ae5ec6fc0"
+    },
+    {
+      "path": "backbone/evidence/generation_config.json",
+      "bytes": 137,
+      "sha256": "fd7ff399e5568cc21a0a8414f43df88ef7c424995b9b97a90563165d2cf79efd"
+    },
+    {
+      "path": "backbone/evidence/official_download_manifest.json",
+      "bytes": 1238,
+      "sha256": "5f9236cacc06cffdad635edb58c9eb40024b4039c3adc2a6036e5d16b6f3392c"
+    },
+    {
+      "path": "backbone/evidence/pointbert_source_manifest.json",
+      "bytes": 1285,
+      "sha256": "8a5c703511ef9e3e89c26588c12b5583fc88252a12057ed31804051f3aa7e2ae"
+    },
+    {
+      "path": "backbone/evidence/pytorch_model.bin.index.json",
+      "bytes": 42089,
+      "sha256": "d7e596fb272adfb91f41c70216cb2ca86ef0632bc57feaeecb8cffd844e178aa"
+    },
+    {
+      "path": "backbone/evidence/special_tokens_map.json",
+      "bytes": 435,
+      "sha256": "2ea88203b955648951a454e73a73967ff77ba4e79ae8ceb4400d4ab2cb040777"
+    },
+    {
+      "path": "backbone/evidence/tokenizer_config.json",
+      "bytes": 778,
+      "sha256": "60e65829650cc502396bdcf2fd0103b5509093a997d371511ff71abb73377d5c"
+    },
+    {
+      "path": "backbone/evidence/unchanged_input_control.json",
+      "bytes": 794,
+      "sha256": "100fa71db698b9026c00ed273500afbd559a5da5a41bd7b4eddb544ea80fe032"
+    },
+    {
+      "path": "backbone/nuscenes_inputs.py",
+      "bytes": 24655,
+      "sha256": "de3f179f369fc99c4565674a4fa587ffb779d539454d8d5da935407f2223733e"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/PATH_REBASE.json",
+      "bytes": 386,
+      "sha256": "c53df7739a935181b6c01a5bb862a7b44c41aa1b6bef6209b124d07ac3c50dae"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/actual_input_assembly_QA.json",
+      "bytes": 943,
+      "sha256": "4a1513cf1e5e47d4d325e1aa85ba67816bc6bdf85f2e05b6abda8350e83419f6"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/adapter_inputs_v1/actual_radar_rgb_adapter_inputs.npz",
+      "bytes": 1514708,
+      "sha256": "01f2e9c765fb4efef8f4df8f77e70adfb6bf4c73f4cf5683139d7615520720a0"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/adapter_inputs_v1/actual_radar_rgb_adapter_inputs_receipt.json",
+      "bytes": 1666,
+      "sha256": "6103caa8b7988f1081ef5236469891797b81491b2511d6f13629f6dbcb45ff01"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/evaluation_time_manifest.json",
+      "bytes": 1309,
+      "sha256": "9b5083e00309a9be5751fe6237d55314f6e22571cb0ca9279e1c653171d7717f"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/partial_response_supervision.json",
+      "bytes": 3791,
+      "sha256": "9ac992356875968ae6c33557aacd75f29e07b7f2b977d6a94f88db5f8ebcb7b2"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/pointbert_actual/actual_pointbert_tokens.npz",
+      "bytes": 415528,
+      "sha256": "079efcc32b5d5507dfb321624ce03417eac5b97271bb943bd24d1c7273291d79"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/pointbert_actual/actual_pointbert_tokens_receipt.json",
+      "bytes": 148978,
+      "sha256": "c2d690d494ee8ee53358c67c33b3b97dd95034a67db221c1a69f7a3d5f0ed712"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/raw_window_manifest.json",
+      "bytes": 7826,
+      "sha256": "a18ab6532c89d15635ee98626b587751027cb0b9222d9d7e24d4baf0d58da65b"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/rgb_actual/actual_rgb_tokens.npz",
+      "bytes": 1097536,
+      "sha256": "ee1442bf862394bd1a53b96c7cc3329aa2a968e4d6195687b148cab8190eedd0"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/rgb_actual/actual_rgb_tokens_receipt.json",
+      "bytes": 107259,
+      "sha256": "c20a8eb879ccdac71539b6b3d9953533b7247255ea558f6064a0122a9f4fcb2c"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/runner_dataset.json",
+      "bytes": 3117,
+      "sha256": "6d8d94d14755e389bb5a8ca4de12bbc165cf3a9abde48fbf15fc8b2563d8ca96"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/runner_dataset.original_frozen.json",
+      "bytes": 2941,
+      "sha256": "766d5c440e0e4dbcaa3d56ac55d0394d1c07effcc4da78ff9813ba349c5c8da2"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/runner_protocol.json",
+      "bytes": 1844,
+      "sha256": "baab83393f49f18d051456ab83459aa202e629fbca09934a514bd8ec0798d7b4"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/source_category_ontology.json",
+      "bytes": 1130,
+      "sha256": "f85b238e1e57296ce59c6ee202430855beec443da1a7dac6e661471f4fc728a6"
+    },
+    {
+      "path": "backbone/nuscenes_real_rgb_probe/supervision_only.json",
+      "bytes": 868175,
+      "sha256": "a81b17fa8ede460a43e808b568ce72e9b02f54a0bf71123612e4a886bfbd6ac4"
+    },
+    {
+      "path": "backbone/official_category_instance_counts.json",
+      "bytes": 6108,
+      "sha256": "4b2b04e7f60020be6adac673f9ed0005e9c31fd0239fe6257895fcb2562216b9"
+    },
+    {
+      "path": "backbone/plain_generation_01/generation_receipt.json",
+      "bytes": 5235,
+      "sha256": "234eafdedaf1076e653003226f58b4772e41973be452d9ba6f449c9a6003eb8f"
+    },
+    {
+      "path": "backbone/plain_generation_01/raw_generations.jsonl",
+      "bytes": 2187,
+      "sha256": "d59ada2d655b567f3aedf21eb56f332c40712aac5c65010c8125c25b5c2535dd"
+    },
+    {
+      "path": "backbone/plain_generation_01_supervisor.json",
+      "bytes": 1508,
+      "sha256": "8c5bb9b5ac4d19ab3d0ce83bd5f26f3cce47154bca17a7beb417a03efaf0e0dd"
+    },
+    {
+      "path": "backbone/plain_runner_01/inference.pt",
+      "bytes": 43560043,
+      "sha256": "eb7e2e0a55c444fb2e401fec674c82c714f7b9a3db3e4c7a00d6958c125e6eee"
+    },
+    {
+      "path": "backbone/plain_runner_01/training_receipt.json",
+      "bytes": 4782,
+      "sha256": "ceb16cd19ac5cec332a7b3558286abe742edf23f8851ae5d45d59a1a4769051d"
+    },
+    {
+      "path": "backbone/plain_runner_01/training_steps.jsonl",
+      "bytes": 1565,
+      "sha256": "429f9435d82444086804bf914f33375602b50d030abb496071335d5934d3f214"
+    },
+    {
+      "path": "backbone/plain_runner_01_source_frozen/adapter.py",
+      "bytes": 25304,
+      "sha256": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e"
+    },
+    {
+      "path": "backbone/plain_runner_01_source_frozen/cached_data.py",
+      "bytes": 7557,
+      "sha256": "9d7b67ea44c4e3a0aa229d13ec337d8520cb3c47e0f96d7ab309949ce810cb76"
+    },
+    {
+      "path": "backbone/plain_runner_01_source_frozen/runtime.py",
+      "bytes": 18135,
+      "sha256": "01d1b8c2635f5eac162926389fff4bd81ccd9b39eb98c2fc2b06590cc0f5a95b"
+    },
+    {
+      "path": "backbone/plain_runner_01_source_frozen/source_manifest.json",
+      "bytes": 580,
+      "sha256": "5606ef61d9e4bf3f9b6dd0bd646e4d6af3f36a9325d83a5c1bab262914564aa6"
+    },
+    {
+      "path": "backbone/plain_runner_01_source_frozen/train_pointllm.py",
+      "bytes": 9295,
+      "sha256": "651e9272ad09621b52d9a725fad8abc77070d3936d45268e30275449264f17e5"
+    },
+    {
+      "path": "backbone/plain_runner_01_source_frozen/training_engine.py",
+      "bytes": 10322,
+      "sha256": "18aea48d8121281f423b370ba2bf891f51d4ca80f872fb83323e4edb93232738"
+    },
+    {
+      "path": "backbone/plain_runner_01_supervisor.json",
+      "bytes": 1467,
+      "sha256": "58ff53ac43d7d533fa626b977f5b78882b867406ecc7bfb4eb7857602da758ba"
+    },
+    {
+      "path": "backbone/postprobe_adapter_test_result.json",
+      "bytes": 999,
+      "sha256": "21bc6e16d937bc4b0fa69d6ab034f0b7eb780bcbe2b9043abaedec93565cc502"
+    },
+    {
+      "path": "backbone/prepare_real_train_probe.py",
+      "bytes": 5029,
+      "sha256": "264c5f12451987e5e1364adfe4eb9ffb50212c97c696fcb778ac531123e26b0c"
+    },
+    {
+      "path": "backbone/probe_run_02/actual_PointBERT_train_cache.npz",
+      "bytes": 409925,
+      "sha256": "93d620a96dd1b6d9fece4a1dbf3d880dfbdbf5b9fe620fd85dfc9f369f75f5d8"
+    },
+    {
+      "path": "backbone/probe_run_02/actual_backbone_probe_adapters.pt",
+      "bytes": 54300705,
+      "sha256": "4fe973869ba7246b5d6e66620e92d44168ca8564beaf9dbd632e97c093e9ceb2"
+    },
+    {
+      "path": "backbone/probe_run_02/probe_receipt.json",
+      "bytes": 18158,
+      "sha256": "8a55095bf76576c9520ca8810a78877e8fea7b117d4fba8513861117f0178117"
+    },
+    {
+      "path": "backbone/probe_run_02_console.log",
+      "bytes": 12630,
+      "sha256": "92d43c2e800ee2c470c1a1acc383fd169127cdebff4e187503369ebbeb155b0f"
+    },
+    {
+      "path": "backbone/probe_run_02_supervisor.json",
+      "bytes": 1134,
+      "sha256": "821328093ca97e36d9defc6f35631ca8603bc90f724e4d1f311e5e4abaadbd4a"
+    },
+    {
+      "path": "backbone/real_train_probe/frame0_lidar_geometry.npz",
+      "bytes": 12262,
+      "sha256": "aa0cc06844b86d95f657f6801b096e71e3a66f047325a94e0a6da45f90dd6dd2"
+    },
+    {
+      "path": "backbone/real_train_probe/frame0_radar.npz",
+      "bytes": 849,
+      "sha256": "f928743ef52ad3a2d4186fc2b3efa0911744f9c27eceba28477124169d2c418d"
+    },
+    {
+      "path": "backbone/real_train_probe/frame1_lidar_geometry.npz",
+      "bytes": 5497,
+      "sha256": "f67693a7ef92126a1065b5ca16117edd74d1e190bb5e33cd3709c334dbfb6dd3"
+    },
+    {
+      "path": "backbone/real_train_probe/frame1_radar.npz",
+      "bytes": 901,
+      "sha256": "6656ca72fe0811ec3d09d41be22afb3a430e31f104dc04fff37e0509b8934109"
+    },
+    {
+      "path": "backbone/real_train_probe/frame2_lidar_geometry.npz",
+      "bytes": 1146,
+      "sha256": "6af00c421ab47a9dabfd71fa722c59059f2b1bfe38769f799583dad3917e5263"
+    },
+    {
+      "path": "backbone/real_train_probe/frame2_radar.npz",
+      "bytes": 808,
+      "sha256": "65cc3ca3725c02535fd9f093c6593d1fad3e738fd0700d1da95581fd2688ae77"
+    },
+    {
+      "path": "backbone/real_train_probe/manifest.json",
+      "bytes": 3973,
+      "sha256": "93df6ae5fffd7383d98371dccb28b7a3238fe2eeff955b9e0776c9690c4e55aa"
+    },
+    {
+      "path": "backbone/real_train_probe/supervision.json",
+      "bytes": 510,
+      "sha256": "6486e3b29b0ec20aa8000545ac93b5262a30f478fda9c72ae47f3257e0727bf4"
+    },
+    {
+      "path": "backbone/requirements-cpu.txt",
+      "bytes": 260,
+      "sha256": "31576bb66ab86b07b7d39803bcede2d9f2405c4cb83be26ccd6fc2a06100f4d9"
+    },
+    {
+      "path": "backbone/requirements_cpu.txt",
+      "bytes": 198,
+      "sha256": "9a2db754a6cb9184cbab6a37b85c1c02b4896484f0bf1f9336bd521d1a5b9dc8"
+    },
+    {
+      "path": "backbone/restore_generate.py",
+      "bytes": 8191,
+      "sha256": "6d8104f0751947b9d1eac2975c1a89de00d77d4774c85bb638c45b4eea8c3ca4"
+    },
+    {
+      "path": "backbone/restore_generate_01_supervisor.json",
+      "bytes": 1499,
+      "sha256": "2d8a4b79576f4dde42391ba6d031c19bc3d13036d8e64dcad0c32828075b253f"
+    },
+    {
+      "path": "backbone/restore_generation_01/actual_generation.json",
+      "bytes": 1504,
+      "sha256": "f586aab0868a42c76164da1efc3354c6b21fffe5a2e8f72853fad58808997fbe"
+    },
+    {
+      "path": "backbone/restore_generation_01/restore_generation_receipt.json",
+      "bytes": 3252,
+      "sha256": "230d089b5d4781de20aad70abfde3fc6eb3387fc8b8eaf61c219951a09117bfd"
+    },
+    {
+      "path": "backbone/resume_guard_smoke.json",
+      "bytes": 472,
+      "sha256": "dcb09c67a1bcc112fed045b12fde8063eed93dcb4ad90e9e1534c9b8de253d3c"
+    },
+    {
+      "path": "backbone/rgb_encoder.py",
+      "bytes": 13686,
+      "sha256": "098c39b4c298396f0695f51d0b12c0a1bdf9422bf56c0ca1d62a15169cea354b"
+    },
+    {
+      "path": "backbone/rgb_generation_01/generation_receipt.json",
+      "bytes": 10407,
+      "sha256": "984f347aa1dbd5ba7d5a7ed389fdddd97d74233fcf7a425f95ec14bc103fdd30"
+    },
+    {
+      "path": "backbone/rgb_generation_01/raw_generations.jsonl",
+      "bytes": 2186,
+      "sha256": "673a335d4b6e190bed3412283ef3c6245ccc150aa4ea857a926f200d8e3671e8"
+    },
+    {
+      "path": "backbone/rgb_generation_01_supervisor.json",
+      "bytes": 1595,
+      "sha256": "a0dd8deedae988fa62a08d4a7199e25d3512132f6c62aadfd1b6093caff141be"
+    },
+    {
+      "path": "backbone/rgb_probe.py",
+      "bytes": 10700,
+      "sha256": "f6452aa5269f86bfbdf53207cff941c8ea92746dd7c5e886d4b7e63358b0a104"
+    },
+    {
+      "path": "backbone/rgb_runner_01/inference.pt",
+      "bytes": 56780237,
+      "sha256": "f39fc35d0d766c86485f3c630448e63554f7dac5b75a969da1ee7a2b6b2bfa76"
+    },
+    {
+      "path": "backbone/rgb_runner_01/training_receipt.json",
+      "bytes": 12999,
+      "sha256": "b88b43e1a50e7f0f4929fa2dac0d3ce86745a75f00dd701a05993a4cb46c0994"
+    },
+    {
+      "path": "backbone/rgb_runner_01/training_steps.jsonl",
+      "bytes": 8416,
+      "sha256": "ea02070f6402bd8bd8eb694cef93f02979119acf79d1421b1e3bd7a4f111c8a0"
+    },
+    {
+      "path": "backbone/rgb_runner_01_source_frozen/adapter.py",
+      "bytes": 25304,
+      "sha256": "dd2d7442cb10613160af5b2d11363ec1ec1801a46807355cd7ce5738c717975e"
+    },
+    {
+      "path": "backbone/rgb_runner_01_source_frozen/cached_data.py",
+      "bytes": 7557,
+      "sha256": "9d7b67ea44c4e3a0aa229d13ec337d8520cb3c47e0f96d7ab309949ce810cb76"
+    },
+    {
+      "path": "backbone/rgb_runner_01_source_frozen/runtime.py",
+      "bytes": 18135,
+      "sha256": "01d1b8c2635f5eac162926389fff4bd81ccd9b39eb98c2fc2b06590cc0f5a95b"
+    },
+    {
+      "path": "backbone/rgb_runner_01_source_frozen/source_manifest.json",
+      "bytes": 580,
+      "sha256": "9ac367d2adb2ea60546dd7a625ae21c3822e4844af87b7dae2853896029693e6"
+    },
+    {
+      "path": "backbone/rgb_runner_01_source_frozen/train_pointllm.py",
+      "bytes": 9134,
+      "sha256": "6146dc6ba4728bc4bd5a8b87f0a020abeb6cad95d5eabfabd43a4b494f69ce19"
+    },
+    {
+      "path": "backbone/rgb_runner_01_source_frozen/training_engine.py",
+      "bytes": 10322,
+      "sha256": "18aea48d8121281f423b370ba2bf891f51d4ca80f872fb83323e4edb93232738"
+    },
+    {
+      "path": "backbone/rgb_runner_01_supervisor.json",
+      "bytes": 1461,
+      "sha256": "ba0ef2dd565dbbfe45938a9d11e63f0b53ebe98f6b06be5252e44e2f49d9b870"
+    },
+    {
+      "path": "backbone/run02_source_frozen/__init__.py",
+      "bytes": 74,
+      "sha256": "a12ea1416d730f6aac96247c3b510c39c657f4bcdc93ce7bea1dd47e3669afc6"
+    },
+    {
+      "path": "backbone/run02_source_frozen/adapter.py",
+      "bytes": 20570,
+      "sha256": "8722598526ad0ae7364cb7bb892b309cdace444eb095847c4139a48c7cc59540"
+    },
+    {
+      "path": "backbone/run02_source_frozen/runtime.py",
+      "bytes": 16486,
+      "sha256": "e93b656e79df3823e0f938b1f7278d1a160a0c9a5be605fb582ee832aef294c1"
+    },
+    {
+      "path": "backbone/run02_source_frozen/source_manifest.json",
+      "bytes": 522,
+      "sha256": "f56569f1d8e53837a963cea44e314c4aea83c0eb6e8a3d613424c0a83fdf6837"
+    },
+    {
+      "path": "backbone/run02_source_frozen/train_step_probe.py",
+      "bytes": 20313,
+      "sha256": "10f845e8b2388bf230f488aee09b421143d486ed0afa8c46058decab1635f990"
+    },
+    {
+      "path": "backbone/run02_source_frozen/vendor_pointbert/__init__.py",
+      "bytes": 44,
+      "sha256": "45000abc69b5d166efe7105285dd66110d6e6dfb4f18b6b4cd87e1da8c9979d7"
+    },
+    {
+      "path": "backbone/run02_source_frozen/vendor_pointbert/checkpoint.py",
+      "bytes": 3910,
+      "sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946"
+    },
+    {
+      "path": "backbone/run02_source_frozen/vendor_pointbert/compat.py",
+      "bytes": 435,
+      "sha256": "e9c91a18c337df7c97c8f22886ca7a44ed2996e0a19bec53d52b9c7f40864d7f"
+    },
+    {
+      "path": "backbone/run02_source_frozen/vendor_pointbert/dvae.py",
+      "bytes": 13750,
+      "sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1"
+    },
+    {
+      "path": "backbone/run02_source_frozen/vendor_pointbert/logger.py",
+      "bytes": 4922,
+      "sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69"
+    },
+    {
+      "path": "backbone/run02_source_frozen/vendor_pointbert/misc.py",
+      "bytes": 9292,
+      "sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927"
+    },
+    {
+      "path": "backbone/run02_source_frozen/vendor_pointbert/point_encoder.py",
+      "bytes": 7560,
+      "sha256": "56623d4828780726a9beb93a57492831ab517ff3ade5909641674218a090a706"
+    },
+    {
+      "path": "backbone/runtime.py",
+      "bytes": 18135,
+      "sha256": "01d1b8c2635f5eac162926389fff4bd81ccd9b39eb98c2fc2b06590cc0f5a95b"
+    },
+    {
+      "path": "backbone/summarize_engineering_evidence.py",
+      "bytes": 6162,
+      "sha256": "d04eeeb395a70bda0e57fd2b2275db645a19b0e7cb1af489c41d113f557442b1"
+    },
+    {
+      "path": "backbone/supervise_probe.py",
+      "bytes": 3328,
+      "sha256": "3d9b10e30a5684ec4822cf895513f7f4cc61778ed38b957a04005d347a518c18"
+    },
+    {
+      "path": "backbone/test_adapter_contract.py",
+      "bytes": 7166,
+      "sha256": "1128dfc51c86f2b6ea2bc79ee5cc99e8bf7d728df9dd562d2a644d148d5dfa2e"
+    },
+    {
+      "path": "backbone/test_nuscenes_inputs.py",
+      "bytes": 4110,
+      "sha256": "09c21110edf54411fba755960ad05c2e6f0a243bd13a4403d9d1175c58e95712"
+    },
+    {
+      "path": "backbone/test_postprobe_adapter.py",
+      "bytes": 6351,
+      "sha256": "ea025b080b368a79a249d56a1d96b9fd105e735f84a9bc9f0f88b2134cdae912"
+    },
+    {
+      "path": "backbone/train_pointllm.py",
+      "bytes": 12727,
+      "sha256": "00f46223d960f8e0dd5daccaaad002a69669f6f38f6ed96b7656ea987dd58eec"
+    },
+    {
+      "path": "backbone/train_step_probe.py",
+      "bytes": 20313,
+      "sha256": "10f845e8b2388bf230f488aee09b421143d486ed0afa8c46058decab1635f990"
+    },
+    {
+      "path": "backbone/training_engine.py",
+      "bytes": 10322,
+      "sha256": "18aea48d8121281f423b370ba2bf891f51d4ca80f872fb83323e4edb93232738"
+    },
+    {
+      "path": "backbone/v6_CODE_REVIEW.md",
+      "bytes": 11280,
+      "sha256": "82198b8fd50e841c915355411620af2772bdd4eba433c74d6db3333e07255cf1"
+    },
+    {
+      "path": "backbone/vendor_pointbert/UPSTREAM_ATTRIBUTION.txt",
+      "bytes": 509,
+      "sha256": "135c42cd3e7d9b57f19221bbb7c9484bca32e3bd70405a06e83a2735643dd640"
+    },
+    {
+      "path": "backbone/vendor_pointbert/__init__.py",
+      "bytes": 44,
+      "sha256": "45000abc69b5d166efe7105285dd66110d6e6dfb4f18b6b4cd87e1da8c9979d7"
+    },
+    {
+      "path": "backbone/vendor_pointbert/checkpoint.py",
+      "bytes": 3910,
+      "sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946"
+    },
+    {
+      "path": "backbone/vendor_pointbert/compat.py",
+      "bytes": 435,
+      "sha256": "e9c91a18c337df7c97c8f22886ca7a44ed2996e0a19bec53d52b9c7f40864d7f"
+    },
+    {
+      "path": "backbone/vendor_pointbert/dvae.py",
+      "bytes": 13750,
+      "sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1"
+    },
+    {
+      "path": "backbone/vendor_pointbert/logger.py",
+      "bytes": 4922,
+      "sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69"
+    },
+    {
+      "path": "backbone/vendor_pointbert/misc.py",
+      "bytes": 9292,
+      "sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927"
+    },
+    {
+      "path": "backbone/vendor_pointbert/point_encoder.py",
+      "bytes": 7560,
+      "sha256": "56623d4828780726a9beb93a57492831ab517ff3ade5909641674218a090a706"
+    },
+    {
+      "path": "dataset_tools/build_causal_pairs.py",
+      "bytes": 9718,
+      "sha256": "a14e1d61dcd53dc0892c0ce6d1ab7b4b86bc641a1015e79fd893db3ba073f460"
+    },
+    {
+      "path": "dataset_tools/build_paired_manifest.py",
+      "bytes": 13061,
+      "sha256": "f257a4cf9129e9e83648305722017e26751d224126e3d55a1822f024872e34e7"
+    },
+    {
+      "path": "dataset_tools/download_official_mini.py",
+      "bytes": 3231,
+      "sha256": "005ecedbfb4e0625f0eb4792398d5027bcd9ac0d05a750056b5df2731742d5ac"
+    },
+    {
+      "path": "dataset_tools/extract_selected.py",
+      "bytes": 5080,
+      "sha256": "65dcc5936b7963ed0204c500f08415015b0cfc786c6b13dcafcf71c1d22932e2"
+    },
+    {
+      "path": "dataset_tools/nuscenes_data_interface.py",
+      "bytes": 6732,
+      "sha256": "31b47aa81cf8e1dbb44fb42e7844acf4fb15cadb903deff48afac9f264005955"
+    },
+    {
+      "path": "diagnostics/INPUT_CONFIG_CHECK.md",
+      "bytes": 5533,
+      "sha256": "2d73dd7e84efa71cd9bfe733d68d70f0f051466a4dacb26240e5bde2f5f8aff8"
+    },
+    {
+      "path": "diagnostics/INPUT_CONFIG_SOURCES.json",
+      "bytes": 668,
+      "sha256": "7f6182768b774b6944c5bbebc4fada9372d3d7ac6e080e534097ef42dbeca3e0"
+    },
+    {
+      "path": "diagnostics/PHYSICAL_UNITS.md",
+      "bytes": 3152,
+      "sha256": "9c5a49ca87768c88e29401a8da292b6d134b19c2ae22dc92a602e1caa25e5f1b"
+    },
+    {
+      "path": "diagnostics/PHYSICAL_UNITS_SOURCES.json",
+      "bytes": 754,
+      "sha256": "f41577d27ce9640145c418e2561581c12cd4f1b28d37b50c56ceb0f5376587c6"
+    },
+    {
+      "path": "diagnostics/README.md",
+      "bytes": 4077,
+      "sha256": "b432feaea121ee2ba6327b7ba24d68fe2a21838e830b9e2d5936ac9de38485de"
+    },
+    {
+      "path": "diagnostics/actual_frame_memory_sweep/frame_memory_replay.json",
+      "bytes": 17662,
+      "sha256": "e673af52e9efcd9c4676c97bd8699702161be49b690e4d4224bcaff01269a2dc"
+    },
+    {
+      "path": "diagnostics/actual_frame_memory_sweep/replay_frame_memory.py",
+      "bytes": 3583,
+      "sha256": "93f4b27d6d3b4dacd4f4eee2b0c8a00c611e119095862b8c4a59556ca8336286"
+    },
+    {
+      "path": "diagnostics/actual_k8_128/local_memory_sweep.csv",
+      "bytes": 2415,
+      "sha256": "356ba1dcf2bd2be0922d059e96b94f23bb3b575b476895317bd5e9f6b665e126"
+    },
+    {
+      "path": "diagnostics/actual_k8_128/memory_sweep_receipt.json",
+      "bytes": 54479,
+      "sha256": "7cf03a0138e9c4956b08d1aded176eb21b949d0d0d4b1b272c4318c4141e4d7d"
+    },
+    {
+      "path": "diagnostics/actual_k8_128/sweep_native_memory.py",
+      "bytes": 7742,
+      "sha256": "c39f81c69be63e322f406020d62c7e9442638fb0b98f8114d0d9841709c7ee9c"
+    },
+    {
+      "path": "diagnostics/actual_native_memory_sweep/local_memory_sweep.csv",
+      "bytes": 1895,
+      "sha256": "7fcc180a0bc0910403e5596817c6f9b6a0959407f93ce1d4bcf911ec77b85f68"
+    },
+    {
+      "path": "diagnostics/actual_native_memory_sweep/memory_sweep_receipt.json",
+      "bytes": 8221,
+      "sha256": "4470e12e423989c3082e1eba12854fad4e92493cb54d610fb7d1f1cebf7ac909"
+    },
+    {
+      "path": "diagnostics/actual_native_memory_sweep/sweep_native_memory_source_v9.py",
+      "bytes": 6617,
+      "sha256": "f91bbe4355683f72a3b3eecc465feb987538efd583f5592f5d15e6b2bb565092"
+    },
+    {
+      "path": "diagnostics/actual_native_reliability/diagnostic_receipt.json",
+      "bytes": 4851,
+      "sha256": "90d8629085fdad32bd10b7aff22387073e61899524794970fe512cedfe0ce90d"
+    },
+    {
+      "path": "diagnostics/actual_native_reliability/observed_native_diagnostics.npz",
+      "bytes": 18594,
+      "sha256": "2fbbcb9f43121213d0d2c21611d68fb9307bba1f495b0f5e14384038160937d4"
+    },
+    {
+      "path": "diagnostics/actual_native_reliability/per_group_diagnostics.csv",
+      "bytes": 14468,
+      "sha256": "eb1df3d436c7fb54d2ceaf89941b2bdd27d19fceeaaeb493d652f56bce58e992"
+    },
+    {
+      "path": "diagnostics/actual_native_reliability/radar_utility_ecdf.csv",
+      "bytes": 1841,
+      "sha256": "d59964ef508c532eb05e3cf7ca85d7a4a93614b52bc9a3133b32eb0db99aed7e"
+    },
+    {
+      "path": "diagnostics/actual_native_reliability/radar_utility_histogram.csv",
+      "bytes": 654,
+      "sha256": "ab4ceba9fbd25f57d63f893805e0cb12b09a6bd51ee0b28819f2af1c462b5d69"
+    },
+    {
+      "path": "diagnostics/inspect_native_reliability.py",
+      "bytes": 9296,
+      "sha256": "b3569f4537207c818480e10eeaa213f83a8196b47b37e6b5891f9b1a41de028a"
+    },
+    {
+      "path": "diagnostics/summarize_reference_gate.py",
+      "bytes": 4736,
+      "sha256": "fce3d5a1283201b6a53e597e2167b9bb7593e1baa411eeaeb14f6f9f0fe5bf3a"
+    },
+    {
+      "path": "diagnostics/sweep_native_memory.py",
+      "bytes": 7742,
+      "sha256": "c39f81c69be63e322f406020d62c7e9442638fb0b98f8114d0d9841709c7ee9c"
+    },
+    {
+      "path": "historical_summary/README.md",
+      "bytes": 1388,
+      "sha256": "6756cb6b9bec3d0f770c445eea2919e4a6605e009b58ab01777f3acafcdd82de"
+    },
+    {
+      "path": "historical_summary/SOURCE_PROVENANCE.json",
+      "bytes": 2072,
+      "sha256": "5aaf52702a674b56ed4dbbf743c91194cd75bbdb39bb58d02d00067a6cfa0188"
+    },
+    {
+      "path": "historical_summary/table2_hirac_sensing.csv",
+      "bytes": 4071,
+      "sha256": "46517d3afa4235d42276e438982cc27a06e0df176b4166e1573ad92c813bd9d7"
+    },
+    {
+      "path": "historical_summary/table3_hirac_response_errors.csv",
+      "bytes": 300,
+      "sha256": "8d1c201f0f78e46aaa136e288d995accc5d9683024361a98f369fce55892e312"
+    },
+    {
+      "path": "historical_summary/table4_hirac_sunny_ablation.csv",
+      "bytes": 249,
+      "sha256": "0e6956819d734332dda1b3500eded9cadc2c14a380b66fd76abe6ddc7570bd36"
+    },
+    {
+      "path": "matlab/ONLINE_EXPORT_RECEIPT.json",
+      "bytes": 3163,
+      "sha256": "f27e752d63c01ee4f268bd50571f6015b1e020dd8daf17c00310ff7e7febd873"
+    },
+    {
+      "path": "matlab/PLOT_SOURCE_VALIDATION.json",
+      "bytes": 1115,
+      "sha256": "81f99bac0321f4bdc33f7860972d16ffde9008567fe5c3b4deac37962ff998d5"
+    },
+    {
+      "path": "matlab/README.md",
+      "bytes": 1719,
+      "sha256": "8a157de03a8ee57b185f897a6465ba906eb78d6c61299e5b0e793bba1c8b65da"
+    },
+    {
+      "path": "matlab/RaHUM_Figures_v10.m",
+      "bytes": 16045,
+      "sha256": "151959c1f85e98116fbad6d0c51adf32515c0bf3a1c08215e18163eb828c48b8"
+    },
+    {
+      "path": "matlab/actual_plot_data_v10.json",
+      "bytes": 70402,
+      "sha256": "a3e19401c71569b36b2c1f372b2258df3506149ddd0ec467666d2e29bdf2f92c"
+    },
+    {
+      "path": "matlab/online_outputs/MATLAB_execution.txt",
+      "bytes": 463,
+      "sha256": "1d88c086f32bdfa7051856cfdac1ca844b314362dd7e732094bfdbf194856c4c"
+    },
+    {
+      "path": "matlab/online_outputs/fig02_claim_types.fig",
+      "bytes": 16779,
+      "sha256": "af170f9f35d35c7e8fccfa5472781a9d77fc0704b3a805304b20eb80d6b102d8"
+    },
+    {
+      "path": "matlab/online_outputs/fig02_claim_types.pdf",
+      "bytes": 11054,
+      "sha256": "26bea6144f93adf5852f764048cf4bbdf9b285d16f53adb101101f6f9805d2ba"
+    },
+    {
+      "path": "matlab/online_outputs/fig03_weather.fig",
+      "bytes": 10798,
+      "sha256": "3a0868f861e45011a615b1be90d7eed97e085f7439290f4b42b81cf6892e6c93"
+    },
+    {
+      "path": "matlab/online_outputs/fig03_weather.pdf",
+      "bytes": 13468,
+      "sha256": "30171930a27317101bec790c01f2618d847a9b7a5af547c0c7d2284f4fb4042a"
+    },
+    {
+      "path": "matlab/online_outputs/fig10_memory_entropy.fig",
+      "bytes": 10633,
+      "sha256": "4cd51036d1a9eb002ea6e318a9f83f819ef0d211fd0c6729e4adcd49b2c727b9"
+    },
+    {
+      "path": "matlab/online_outputs/fig10_memory_entropy.pdf",
+      "bytes": 13658,
+      "sha256": "0cbaca434c4affdc156a790de5f05ecc8f05b7c231712f3f59eb624a79643c4a"
+    },
+    {
+      "path": "matlab/online_outputs/fig11_adapter_time.fig",
+      "bytes": 7910,
+      "sha256": "109c3bb1bf2cb0009b7918c2049e4812d1122c12730a9a5e9c78c048bc9240ce"
+    },
+    {
+      "path": "matlab/online_outputs/fig11_adapter_time.pdf",
+      "bytes": 10371,
+      "sha256": "e960feaa3390cab950636b9db5cde4419a48e258d32a716dfe0edd4a068fa903"
+    },
+    {
+      "path": "matlab/online_outputs/fig12_reference_attention.fig",
+      "bytes": 34926,
+      "sha256": "48346fb81aff74cd9c2b7ab861e6cf9e9e89853b7d80a07dfb7c5fe9de2b0053"
+    },
+    {
+      "path": "matlab/online_outputs/fig12_reference_attention.pdf",
+      "bytes": 23953,
+      "sha256": "8719636e2efdca0e3467089715848c6f0775e8400d20d5b0830219f63329ab4d"
+    },
+    {
+      "path": "matlab/online_outputs/scene01_radar.fig",
+      "bytes": 8168,
+      "sha256": "044a20e3a37cbdc7a2c2f4e3773d2aa54dba924c4d7f627d828d798324a9fe36"
+    },
+    {
+      "path": "matlab/online_outputs/scene01_radar.pdf",
+      "bytes": 11802,
+      "sha256": "d9724c8f3e6374eac55e387185dc6b4bfa8c53585e7c366b380d6d400181627a"
+    },
+    {
+      "path": "matlab/online_outputs/scene01_reference.fig",
+      "bytes": 14945,
+      "sha256": "9cf03fa3fcc41a79d40efcdc00f29040e68f6cf8cf20d6b0161e3cc40e04c144"
+    },
+    {
+      "path": "matlab/online_outputs/scene01_reference.pdf",
+      "bytes": 13310,
+      "sha256": "e7c06c4bf035b7c516bbe7c26d4b95bcb391dfadc2c836e82cce6e3824ea79f1"
+    },
+    {
+      "path": "matlab/online_outputs/scene02_radar.fig",
+      "bytes": 8148,
+      "sha256": "6962b99dbed22892c657ab0c0d293447fc882a696e009866604a5bf6b7e617c9"
+    },
+    {
+      "path": "matlab/online_outputs/scene02_radar.pdf",
+      "bytes": 11891,
+      "sha256": "4eed9777cbdd59e37f549bfb0f0b4ba7b2a87c43c3d3318542e2f80b05ad570e"
+    },
+    {
+      "path": "matlab/online_outputs/scene02_reference.fig",
+      "bytes": 14460,
+      "sha256": "c55e0971ff6082ba8fd193b84cb3c4d7126e3c34550d53c1a58706b48e22b4d3"
+    },
+    {
+      "path": "matlab/online_outputs/scene02_reference.pdf",
+      "bytes": 13120,
+      "sha256": "46242e55bd1f7a25e54647a3b938e954679c4c5f7ec3ed0df3cfb48ada39996e"
+    },
+    {
+      "path": "matlab/online_outputs/scene03_radar.fig",
+      "bytes": 8109,
+      "sha256": "17336d88e0da4fb8722f31bdf2ba821e780a18babe4beb999a52112676c5ce32"
+    },
+    {
+      "path": "matlab/online_outputs/scene03_radar.pdf",
+      "bytes": 10789,
+      "sha256": "2fb6cf227578f88211076b084db17c6487ad7fd2043b52839ae85deff3f72a5d"
+    },
+    {
+      "path": "matlab/online_outputs/scene03_reference.fig",
+      "bytes": 10779,
+      "sha256": "ea12dd5d55c4309e04751dffc8379f695688b6973867526ee80fafab20c484d5"
+    },
+    {
+      "path": "matlab/online_outputs/scene03_reference.pdf",
+      "bytes": 11254,
+      "sha256": "1b6c0fb2ff657f55aef2dd2434927f50b1196b1875514a6fcf96ba0f0eea52e5"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/0e837c21890a4515874247ceb3dbf5c3_gt_boxes.json",
+      "bytes": 11025,
+      "sha256": "b4ab7534fa84b9575ea9da493fb0319348af486e942f009ddc1453f21af92cd5"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/0e837c21890a4515874247ceb3dbf5c3_gt_corners_ego.csv",
+      "bytes": 10113,
+      "sha256": "98064d5d77ed90919b2cc0dfc32d25e2d3730a5d7e61bdab4b3251e5c2e297a9"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/0e837c21890a4515874247ceb3dbf5c3_radar_ego_xyz.csv",
+      "bytes": 3812,
+      "sha256": "985fabceb62743e7be82061266c3b94c271eb20de4d4c8ad8d951e98b7ecad42"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/5b03af7a953245b5a3b23191ed4da62a_gt_boxes.json",
+      "bytes": 28570,
+      "sha256": "acc308f9f166945a04e4622dee17a3842c49d6e712c6a9ebf269355e1d686a6c"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/5b03af7a953245b5a3b23191ed4da62a_gt_corners_ego.csv",
+      "bytes": 26213,
+      "sha256": "f5cdbd0c06aa0d312c64cdb51c754530b9b10123fbaa598356314cdad53ee8ca"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/5b03af7a953245b5a3b23191ed4da62a_radar_ego_xyz.csv",
+      "bytes": 4031,
+      "sha256": "11df8210c54324afe753644ffbfd9ee7d43d6a92bff4344d3cf24f95d1df9393"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/CASE_SOURCE_MANIFEST.json",
+      "bytes": 3259,
+      "sha256": "3bfe01f8da602a5b5260c883b859a8562f24aaf8db5c2c82c3d4c09e62a3eca1"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/README.md",
+      "bytes": 841,
+      "sha256": "a0a2deeace8bfb3f147bc1b00f3ad7c2b042e135474063c72d6d94d78a4e30cb"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/c844bf5a9f2243ff8f4bf2c85fe218ff_gt_boxes.json",
+      "bytes": 31053,
+      "sha256": "54de26b99b22a3f3dddc676f46048200f6e336a4058d7d878262d58772d5cd32"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/c844bf5a9f2243ff8f4bf2c85fe218ff_gt_corners_ego.csv",
+      "bytes": 28115,
+      "sha256": "f71d7952e59afb56506fa6fcb68c9c63bcbd7e259c313c90f2369576e152565e"
+    },
+    {
+      "path": "matlab/recorded_scene_inputs/c844bf5a9f2243ff8f4bf2c85fe218ff_radar_ego_xyz.csv",
+      "bytes": 4105,
+      "sha256": "c085f9ba4a3d91b6e4e2748fe12020b580b4b31cd8ccdbd125486e1c0a94881f"
+    },
+    {
+      "path": "protocols/experiment_contract.json",
+      "bytes": 1404,
+      "sha256": "a354a07238be2ac6813b0b578ea55d7ac05514320ab52a8c22c36bfba396323f"
+    },
+    {
+      "path": "provenance/RELEASE_V8_PRE_MATLAB_QA.json",
+      "bytes": 661,
+      "sha256": "5da19019a04760ac6df63038ad8d974af413a9de42cedfce1d018a94a2d0e86a"
+    },
+    {
+      "path": "provenance/Radar_Ghost_Official_Label_Convention.md",
+      "bytes": 11154,
+      "sha256": "e7a4d7a810d2784661dac5a8be82e02ab63c83c232c506fa54199261a7be863d"
+    },
+    {
+      "path": "provenance/Radar_Ghost_Official_README.md",
+      "bytes": 12636,
+      "sha256": "7d1ba67c5a71cfded85fb6c2440d689ea51a98d7693a15ed7c487e87a6f79884"
+    },
+    {
+      "path": "provenance/dinov2/README.md",
+      "bytes": 3033,
+      "sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c"
+    },
+    {
+      "path": "provenance/dinov2/config.json",
+      "bytes": 547,
+      "sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d"
+    },
+    {
+      "path": "provenance/dinov2/download_receipt.json",
+      "bytes": 1961,
+      "sha256": "b6b4160c786c0182b16d7a1b999a3819e4288e8c7184fcf6ba71e60429b37da2"
+    },
+    {
+      "path": "provenance/dinov2/preprocessor_config.json",
+      "bytes": 436,
+      "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+    },
+    {
+      "path": "provenance/nuscenes_mini/causal_pairing_summary.json",
+      "bytes": 4897,
+      "sha256": "0492d11e8209b3faba394eed938544fd82aaf1e1727d6e9af6f375652760edd9"
+    },
+    {
+      "path": "provenance/nuscenes_mini/download_receipt.json",
+      "bytes": 1471,
+      "sha256": "c409bda4d67e2cb9c36d706e0eb40159efafffbff9778ecc621e21667bdc85c5"
+    },
+    {
+      "path": "provenance/nuscenes_mini/extraction_receipt.json",
+      "bytes": 910,
+      "sha256": "777dfa9ff14ab9b5008e097130ab5555833ced961a7bac94c9241a6ef9de45d4"
+    },
+    {
+      "path": "provenance/official_mini_time_anchor_independent_check.json",
+      "bytes": 163,
+      "sha256": "d1f1566178d90d980c8b67d11bc218a6b4967a477a8d07bbff2300d734a6173b"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/__init__.py",
+      "bytes": 845,
+      "sha256": "b985432690e17aed3f915c4133d44f018fa48c324e06ae3db611206b64057393"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/conversation.py",
+      "bytes": 15591,
+      "sha256": "2579e26ecc128f0a5c40d3c115049e900a4f6b8882af4663b61ce1aa7fd2d9f7"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/__init__.py",
+      "bytes": 2049,
+      "sha256": "988ceddd1f6eafb09b6da2533ee97d3e592f96824c638864db5d61ccb110f9e1"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/chrlmm_dataset.py",
+      "bytes": 11125,
+      "sha256": "f65b13bbb6e2bb92f18704cb8907cc87fdecb01a63cb0b97b853b82c374fb6bd"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/modelnet.py",
+      "bytes": 5532,
+      "sha256": "2c29fb550be2d08c8adce2a9c81928a11ea56451032da968e4bcf19d8f0387a6"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/modelnet_config/ModelNet40.yaml",
+      "bytes": 155,
+      "sha256": "6a99380013d910db59646d0b48a969dbdbbb8c13f43f6b7ffff20023bb03a14c"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/modelnet_config/modelnet40_shape_names_modified.txt",
+      "bytes": 275,
+      "sha256": "25089598c178794aa4fae0a5f18b9927b39b3ba008bb44c326e2c3e50777a228"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/multimodal_adapter.py",
+      "bytes": 18460,
+      "sha256": "3394201225e1c45276ae641aba71c16c38d1a7ec11826c27bbb0714740dcbbc8"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/object_point_dataset.py",
+      "bytes": 10285,
+      "sha256": "f0dd2ba0dc3552e97bde216850abf88c6d77dc67961170ba6b3d6551411b5c52"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/data/utils.py",
+      "bytes": 8096,
+      "sha256": "2805fd33a8587dacbf17a2e6f9fa1e2cf781d3b76c639330bd453a2659d10656"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/CHRLMM.py",
+      "bytes": 25081,
+      "sha256": "5311e90a75bff4f6b3712c3586a3c06f04e57a0facf6c7b2921a9f9da8af758c"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/CHRLMM_hallucination.py",
+      "bytes": 17615,
+      "sha256": "078663a41f3ccbde829185c5febe69b11b9a8e32ebce8a3c7ecd4da973ba9abd"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/__init__.py",
+      "bytes": 849,
+      "sha256": "77957477e28c19718292707dae4c62a3a89d9ebc6c84d8d7da87a3531bcb8cb3"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/pointbert/PointTransformer_8192point_2layer.yaml",
+      "bytes": 306,
+      "sha256": "95a83fe87a66dd437477d5e3d758642f6cb54db5b634b0c322c360335c802e67"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/pointbert/PointTransformer_base_8192point.yaml",
+      "bytes": 291,
+      "sha256": "bc60b889d6a94013bfd1f1a7f8f4172959d11700d5d3954fc10893a18265529f"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/pointbert/checkpoint.py",
+      "bytes": 3910,
+      "sha256": "bd95d3c00499acc67b69555c7d9022731b3f53633dda6789380f32e41a084946"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/pointbert/dvae.py",
+      "bytes": 13750,
+      "sha256": "52710cf3d8f454cc1ffa4e0603d60ba34a0e7d7c31fad8aa8c039162ef797cc1"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/pointbert/logger.py",
+      "bytes": 4922,
+      "sha256": "d5ce96284512f59bfe386c857c9e3587fbd9afd605d4140f3383bfe7d0a03f69"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/pointbert/misc.py",
+      "bytes": 9292,
+      "sha256": "fc840f9ad9970d47a0eb7b38089e342ed4174ff94ff2b980487183032d888927"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/pointbert/point_encoder.py",
+      "bytes": 8976,
+      "sha256": "9236b3236e6d9e9e6e40f86671ecc439b96d8b2c0fd6105557a1e946e66e2638"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/model/utils.py",
+      "bytes": 1087,
+      "sha256": "d739ef72b626f72fa07d4b6c86aa04de708c92a028bb9c4243ce87d3488cfd3d"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/train/CHRLMM_trainer.py",
+      "bytes": 1978,
+      "sha256": "bb196f0c85d4c68a4dc8286272fcfdd5dd5cd42cf82bdbe891052abdefa413fd"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/train/llama_flash_attn_monkey_patch.py",
+      "bytes": 4614,
+      "sha256": "509d11eb2a8fe127aca9138badb499b9d723cce0517967e6a09817cefd19d28f"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/train/train.py",
+      "bytes": 15331,
+      "sha256": "f875809092074a7ee6ec09c748545afe2403eb3223da346b5ebe6658219e282f"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/train/train_mem.py",
+      "bytes": 500,
+      "sha256": "fec09e83e3650ea535560ea091881d5f5fd6f5c7539efcb5a4ef90cc1b5b8dc3"
+    },
+    {
+      "path": "reference_full_adaptation/CHRLMM/utils.py",
+      "bytes": 4966,
+      "sha256": "21ad257b642ce726b601030515421b28149caf15ae6f9f4607c7fcfb65de3b1f"
+    },
+    {
+      "path": "reference_full_adaptation/README.md",
+      "bytes": 2641,
+      "sha256": "c26493ff8f6781f8604c13dbf8759a2ef6aa4ac0c991f77d043178f7a83d1fd1"
+    },
+    {
+      "path": "reference_full_adaptation/config/chrlmm_config.yaml",
+      "bytes": 1612,
+      "sha256": "17c1d35371836fd11198f29ab5a155789b0787addf7c439992826f3ebcf0d5e8"
+    },
+    {
+      "path": "reference_full_adaptation/pyproject.toml",
+      "bytes": 1137,
+      "sha256": "658491ded873231d139edb5d6f8086bfab0303e1ab2449e98476b419edd5549a"
+    },
+    {
+      "path": "reference_full_adaptation/reported_configuration.json",
+      "bytes": 783,
+      "sha256": "158e8eb905224217ef1f51e5b9035086e61fce010d82d0f87b51a05b169cbb80"
+    },
+    {
+      "path": "reference_full_adaptation/scripts/prepare_vrpct_npy.py",
+      "bytes": 11728,
+      "sha256": "98484ebd62ef3c2463b567ee1410d75bf7ffc010686c2a4b42808bf3edc06ea7"
+    },
+    {
+      "path": "reference_full_adaptation/scripts/train_chrlmm.sh",
+      "bytes": 562,
+      "sha256": "d4fdf8491fd0309328ee48fd8e5ac4b8d95802d563ccf4edaabae69e8945300a"
+    },
+    {
+      "path": "reference_full_adaptation/scripts/train_chrlmm_auto.py",
+      "bytes": 12371,
+      "sha256": "15367346e27a0f43168cea20cd1969d2a109c0d81d1bdb6e4bf110805883bdf1"
+    },
+    {
+      "path": "reference_full_adaptation/scripts/train_hallucination_reducer.py",
+      "bytes": 21610,
+      "sha256": "981764f3230b64bb2d070019edc7f0bf00c21fd5fa3cae803b5f129e5e378793"
+    },
+    {
+      "path": "verify_real_example.py",
+      "bytes": 1126,
+      "sha256": "abc6e645def41122241091b1305ae3f0531816bb455132fb9707ad139492778b"
+    },
+    {
+      "path": "verify_release.py",
+      "bytes": 1748,
+      "sha256": "013b5941010135df06cf444aeadfd1a3a638d61aaa6df74f5014aa0cc51e4d54"
+    }
+  ],
+  "frozen_reference_files_verified": 32,
+  "single_MATLAB_source": true,
+  "raw_sensor_archive_included": false,
+  "full_pretrained_7B_weights_included": false,
+  "private_reports_included": false
+}

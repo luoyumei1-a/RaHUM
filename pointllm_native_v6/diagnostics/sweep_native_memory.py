@@ -47,7 +47,7 @@ def main():
     context={k.removeprefix("context_"):torch.from_numpy(v) for k,v in arrays.items() if k.startswith("context_")}
     if any(any(x in k.lower() for x in ("label","category","ground_truth","claim")) for k in context):
         raise ValueError("Label-like metadata must not enter forward")
-    rows=[];last_tokens={};raw_timings={}
+    rows=[];last_tokens={};raw_timings={};frame_rows=[]
     nv=int(reference.shape[2]-int(cp["adapter_config"]["reference_has_cls"]))
     if max(a.k_values)>nv:raise ValueError("Budget exceeds actual reference tokens")
     for k in a.k_values:
@@ -69,6 +69,12 @@ def main():
                 raise ValueError("Invalid utility normalization")
             if not torch.allclose(att.sum(-1),frame["reference_available"].to(att.dtype),atol=1e-6):
                 raise ValueError("Invalid masked attention normalization")
+            frame_entropy=(-(att*att.clamp_min(1e-30).log()).sum(-1))[active]
+            frame_rows.append({"local_K":k,"frame":t+1,"supported_groups":int(active.sum()),
+                 "radar_utility_mean":float(utility[...,0][active].mean()),
+                 "attention_entropy_nats_mean":float(frame_entropy.mean()),
+                 "attention_max_mean":float(att.amax(-1)[active].mean()),
+                 "reference_attention_rank_mean":att[active].mean(0).tolist()})
             weights.extend(utility[...,0][active].tolist())
             entropies.extend((-(att*att.clamp_min(1e-30).log()).sum(-1))[active].tolist())
             max_attention.extend(att.amax(-1)[active].tolist())
@@ -81,6 +87,9 @@ def main():
              "native_radar_utility_min":float(weights.min()),"native_radar_utility_max":float(weights.max()),
              "attention_entropy_nats_mean":float(np.mean(entropies)),
              "attention_max_mean":float(np.mean(max_attention)),
+             "entropy_p10":float(np.quantile(entropies,.1)),"entropy_p90":float(np.quantile(entropies,.9)),
+             "adapter_parameters":sum(p.numel() for p in model.parameters()),
+             "adapter_trainable_parameters":sum(p.numel() for p in model.parameters() if p.requires_grad),
              "corrected_sequence_relative_L2_change_from_native":float((corrected-radar).norm()/radar.norm()),
              "forward_ms_median":float(np.median(times)),"forward_ms_min":float(min(times)),
              "forward_ms_max":float(max(times))}
@@ -101,9 +110,12 @@ def main():
              "timing": {"device":"cpu","torch_threads":a.threads,"warmup_forwards_per_K":1,
                         "recorded_forwards_per_K":a.timing_repeats,"measured_component":"adapter-only forward, complete three-frame cached-feature window; excludes encoders, projector and 7B decoder",
                         "recorded_forward_ms_by_K":raw_timings},
-             "torch":str(torch.__version__),"rows":rows,"csv_sha256":sha(a.output_dir/"local_memory_sweep.csv")}
+             "torch":str(torch.__version__),"frame_rows":frame_rows,"rows":rows,"csv_sha256":sha(a.output_dir/"local_memory_sweep.csv")}
     (a.output_dir/"memory_sweep_receipt.json").write_text(json.dumps(receipt,indent=2)+"\n")
-    print(json.dumps(receipt,indent=2))
+    assert len({r["adapter_parameters"] for r in rows})==1
+    assert all(r["available_radar_groups"]==42 for r in rows)
+    assert all(np.isfinite(r["forward_ms_median"]) for r in rows)
+    print(json.dumps({"status":receipt["status"],"K":[r["local_K"] for r in rows],"adapter_parameters":rows[0]["adapter_parameters"],"frames":len(frame_rows)},indent=2))
 
 
 if __name__=="__main__":main()
